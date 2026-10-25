@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-10-18T03:05:12.199594+00:00",
+  "status": "frozen_before_v17_formal_training",
+  "experiment": "leman-f1-v17-rdrop",
+  "goal": "improve exact original character-span Micro F1; 95 percent is a target",
+  "baseline": {
+    "version": 14,
+    "selection_sha256": "050dd074323902f6be3352ebaab1ded1dfec93e3f386abc27488f416e62f5385",
+    "comparison_sha256": "d3bf9f3fab3092f332de3a976fff32b6810f11cbccf5c9300aa46cffc66e2da1",
+    "full_dev_micro": 0.9463046684234703,
+    "workflow_crossfit_micro": 0.9445118106417034
+  },
+  "data_sha256": {
+    "train2.txt": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+    "dev2.txt": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+    "label.txt": "e21a9f50c981c53fc4f599c950d5f49f682087e04240e60687e3a22238fa8223"
+  },
+  "training": {
+    "parent_sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4",
+    "parent": "v4 seed42 epoch1 EMA",
+    "seed": 45,
+    "epochs": 3,
+    "world_size": 2,
+    "original_examples_per_gpu": 16,
+    "forward_batch_per_gpu": 32,
+    "gradient_accumulation": 4,
+    "effective_original_example_batch": 128,
+    "encoder_lr": 3e-06,
+    "head_lr": 1e-05,
+    "ema_decay": 0.995,
+    "warmup_fraction": 0.05,
+    "grad_clip": 1.0,
+    "consistency_weight": 1.0,
+    "FGM": false,
+    "supervised_loss": "unchanged v4 positive-weighted type-weighted MLCCE + boundary BCE",
+    "consistency_distribution": "per-example/type softmax over valid spans and null score0",
+    "consistency": "0.5*(KL(p||q)+KL(q||p)), mean over examples/types; no detach",
+    "dropout": "ordinary/per-example masks independent; vocabulary-wide lexical mask shared within doubled batch",
+    "selection": "threshold0 dev Micro; parent epoch0 + live and EMA each epoch",
+    "new_forward_parameters": false,
+    "updates_saving": 250,
+    "epoch_snapshot_interval": 5
+  },
+  "analysis": {
+    "folds": "sha256(leman-f1-v2-folds-20261016 + null + text), first8 bytes big endian mod2; fixed",
+    "candidate_floor": -4.0,
+    "routes": [
+      "v14 inherited workflow",
+      "rdrop only",
+      "v4 + rdrop",
+      "v4 + fgm43 + fgm44 + rdrop"
+    ],
+    "calibration": "unchanged v9 six features per model; type intercept support200; GP/boundary slope support500; ridge10/50; fit-only statistics",
+    "route_selection": "fitting-partition Micro, then Macro13, prefer baseline then fewer models on ties; never held-out selection",
+    "adoption": "full-dev Micro >= v14; workflow crossfit Micro > v14; neither held-out half below v14",
+    "no_additional_hyperparameter_search": true,
+    "test_accessed": false
+  },
+  "checks": {
+    "mathematical_QA": "PASS; KL, empty spans, padding gradient, unequal final microbatches",
+    "two_gpu_no_update_backward": "PASS; worst shape tokens247 chars192; 18.823 GiB maximum with Adam/EMA reserve; optimizer_steps0"
+  },
+  "references": [
+    "https://arxiv.org/abs/2106.14448"
+  ],
+  "interpretation": "exploratory dev comparison after repeated model/checkpoint selection; not an independent test result"
+}

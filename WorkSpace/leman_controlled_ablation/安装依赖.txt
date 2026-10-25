@@ -1,0 +1,14 @@
+当前服务器已有 PyTorch 2.7.0+cu126、transformers 4.56.2，可直接运行，无需重复安装。
+
+迁移到新镜像时，在本目录执行：
+
+python -m pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cu126
+python -m pip install -r requirements.txt
+
+默认Python路径：/root/miniconda3/bin/python
+如需改用其他解释器：
+LEMAN_GP_PYTHON=/你的环境/bin/python bash train.sh --variant F --seed 42
+
+模型、tokenizer须完整保存在 /root/data/WorkSpace/model/。
+train2.txt、dev2.txt、label.txt须保存在 /root/data/WorkSpace/data/。
+训练不下载模型，不读取test数据。

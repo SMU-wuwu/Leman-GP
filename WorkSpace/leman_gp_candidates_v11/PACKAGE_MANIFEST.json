@@ -1,0 +1,13 @@
+{
+  "files": {
+    "CACHE_DISCLOSURE.json": "dd14692dc490bbddd4f321196611114a685b96b1367bcb179f26af664e70f878",
+    "POLICY.json": "aadbee94d6b67ef1cc6d87eff8ef6ba380d993da4f252c2eb5f6da07ebed426f",
+    "analyze.py": "10232e8cefea61ed5e73ac11e34f7822d7f82b3f17d44b78dce140f400e07e5b",
+    "extract.py": "87ef229cb249bcb7e5ffddd1b34695dbb1bb520c541f4d1339740912aa0993d0"
+  },
+  "shared_dependencies": {
+    "leman_gp_fgm_v10": "8f30cf112dbc26696afaefb633ae635adc0cb0484a5297fdc5d20cb8cced5a4e",
+    "leman_gp_fgm_v10_analysis": "32299f85994ddcefa42878f1036bfc1afae21caade346c9dbd65c2c8ce68fe0c",
+    "leman_gp_typecal_v9": "9feb7005d4de355bc4419536be8416dc4c2c88721fe0527e5975cc7769aefd97"
+  }
+}

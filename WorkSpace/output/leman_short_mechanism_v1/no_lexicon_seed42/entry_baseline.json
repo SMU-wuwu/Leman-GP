@@ -1,0 +1,136 @@
+{
+  "micro": {
+    "precision": 0.9349487956151739,
+    "recall": 0.9357135983062266,
+    "f1": 0.9353310406195137,
+    "true_positive": 19446,
+    "predicted": 20799,
+    "support": 20782
+  },
+  "macro_f1": 0.8675649140498224,
+  "per_type": {
+    "BIS": {
+      "precision": 0.9310344827586207,
+      "recall": 0.9642857142857143,
+      "f1": 0.9473684210526315,
+      "true_positive": 189,
+      "predicted": 203,
+      "support": 196
+    },
+    "COM": {
+      "precision": 0.7162162162162162,
+      "recall": 0.828125,
+      "f1": 0.7681159420289855,
+      "true_positive": 53,
+      "predicted": 74,
+      "support": 64
+    },
+    "CRO": {
+      "precision": 0.9557034656873996,
+      "recall": 0.9632199861207494,
+      "f1": 0.9594470046082949,
+      "true_positive": 4164,
+      "predicted": 4357,
+      "support": 4323
+    },
+    "CUL": {
+      "precision": 0.8891820580474934,
+      "recall": 0.9051029543419875,
+      "f1": 0.8970718722271517,
+      "true_positive": 1011,
+      "predicted": 1137,
+      "support": 1117
+    },
+    "DIS": {
+      "precision": 0.9771324863883848,
+      "recall": 0.9792651873408512,
+      "f1": 0.9781976744186046,
+      "true_positive": 2692,
+      "predicted": 2755,
+      "support": 2749
+    },
+    "DRUG": {
+      "precision": 0.926664159458443,
+      "recall": 0.9200896191187453,
+      "f1": 0.9233651864343264,
+      "true_positive": 2464,
+      "predicted": 2659,
+      "support": 2678
+    },
+    "FER": {
+      "precision": 0.8072289156626506,
+      "recall": 0.8589743589743589,
+      "f1": 0.8322981366459627,
+      "true_positive": 67,
+      "predicted": 83,
+      "support": 78
+    },
+    "ORG": {
+      "precision": 0.6934523809523809,
+      "recall": 0.744408945686901,
+      "f1": 0.7180277349768875,
+      "true_positive": 233,
+      "predicted": 336,
+      "support": 313
+    },
+    "OTH": {
+      "precision": 0.6646706586826348,
+      "recall": 0.4703389830508475,
+      "f1": 0.5508684863523573,
+      "true_positive": 111,
+      "predicted": 167,
+      "support": 236
+    },
+    "PAOG": {
+      "precision": 0.924892703862661,
+      "recall": 0.9451754385964912,
+      "f1": 0.9349240780911063,
+      "true_positive": 431,
+      "predicted": 466,
+      "support": 456
+    },
+    "PART": {
+      "precision": 0.9073647871116226,
+      "recall": 0.8924731182795699,
+      "f1": 0.8998573466476463,
+      "true_positive": 1577,
+      "predicted": 1738,
+      "support": 1767
+    },
+    "PER": {
+      "precision": 0.906046511627907,
+      "recall": 0.8931682714351215,
+      "f1": 0.8995613022396675,
+      "true_positive": 1948,
+      "predicted": 2150,
+      "support": 2181
+    },
+    "PET": {
+      "precision": 0.9640564826700898,
+      "recall": 0.9744809688581315,
+      "f1": 0.9692406969240697,
+      "true_positive": 4506,
+      "predicted": 4674,
+      "support": 4624
+    }
+  },
+  "total_samples": 5963,
+  "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+  "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+  "loss": 0.12989573865813747,
+  "windows": 6099,
+  "seconds": 33.98142291104887,
+  "threshold": 0.0,
+  "coverage": {
+    "sentences": 5963,
+    "windows": 6099,
+    "gold_entities": 20782,
+    "gold_not_fully_contained_in_any_window": 0,
+    "max_encoder_tokens_observed": 223,
+    "max_chars_observed": 192,
+    "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+  },
+  "world_size": 2,
+  "device": "cuda:0",
+  "amp": "bf16"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "recipes": {
+    "soup2": {
+      "sha256": "bc5ef68b6f733ccdd9e96d558e501ebef24d1584c1aedd02f6ca09316d8e0b23",
+      "tensors": 208,
+      "elements": 387904067,
+      "all_tensors_bitwise_equal_to_independent_mean": true
+    },
+    "soup3": {
+      "sha256": "3061466ac2f6782ec6694818ee0317b8a6fb8ad51567b18c97fa2ac763837a83",
+      "tensors": 208,
+      "elements": 387904067,
+      "all_tensors_bitwise_equal_to_independent_mean": true
+    }
+  },
+  "test_accessed": false,
+  "model_weights_updated": false
+}

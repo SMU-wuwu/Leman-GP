@@ -1,0 +1,68 @@
+{
+  "types": [
+    "BIS",
+    "COM",
+    "CRO",
+    "CUL",
+    "DIS",
+    "DRUG",
+    "FER",
+    "ORG",
+    "OTH",
+    "PAOG",
+    "PART",
+    "PER",
+    "PET"
+  ],
+  "checkpoint_sha256": "bc5ef68b6f733ccdd9e96d558e501ebef24d1584c1aedd02f6ca09316d8e0b23",
+  "recipe": "soup2",
+  "parents": {
+    "fgm43": {
+      "path": "/root/data/WorkSpace/output/leman_fgm_v10_seed43/best.pt",
+      "sha256": "efdeaaa83bc483b376837ee5bcb35df7bcb5a9b1b10d2f120eb32868f1d80506",
+      "best_epoch": 1,
+      "weight_source": "live"
+    },
+    "fgm44": {
+      "path": "/root/data/WorkSpace/output/leman_fgm_v14_seed44/best.pt",
+      "sha256": "a3020f91bdf471069a58e25f4c016daa45d246c03b648a8ad6e760cce20dc625",
+      "best_epoch": 1,
+      "weight_source": "live"
+    }
+  },
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "policy_sha256": "198815b32faeb3ec2b071e18c4bd5dc012aeed51562af7138bbcc8d0c917991b",
+  "floor": -4.0,
+  "environment": {
+    "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+    "torch": "2.7.0+cu126",
+    "transformers": "4.56.2",
+    "cuda": "12.6",
+    "cudnn": 90501,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "memory_gib": 23.5164794921875,
+    "driver_gpu_listing": [
+      "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+      "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "world_size": 2,
+    "amp": "bf16",
+    "tf32": true,
+    "numerical_policy": {
+      "revision": "f1-v2-based-on-a100-step0-fix2",
+      "encoder_autocast": "bf16",
+      "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+      "custom_layers": "fp32_autocast_disabled_before_projections",
+      "gradient_norm": "fp64_before_clipping",
+      "fp16_bf16_reduced_precision_reduction": false,
+      "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+      "score_clamping": false,
+      "replace_nonfinite_loss": false,
+      "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+      "cdist_backward_max_elements": 134217728
+    }
+  },
+  "test_accessed": false,
+  "seconds": 32.74804701842368,
+  "cache_sha256": "a26ece2fae0a2d0ddb04f70aece6fae8c38bb27c9031625b0af1dfd81d6b8bc2"
+}

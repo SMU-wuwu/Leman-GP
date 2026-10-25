@@ -1,0 +1,203 @@
+{
+  "split": "dev",
+  "test_read": false,
+  "sources": {
+    "F42_A": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/A/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "1e000da565da33c59b15547b614e6a3d69593d2d2875e5044a1128bba3809010",
+      "micro": {
+        "tp": 19677,
+        "fp": 1188,
+        "fn": 1105,
+        "predicted": 20865,
+        "support": 20782,
+        "precision": 0.9430625449317038,
+        "recall": 0.9468289866230392,
+        "f1": 0.9449420126299614
+      },
+      "new_gold_vs_oldpool": 70,
+      "new_gold_beyond_oldpool_and_F42C": 22
+    },
+    "F42_B": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/B/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "1e000da565da33c59b15547b614e6a3d69593d2d2875e5044a1128bba3809010",
+      "micro": {
+        "tp": 19677,
+        "fp": 1188,
+        "fn": 1105,
+        "predicted": 20865,
+        "support": 20782,
+        "precision": 0.9430625449317038,
+        "recall": 0.9468289866230392,
+        "f1": 0.9449420126299614
+      },
+      "new_gold_vs_oldpool": 70,
+      "new_gold_beyond_oldpool_and_F42C": 22
+    },
+    "F42_C": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/C/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "ec5d650e377b006de539b937edc7ffb4b16c85a8483875b25f6b93daa8c1987a",
+      "micro": {
+        "tp": 19662,
+        "fp": 1133,
+        "fn": 1120,
+        "predicted": 20795,
+        "support": 20782,
+        "precision": 0.9455157489781197,
+        "recall": 0.9461072081609084,
+        "f1": 0.9458113861028934
+      },
+      "new_gold_vs_oldpool": 58,
+      "new_gold_beyond_oldpool_and_F42C": 0
+    },
+    "F_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/F_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "ec5d650e377b006de539b937edc7ffb4b16c85a8483875b25f6b93daa8c1987a",
+      "micro": {
+        "tp": 19662,
+        "fp": 1133,
+        "fn": 1120,
+        "predicted": 20795,
+        "support": 20782,
+        "precision": 0.9455157489781197,
+        "recall": 0.9461072081609084,
+        "f1": 0.9458113861028934
+      },
+      "new_gold_vs_oldpool": 58,
+      "new_gold_beyond_oldpool_and_F42C": 0
+    },
+    "max_words5_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/max_words5_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "ec5d650e377b006de539b937edc7ffb4b16c85a8483875b25f6b93daa8c1987a",
+      "micro": {
+        "tp": 19662,
+        "fp": 1133,
+        "fn": 1120,
+        "predicted": 20795,
+        "support": 20782,
+        "precision": 0.9455157489781197,
+        "recall": 0.9461072081609084,
+        "f1": 0.9458113861028934
+      },
+      "new_gold_vs_oldpool": 58,
+      "new_gold_beyond_oldpool_and_F42C": 0
+    },
+    "no_attention_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_attention_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "d8cb1e357bbfb52fd5461c03fc7f61b6b2a18dd2ad2cc53908a0c060faf8b1e9",
+      "micro": {
+        "tp": 19580,
+        "fp": 1105,
+        "fn": 1202,
+        "predicted": 20685,
+        "support": 20782,
+        "precision": 0.9465796470872613,
+        "recall": 0.9421614859012607,
+        "f1": 0.9443653989919695
+      },
+      "new_gold_vs_oldpool": 49,
+      "new_gold_beyond_oldpool_and_F42C": 10
+    },
+    "no_char_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_char_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "ae8b9dab2e3aa1075aed4cd66c622f1ed5af168d3d634e53eff75e586d266278",
+      "micro": {
+        "tp": 19646,
+        "fp": 1119,
+        "fn": 1136,
+        "predicted": 20765,
+        "support": 20782,
+        "precision": 0.946111244883217,
+        "recall": 0.9453373111346357,
+        "f1": 0.9457241196716971
+      },
+      "new_gold_vs_oldpool": 54,
+      "new_gold_beyond_oldpool_and_F42C": 0
+    },
+    "max_words3_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/max_words3_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "8083040a9f3746c72d34bc30244a912630fc7ebb94622a2d59b5e08b156b6a89",
+      "micro": {
+        "tp": 19665,
+        "fp": 1132,
+        "fn": 1117,
+        "predicted": 20797,
+        "support": 20782,
+        "precision": 0.9455690724623744,
+        "recall": 0.9462515638533346,
+        "f1": 0.945910195050386
+      },
+      "new_gold_vs_oldpool": 57,
+      "new_gold_beyond_oldpool_and_F42C": 0
+    },
+    "gp_reset_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/gp_reset_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "bb9610f4fdc87b319d8b3bc4c47d43da6b7122e04e034e3c028716e521f350a1",
+      "micro": {
+        "tp": 19514,
+        "fp": 1177,
+        "fn": 1268,
+        "predicted": 20691,
+        "support": 20782,
+        "precision": 0.9431153641679958,
+        "recall": 0.9389856606678857,
+        "f1": 0.9410459817230488
+      },
+      "new_gold_vs_oldpool": 39,
+      "new_gold_beyond_oldpool_and_F42C": 11
+    },
+    "no_lexicon_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_lexicon_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "f9015c84389947a1d00cb6096e194b65e04b062a6ce047d521129ee3dbec4168",
+      "micro": {
+        "tp": 19474,
+        "fp": 1284,
+        "fn": 1308,
+        "predicted": 20758,
+        "support": 20782,
+        "precision": 0.9381443298969072,
+        "recall": 0.9370609181022038,
+        "f1": 0.9376023110255176
+      },
+      "new_gold_vs_oldpool": 62,
+      "new_gold_beyond_oldpool_and_F42C": 31
+    },
+    "crf_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/crf_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "47d8eac5ffb50d7796ddc8c49bad115e6b3940fc0cdd7797d256eff3c7c35a2a",
+      "micro": {
+        "tp": 19381,
+        "fp": 1692,
+        "fn": 1401,
+        "predicted": 21073,
+        "support": 20782,
+        "precision": 0.9197076828168746,
+        "recall": 0.9325858916369936,
+        "f1": 0.9261020188746865
+      },
+      "new_gold_vs_oldpool": 55,
+      "new_gold_beyond_oldpool_and_F42C": 23
+    },
+    "dot_attention_seed42": {
+      "prediction_path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/dot_attention_seed42/best_dev/dev_predictions.jsonl",
+      "prediction_sha256": "e8acbc70ede1d01c8f20427d2b32480d37cc5932aaa5e12f3c6e13f2e3350c11",
+      "micro": {
+        "tp": 19675,
+        "fp": 1152,
+        "fn": 1107,
+        "predicted": 20827,
+        "support": 20782,
+        "precision": 0.9446871849042109,
+        "recall": 0.946732749494755,
+        "f1": 0.9457088610637122
+      },
+      "new_gold_vs_oldpool": 59,
+      "new_gold_beyond_oldpool_and_F42C": 2
+    }
+  },
+  "selected": [
+    "F42_C",
+    "F42_B",
+    "no_lexicon_seed42"
+  ]
+}

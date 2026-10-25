@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-19T12:36:19.917468+00:00",
+  "files": {
+    "QA_RESULT.json": "2a44e98b2ec8b777ec21424f437a15ee865f29e543f173ba8c0c75a40d1454a6",
+    "README.md": "9fc1b5c6523f8e03dd59bceae1fbbb513397ef187480a7df90f036780ea36e2c",
+    "SOURCE.json": "caaac1397d5a53716d6ae94c7af964016652988f5ea7cbc2dfbf9d34b17d371f",
+    "data.py": "eadc9adf7020ac6884d0ec6697092c78ad0849d2fe7352e65925cab313316da6",
+    "model.py": "7d6f7b8eedb456ea099a8681ad673c3b9b75869dc1bd778a66c7c13c033a6085",
+    "prepare_resources.py": "a2512325ff1e21e35167909077d817fe04e823866eef158ed56691bb434dead7",
+    "qa.py": "8b6d7fe2dc730011a50cf62c8dc2d490e10c23976124f07f0ca3f9a16eaccc7a",
+    "requirements.txt": "30661865b6982ecc66bf1887208f529fd1e2efccbf7cb30f503043d766a7d51b",
+    "run.sh": "b7d840dfd068ec47cb356c63941e149597a446190bc0b49292bb8ca20828f123",
+    "train.py": "abf0bd8a808e2355e100e332ef3fa33d8932e3d58a5662f471e8bd7513f5b357",
+    "\u5b89\u88c5\u4f9d\u8d56.txt": "6a6dc1924980b4f6fcdfc4427c4a7daa85eccb551555e1eec9794cdc14f99d4b"
+  },
+  "qa": "QA_RESULT.json",
+  "training_started": false,
+  "resources_downloaded": false
+}

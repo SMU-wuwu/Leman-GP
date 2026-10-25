@@ -1,0 +1,358 @@
+{
+  "name": "最终定稿版本2",
+  "version": "final_v2",
+  "status": "frozen",
+  "frozen_at_utc": "2026-10-19T11:12:39.551606+00:00",
+  "source": "/root/data/WorkSpace/output/leman_wide_v23",
+  "selected_case": "wide_context6_consensus8",
+  "selection_authorization": "用户：好的，将新的最优结果保存为定稿版本2。",
+  "parent_version": "/root/data/WorkSpace/output/leman_final_v1_20261019",
+  "parent_freeze_sha256": "0b86632a0e2f1734e546603123955bd6eb003c3b3155d8d3f2a37f94f545006b",
+  "source_artifact_manifest_sha256": "cc671758e2689632e0255b78bd29a012a18ce7468fd3898830ad0e27cd492b12",
+  "full_dev": {
+    "micro": {
+      "precision": 0.9561297202966698,
+      "recall": 0.9490905591377153,
+      "f1": 0.9525971360266596,
+      "true_positive": 19724,
+      "predicted": 20629,
+      "support": 20782
+    },
+    "macro_f1": 0.9020008059443738,
+    "per_type": {
+      "BIS": {
+        "precision": 0.9597989949748744,
+        "recall": 0.9744897959183674,
+        "f1": 0.9670886075949368,
+        "true_positive": 191,
+        "predicted": 199,
+        "support": 196
+      },
+      "COM": {
+        "precision": 0.7702702702702703,
+        "recall": 0.890625,
+        "f1": 0.8260869565217391,
+        "true_positive": 57,
+        "predicted": 74,
+        "support": 64
+      },
+      "CRO": {
+        "precision": 0.972472819801064,
+        "recall": 0.972472819801064,
+        "f1": 0.972472819801064,
+        "true_positive": 4204,
+        "predicted": 4323,
+        "support": 4323
+      },
+      "CUL": {
+        "precision": 0.8995633187772926,
+        "recall": 0.9221128021486124,
+        "f1": 0.9106984969053935,
+        "true_positive": 1030,
+        "predicted": 1145,
+        "support": 1117
+      },
+      "DIS": {
+        "precision": 0.9966654316413487,
+        "recall": 0.9785376500545653,
+        "f1": 0.9875183553597651,
+        "true_positive": 2690,
+        "predicted": 2699,
+        "support": 2749
+      },
+      "DRUG": {
+        "precision": 0.9503012048192772,
+        "recall": 0.9424943988050785,
+        "f1": 0.9463817022872141,
+        "true_positive": 2524,
+        "predicted": 2656,
+        "support": 2678
+      },
+      "FER": {
+        "precision": 0.9411764705882353,
+        "recall": 0.8205128205128205,
+        "f1": 0.8767123287671232,
+        "true_positive": 64,
+        "predicted": 68,
+        "support": 78
+      },
+      "ORG": {
+        "precision": 0.8195488721804511,
+        "recall": 0.6964856230031949,
+        "f1": 0.7530224525043178,
+        "true_positive": 218,
+        "predicted": 266,
+        "support": 313
+      },
+      "OTH": {
+        "precision": 0.8087431693989071,
+        "recall": 0.6271186440677966,
+        "f1": 0.7064439140811456,
+        "true_positive": 148,
+        "predicted": 183,
+        "support": 236
+      },
+      "PAOG": {
+        "precision": 0.9625550660792952,
+        "recall": 0.9583333333333334,
+        "f1": 0.9604395604395605,
+        "true_positive": 437,
+        "predicted": 454,
+        "support": 456
+      },
+      "PART": {
+        "precision": 0.9202524383247275,
+        "recall": 0.9077532541029995,
+        "f1": 0.913960113960114,
+        "true_positive": 1604,
+        "predicted": 1743,
+        "support": 1767
+      },
+      "PER": {
+        "precision": 0.9244159413650939,
+        "recall": 0.9252636405318662,
+        "f1": 0.9248395967002749,
+        "true_positive": 2018,
+        "predicted": 2183,
+        "support": 2181
+      },
+      "PET": {
+        "precision": 0.979076790336497,
+        "recall": 0.9816176470588235,
+        "f1": 0.9803455723542117,
+        "true_positive": 4539,
+        "predicted": 4636,
+        "support": 4624
+      }
+    },
+    "total_samples": 5963,
+    "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+    "overlap_policy": "retain all; deduplicate identical spans from overlapping windows"
+  },
+  "crossfit": {
+    "micro": {
+      "precision": 0.9497228435281533,
+      "recall": 0.9398517948224425,
+      "f1": 0.94476153622908,
+      "true_positive": 19532,
+      "predicted": 20566,
+      "support": 20782
+    },
+    "macro_f1": 0.8825433771149538,
+    "per_type": {
+      "BIS": {
+        "precision": 0.949748743718593,
+        "recall": 0.9642857142857143,
+        "f1": 0.9569620253164557,
+        "true_positive": 189,
+        "predicted": 199,
+        "support": 196
+      },
+      "COM": {
+        "precision": 0.782608695652174,
+        "recall": 0.84375,
+        "f1": 0.8120300751879699,
+        "true_positive": 54,
+        "predicted": 69,
+        "support": 64
+      },
+      "CRO": {
+        "precision": 0.96833102172908,
+        "recall": 0.9690030071709461,
+        "f1": 0.9686668979072726,
+        "true_positive": 4189,
+        "predicted": 4326,
+        "support": 4323
+      },
+      "CUL": {
+        "precision": 0.9162790697674419,
+        "recall": 0.8818263205013429,
+        "f1": 0.8987226277372263,
+        "true_positive": 985,
+        "predicted": 1075,
+        "support": 1117
+      },
+      "DIS": {
+        "precision": 0.9893577981651376,
+        "recall": 0.9807202619134231,
+        "f1": 0.9850200949945196,
+        "true_positive": 2696,
+        "predicted": 2725,
+        "support": 2749
+      },
+      "DRUG": {
+        "precision": 0.9433183183183184,
+        "recall": 0.938386855862584,
+        "f1": 0.940846125046799,
+        "true_positive": 2513,
+        "predicted": 2664,
+        "support": 2678
+      },
+      "FER": {
+        "precision": 0.7875,
+        "recall": 0.8076923076923077,
+        "f1": 0.7974683544303798,
+        "true_positive": 63,
+        "predicted": 80,
+        "support": 78
+      },
+      "ORG": {
+        "precision": 0.7491289198606271,
+        "recall": 0.6869009584664537,
+        "f1": 0.7166666666666667,
+        "true_positive": 215,
+        "predicted": 287,
+        "support": 313
+      },
+      "OTH": {
+        "precision": 0.7816091954022989,
+        "recall": 0.576271186440678,
+        "f1": 0.6634146341463415,
+        "true_positive": 136,
+        "predicted": 174,
+        "support": 236
+      },
+      "PAOG": {
+        "precision": 0.9552572706935123,
+        "recall": 0.9364035087719298,
+        "f1": 0.9457364341085271,
+        "true_positive": 427,
+        "predicted": 447,
+        "support": 456
+      },
+      "PART": {
+        "precision": 0.914103308183401,
+        "recall": 0.8913412563667232,
+        "f1": 0.9025787965616046,
+        "true_positive": 1575,
+        "predicted": 1723,
+        "support": 1767
+      },
+      "PER": {
+        "precision": 0.9043083900226757,
+        "recall": 0.9142595139844109,
+        "f1": 0.9092567259461924,
+        "true_positive": 1994,
+        "predicted": 2205,
+        "support": 2181
+      },
+      "PET": {
+        "precision": 0.9790940766550522,
+        "recall": 0.972318339100346,
+        "f1": 0.9756944444444444,
+        "true_positive": 4496,
+        "predicted": 4592,
+        "support": 4624
+      }
+    },
+    "total_samples": 5963,
+    "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+    "overlap_policy": "retain all; deduplicate identical spans from overlapping windows"
+  },
+  "delta_vs_final_v1_percentage_points": {
+    "full_dev": 0.2563145543994727,
+    "crossfit": 0.08342581987953457
+  },
+  "primary_report": "Full-dev fitted exact character-span Micro F1",
+  "models": [
+    "old",
+    "fgm43",
+    "fgm44",
+    "ema43",
+    "fgm46",
+    "soup2",
+    "soup3",
+    "parent",
+    "v4ema",
+    "v2ema",
+    "rdrop",
+    "fgm47"
+  ],
+  "parameters": {
+    "max_iter": 180,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 35,
+    "l2_regularization": 2.0,
+    "max_bins": 127,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "negative_weight": 1.5,
+  "feature_columns": 99,
+  "context_prior": {
+    "source": "train2",
+    "strength": 20.0,
+    "cap": 8.0
+  },
+  "candidate_rows": 23769,
+  "gold_covered": 20170,
+  "data_sha256": {
+    "train2.txt": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+    "dev2.txt": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+    "label.txt": "e21a9f50c981c53fc4f599c950d5f49f682087e04240e60687e3a22238fa8223"
+  },
+  "test_accessed_during_freeze": false,
+  "new_neural_training": false,
+  "new_calibrator_fitting": false,
+  "runtime": {
+    "python": "3.12.9",
+    "numpy": "2.2.6",
+    "sklearn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "checkpoint_policy": "Existing neural weights referenced by DEPENDENCIES.json; all 12 dev caches and fitted calibrators copied into snapshot.",
+  "files": {
+    "DEPENDENCIES.json": "2643d6cc04d9a0debaf78bdbd95855362738f579ba5253fadc426687b9c6fe65",
+    "README.md": "54b788b082749f2a718ace64cfeb1b7346ce0df372bb667dfd96aadcd2ca2c26",
+    "REPLAY_VERIFICATION.json": "cb72eb1c0e60ffd1eecfc6812b3490c659a1506b5d48183a90356e703855ce8e",
+    "SELECTED_RESULT.json": "fce4ac680a4066135168cd2f5c5a3109ba9d4295698ac83b86cce12d0e727337",
+    "analysis_v20.json": "088d97b1f6d5f5e321958564ed73d720192457635d5493563b2e656474c8ef27",
+    "caches/ema43.jsonl.gz": "d4bbdb7eccc084ed129a553e4e5fa3ea12e008e50fea7dca8bdb5cf35723e57c",
+    "caches/fgm43.jsonl.gz": "66eb24aebf499af1efc0f95c0464ceebcbe5760029c1e131702bef48877d068b",
+    "caches/fgm44.jsonl.gz": "a748e191cfe78387205f48df315a8d3b153413556d6426c7f3b1613bf660b31e",
+    "caches/fgm46.jsonl.gz": "18d80eaf6ea0f3eb0df890af7187560606d6c176efa550b2b5a54805172be6eb",
+    "caches/fgm47.jsonl.gz": "9ef228f3ed1f5778862809f4e1562480738d219961fccd3f20da41826fa812d6",
+    "caches/old.jsonl.gz": "821d8d02b73d83414dc54a259670782d054670d5f72a0c9e963dc11ea9f1899e",
+    "caches/parent.jsonl.gz": "b5fd5c7bbe02334ca6b6b4e0f4292472ee8196686445a8657b4e32e2f3301f78",
+    "caches/rdrop.jsonl.gz": "096e114ade91e6105d004d890b85ce70540ef5f9992c16861ae5d27971df4501",
+    "caches/soup2.jsonl.gz": "a26ece2fae0a2d0ddb04f70aece6fae8c38bb27c9031625b0af1dfd81d6b8bc2",
+    "caches/soup3.jsonl.gz": "c196b96be3055a9ed98c15cc1e9ab46f73d54184a8570f23fbbccee788102aa0",
+    "caches/v2ema.jsonl.gz": "99c1cf47080c1e6dd7dd710a311415aeb201006a1ae4c6c95654fcaab207e646",
+    "caches/v4ema.jsonl.gz": "95eed0483f8f3d7d4b42eae6ae9ee93935c4e1170e1099c4da94f076485e2e6d",
+    "dev_caches.json": "a43c570fb349be07bbf69747e3facd8c3cce5f46cbf3acdcea6a3c3841b6b2a8",
+    "dev_text_only.jsonl": "7f28fadf6798da28e48dd6b54e43e096322601512b253ccee662fb22fe76fdf9",
+    "provenance/ARTIFACT_HASHES.json": "cc671758e2689632e0255b78bd29a012a18ce7468fd3898830ad0e27cd492b12",
+    "provenance/EXPLORATION_BEST.json": "af36b5e3bc03daa0dc414577600d2505bc525bbc77dfa5c2cb22191bed283bab",
+    "provenance/PLAN.json": "e0fb64e130e364dd0b5c6518102622f9b026b9aaf93ba7a0473ad02f5a5c5b66",
+    "provenance/REPLAY_COMMAND.txt": "7e00124194b311b478afc52f0bb38ee7bca2b4e3a6793c857c0a77f5507400eb",
+    "provenance/RESULTS.md": "863d6a3974775dd3ee673653fe1f5b6594c48a5e595d603bc4025c87a514af07",
+    "provenance/dev_caches.json": "67e0eb918368d04087c3beeb43d745692ac7a127483159dffcfbe218a2eb4130",
+    "provenance/independent_recount.json": "a599c6c5b8ca9456e631692b17e6e8717a7ad4f8c2cf724b387ff97fae5bac5a",
+    "provenance/parent_FREEZE.json": "0b86632a0e2f1734e546603123955bd6eb003c3b3155d8d3f2a37f94f545006b",
+    "provenance/summary.json": "7d32fe1d2094bd9f9cb391e54794233c54434e797d9b7e4d1a043a0ef6820698",
+    "replay_dev.sh": "c08c0bd495b36e8a34367fadebd383bab78da958fa4993ff78731d1a2e6fb66d",
+    "replay_verified.jsonl": "97c8ea666291c16ffb34f5c317eabb199cd4f1507b2bfe227814ab39d957c126",
+    "requirements_replay.txt": "1a863cdc81df530de0dab74339bdf9fbc6531ea3af52b97f4a46f6a8b7224ebc",
+    "source_snapshot/context_priors_v22.py": "a6bda48b257ac80168e37def2c6dbef116a808816720078d6dcbfa9a4378050c",
+    "source_snapshot/freeze_final_v2.py": "c7eb93d5dca12867583ff103d2985583fae2c5616d03237b1b7b54b2cb2796b3",
+    "source_snapshot/predict_hgb_v22.py": "b29464388adfd2173bd03debd3a5c5ce35b35888d3d9a08e7fd07cb50a80dada",
+    "source_snapshot/remote_context_v22.py": "0761ee9f4320b68dee64761fa898cd69052c0b0d29361d22e40394b074306010",
+    "source_snapshot/remote_hgb47_v20.py": "32d0f28aa3c9e753b14709c7b12ee04578e8db8456dd7e7818ac753405b7f1b2",
+    "source_snapshot/remote_wide_v23.py": "90aadff84cea38a10f85ea7f06e53c651f2011c86d44e8f5508125f84d54370f",
+    "train_boundary_priors.joblib": "30deed7dbdb32dbaae67ee9d513ae5830cca1b06ccb6eab8a3fe560a47c6da0a",
+    "v6_train_gazetteer.json": "f7ab9615cb3917ea01d5a8cda0834b95672e5c30ee30df9f45019f89b11a709d",
+    "wide_context6_consensus8/crossfit_predictions.jsonl": "ecc3e47d9c39612b12f7988ccbe3e0241d13870ec99c9b9b21dfe32c21034665",
+    "wide_context6_consensus8/decoder_full.json": "403eeb84d8185d3beb88c8a3be83d857c14a834dcc0a5bd871abf863d2f68683",
+    "wide_context6_consensus8/decoder_held0.json": "3f0528b9bd84ed77941006465f1a1680beb747bff8e314de30d31af4f0c125fb",
+    "wide_context6_consensus8/decoder_held1.json": "7093c6011addf4a38175e5f11332ca2b856700534d99b876c2422e5f9f37b0b2",
+    "wide_context6_consensus8/features.npz": "9b7d3cc902dcd481c5cc1d1de72f5f43e6f8d73a010819b309dd35590459e597",
+    "wide_context6_consensus8/full_dev_predictions.jsonl": "9bd30bb486c0734902bb0524bf6b420c204df886046b09c613c0dae064246ff9",
+    "wide_context6_consensus8/hgb_excluding_fold0.joblib": "e8b36428c5358659ba079863990f9a00dc60e381a9c007ed208da7f1c49a980a",
+    "wide_context6_consensus8/hgb_excluding_fold1.joblib": "dd8691e46b9194292207a1b7622eec07ad59ab3faac6940e57b22b9985ccfa44",
+    "wide_context6_consensus8/hgb_full_dev.joblib": "bac8f3d71d352ae3ced8bc51a1504e60632726c6cc2429fa7ad884dc42cc454b",
+    "wide_context6_consensus8/replay_check.json": "475298dad67440c1365d07b0b24c50951b5ccb233cf9341ce47ab47d8af75264",
+    "wide_context6_consensus8/replayed_without_gold.jsonl": "97c8ea666291c16ffb34f5c317eabb199cd4f1507b2bfe227814ab39d957c126",
+    "wide_context6_consensus8/scores.npz": "f7d4c57dd5a9b83aa0dcf76f67fe1629112b3922dd5b0b5da969bf35a5a78437"
+  }
+}

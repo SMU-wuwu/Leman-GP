@@ -1,0 +1,31 @@
+{
+  "experiment": "v9 shrinkage of type-specific GP and boundary calibration slopes",
+  "created_before_scoring_utc": "2026-10-17T12:50:46.005175+00:00",
+  "routes": [
+    "v6",
+    "type_slopes"
+  ],
+  "ridge": 10.0,
+  "raw_candidate_floor": -32.0,
+  "raw_scale": 8.0,
+  "baseline_floor": -4.0,
+  "candidates": "unchanged original v6 candidates; no new proposal or model inference",
+  "deduplication": "maximum GP window and attached boundary confidence retained together for each model",
+  "fusion_missing": "GP=-32, boundary logprob=-16 and boundary probability=exp(-16), with separate presence indicators",
+  "features": "unchanged six v6 features, type intercepts >=200 fit gold, GP and boundary-logprob slopes for types with >=500 fit gold",
+  "baseline": "audited v6 fits and predictions reused without modification",
+  "selection": "fit-only Micro, then Macro13, then prefer baseline, then fewer models; same fixed text-hash halves",
+  "acceptance": "full-dev Micro >= v6, combined crossfit Micro > v6 and neither held-out half decreases; otherwise retain v6",
+  "normalization": "fit-only means, std, type eligibility and ridge-logistic coefficients",
+  "decoder": "unchanged original/expanded Micro threshold search from v4; no extra threshold sweeps",
+  "train_sha256": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "test_accessed": false,
+  "scope": "exploratory dev only; CPU calibration of existing v4 cache, no neural training or test access",
+  "interaction_ridge": 50.0,
+  "interaction_min_support": 500,
+  "interaction_features": [
+    0,
+    1
+  ]
+}

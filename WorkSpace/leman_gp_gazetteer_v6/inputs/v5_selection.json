@@ -1,0 +1,200 @@
+{
+  "method": "calibrated_v4",
+  "fit": {
+    "logistic": {
+      "mean": [
+        12.330436339032584,
+        -0.19766346210926639,
+        0.8830355191991519,
+        1.455757286575096
+      ],
+      "std": [
+        3.4056933092525354,
+        0.5151509848914643,
+        0.2111787690971897,
+        0.38698983755778643
+      ],
+      "coefficients": [
+        3.6216491179165584,
+        1.139522017053686,
+        -0.36323145239778937,
+        0.5648440196231004,
+        0.0032633506689097474,
+        -0.061192246570938705,
+        0.07433869694107653,
+        0.27546404769420907,
+        -0.05456496739741481,
+        -0.29601534401109764,
+        -0.31890251173847584,
+        0.26858942154294746,
+        -0.2566321994503456,
+        -0.3509973265631263,
+        0.12543461494238303
+      ],
+      "eligible_types": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "support": [
+        196,
+        64,
+        4323,
+        1117,
+        2749,
+        2678,
+        78,
+        313,
+        236,
+        456,
+        1767,
+        2181,
+        4624
+      ],
+      "iterations": 8,
+      "fit_candidate_rows": 20997,
+      "fit_positive_rows": 19577,
+      "gradient_max": 1.1570268854121935e-08,
+      "objective": 3378.357201880771
+    },
+    "decoder": {
+      "strategy": "weighted_interval",
+      "global_threshold": -0.25,
+      "thresholds": {
+        "BIS": -0.25,
+        "COM": -0.25,
+        "CRO": -0.75,
+        "CUL": -0.75,
+        "DIS": -0.5,
+        "DRUG": -1.0,
+        "FER": -0.25,
+        "ORG": -0.25,
+        "OTH": -0.5,
+        "PAOG": -1.25,
+        "PART": 0.5,
+        "PER": -0.25,
+        "PET": 0.25
+      },
+      "fit_support": {
+        "BIS": 196,
+        "COM": 64,
+        "CRO": 4323,
+        "CUL": 1117,
+        "DIS": 2749,
+        "DRUG": 2678,
+        "FER": 78,
+        "ORG": 313,
+        "OTH": 236,
+        "PAOG": 456,
+        "PART": 1767,
+        "PER": 2181,
+        "PET": 4624
+      },
+      "eligible": [
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "min_support": 200,
+      "selection_metric": "exact original character-span micro F1",
+      "fit_sentences": 5963,
+      "fit_micro_f1": 0.9411335441498418,
+      "boundary_weight": 0.0,
+      "fit_macro_f1": 0.8772787205945092
+    },
+    "family": "single_v4"
+  },
+  "baseline_decoder": {
+    "strategy": "weighted_interval",
+    "global_threshold": 5.25,
+    "thresholds": {
+      "BIS": 5.25,
+      "COM": 5.25,
+      "CRO": 5.25,
+      "CUL": 5.25,
+      "DIS": 5.25,
+      "DRUG": 4.5,
+      "FER": 5.25,
+      "ORG": 5.0,
+      "OTH": 5.25,
+      "PAOG": 5.25,
+      "PART": 5.25,
+      "PER": 5.25,
+      "PET": 5.25
+    },
+    "fit_sentences": 5963,
+    "fit_micro_f1": 0.9404447886165089,
+    "fit_macro_f1": 0.8761943287399981,
+    "eligible": [
+      "CRO",
+      "CUL",
+      "DIS",
+      "DRUG",
+      "ORG",
+      "OTH",
+      "PAOG",
+      "PART",
+      "PER",
+      "PET"
+    ],
+    "fit_support": {
+      "BIS": 196,
+      "COM": 64,
+      "CRO": 4323,
+      "CUL": 1117,
+      "DIS": 2749,
+      "DRUG": 2678,
+      "FER": 78,
+      "ORG": 313,
+      "OTH": 236,
+      "PAOG": 456,
+      "PART": 1767,
+      "PER": 2181,
+      "PET": 4624
+    },
+    "min_support": 200,
+    "global_upper_bound_hit": false,
+    "boundary_weight": 0.25
+  },
+  "types": [
+    "BIS",
+    "COM",
+    "CRO",
+    "CUL",
+    "DIS",
+    "DRUG",
+    "FER",
+    "ORG",
+    "OTH",
+    "PAOG",
+    "PART",
+    "PER",
+    "PET"
+  ],
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "checkpoint_sha256": {
+    "parent": "22a4efe6a31021bda0d62fc6c1b73294dadfca79f00e79ab83bb89a9c9177bc1",
+    "upgraded": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4"
+  },
+  "identity": {
+    "package_manifest_sha256": "2266ab4534a93bcedb689e6fcb59c93b9c7551546f6e288992eadc1c0bb2af5e",
+    "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+    "test_accessed": false
+  },
+  "test_accessed": false,
+  "scope": "Exploratory dev-only calibration. Checkpoint and route use dev; crossfit only holds out the calibration/decoder fitting labels."
+}

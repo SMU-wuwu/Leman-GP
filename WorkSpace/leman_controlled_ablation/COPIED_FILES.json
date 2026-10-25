@@ -1,0 +1,50 @@
+{
+  "data.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/data.py",
+    "sha256": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee"
+  },
+  "runtime.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/runtime.py",
+    "sha256": "1d21fd4b208b0c5a0aad6e6f4a350ed32142aca7bdcee0767d18a72e0190ebdb"
+  },
+  "paper_core.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/paper_core.py",
+    "sha256": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303"
+  },
+  "evaluate.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/evaluate.py",
+    "sha256": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3"
+  },
+  "transfer.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/transfer.py",
+    "sha256": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+  },
+  "adversarial.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/adversarial.py",
+    "sha256": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa"
+  },
+  "recipe.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/recipe.py",
+    "sha256": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc"
+  },
+  "requirements.txt": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/requirements.txt",
+    "sha256": "a7b7f442174d0a846ccd5a8f766c8609442517ce0a1a71007ca888f57eb955e6"
+  },
+  "parent_model.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/model.py",
+    "sha256": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2"
+  },
+  "parent_config.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/leman_gp_fgm_seed46_dual4090/config.py",
+    "sha256": "73634cfe029342a0b7fa6f7746616f24f86a11f6759313e505a79792648c8c04"
+  },
+  "crf_reference.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261019/lebert_baseline/model.py",
+    "sha256": "7d6f7b8eedb456ea099a8681ad673c3b9b75869dc1bd778a66c7c13c033a6085"
+  },
+  "crf_data_reference.py": {
+    "copied_from": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261019/lebert_baseline/data.py",
+    "sha256": "1c008c24e8b24305e2e44385763c3500ac79ff371aa74c47d5a1ec90bb8c9594"
+  }
+}

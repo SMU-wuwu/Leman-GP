@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-17T13:53:44.253208+00:00",
+  "frozen_plan_sha256": "acdc1e449a33707f559bff3ebaa84883bb1900343df7dadcbe61057c9282285c",
+  "feature_order_per_model": [
+    "GP/8",
+    "boundary_logprob",
+    "exp(boundary_logprob)",
+    "log1p_length",
+    "log1p_train_same_type_mentions",
+    "log1p_train_other_type_mentions"
+  ],
+  "fusion": "concatenate six-feature block per model in order v4, FGM; candidates are union; no extra features",
+  "missing_model_GP": -4.0,
+  "missing_model_boundary_logprob": -16.0,
+  "type_slope_indices": {
+    "fgm": [
+      0,
+      1
+    ],
+    "fusion": [
+      0,
+      1,
+      6,
+      7
+    ]
+  },
+  "ridge_base": 10.0,
+  "ridge_interactions": 50.0,
+  "route_order": [
+    "v9",
+    "fgm",
+    "fusion"
+  ],
+  "no_training_or_test": true,
+  "shared_code": "unchanged leman_gp_typecal_v9 modules and frozen_v4; v10 model loaded from its own unchanged source"
+}

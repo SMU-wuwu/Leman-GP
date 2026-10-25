@@ -1,0 +1,781 @@
+{
+  "formal_training_started_by_agent": false,
+  "syntax": "all package Python files parsed",
+  "source_hashes": {
+    "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+    "qa_short.py": "cbe93c849c7e1ec3528b160dc37c28c527674d1f81b7d4dd98976ec7686f9c5c",
+    "config.py": "e3596f1f450b4a958c1de209cce7d5c2861807de5951be2073b000b56294f924",
+    "clean_control.py": "bf5bf0ee30b3c05038735bb8165681ad431fe01528f36bfb7f06889f1725d3de",
+    "parent_model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+    "adversarial.py": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa",
+    "controlled_evaluate.py": "ed519d4017853204538bf4a29b3842cef0cd13eff41fff109c05aad82095b16a",
+    "crf_data_reference.py": "1c008c24e8b24305e2e44385763c3500ac79ff371aa74c47d5a1ec90bb8c9594",
+    "architecture_base.py": "8fbcddab8a4d5b9e277e3906a7d53a790624f9fc0cc6b2d2ce73d292c578baab",
+    "runtime.py": "1d21fd4b208b0c5a0aad6e6f4a350ed32142aca7bdcee0767d18a72e0190ebdb",
+    "model.py": "809720244855e8cc29df2b5912a610c6b5665b58fd33e6c24d4ca55e3b787b1b",
+    "import_controls.py": "c386bd66462862f11a3d4acd8dbbd22b4ed43e15d79fc4b5fd1989ccfe070991",
+    "qa_pipeline_short.py": "1b47419f6cfb17f02aacfd04bd042e5480671acf91d4e05cad396c4e9d2f470c",
+    "evidence_core.py": "bc539a54f78030422cb54c5ae33540a24b53f6c0c61791f3c3a34e3355d329da",
+    "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b",
+    "qa_continue.py": "b75601050c15b903fca6f432598726d807b006a32ae99c7eff2b3df5913fc364",
+    "controlled_data.py": "aa1074d687fe8bc9f7eb5d222e767399a15951e46471cb873b6d983586359c62",
+    "inspect_fixed.py": "73c386ccda20fbded8013f79479a58f049fc1c50b031e6711a7770267ddc9121",
+    "crf_reference.py": "7d6f7b8eedb456ea099a8681ad673c3b9b75869dc1bd778a66c7c13c033a6085",
+    "train.py": "bd4e6538d9772647ead1309182362f95198fd96f2fbcf7d3dc984c5b20fa5b97",
+    "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+    "probes.py": "fc897f3efd24163f07b0a268d2ca8977618732485cadb58b70c05997d92c0236",
+    "run_suite.py": "67f47d992e6bf3ad2a8011cf0673ec2be26cd4ecf4ee59bbaa1c70faeeb94074",
+    "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+    "plot_results.py": "53ba637e6f5a04037403dd4b97c3adcb378c5e936d2e61b4b61845ac07935347",
+    "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+    "analyze.py": "3b977df9a88df1394891fb99c1659608f2ed7716b72855dbb776a121f604eef8",
+    "parent_config.py": "73634cfe029342a0b7fa6f7746616f24f86a11f6759313e505a79792648c8c04"
+  },
+  "checks": {
+    "22_variant_synthetic_ddp_two_updates": {
+      "variants": {
+        "F": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_lexicon": {
+          "transfer": {
+            "loaded_tensors": 56,
+            "loaded_numel": 16907,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [
+              "adapter.word_embedding.weight",
+              "adapter.boundary_embedding.weight",
+              "adapter.projection.0.weight",
+              "adapter.projection.0.bias",
+              "adapter.projection.2.weight",
+              "adapter.projection.2.bias",
+              "adapter.bilinear.weight",
+              "adapter.gate.weight",
+              "adapter.gate.bias",
+              "adapter.norm.weight",
+              "adapter.norm.bias"
+            ],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_attention": {
+          "transfer": {
+            "loaded_tensors": 55,
+            "loaded_numel": 20541,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [
+              "attention.raw_temperature",
+              "attention.q.weight",
+              "attention.k.weight",
+              "attention.v.weight",
+              "attention.out.weight",
+              "attention.out.bias",
+              "attention.qnorm.weight",
+              "attention.qnorm.bias",
+              "attention.knorm.weight",
+              "attention.knorm.bias",
+              "attention.norm.weight",
+              "attention.norm.bias"
+            ],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "dot_attention": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "max_words3": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "max_words5": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_char": {
+          "transfer": {
+            "loaded_tensors": 64,
+            "loaded_numel": 21294,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [
+              "char_scale",
+              "char_embedding.weight",
+              "char_projection.weight"
+            ],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_boundary": {
+          "transfer": {
+            "loaded_tensors": 65,
+            "loaded_numel": 21579,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [
+              "boundary.weight",
+              "boundary.bias"
+            ],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_recurrence": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_gru_linear": {
+          "transfer": {
+            "loaded_tensors": 55,
+            "loaded_numel": 18575,
+            "new_or_reset_tensors": [
+              "pointwise.weight",
+              "pointwise.bias"
+            ],
+            "dropped_parent_tensors": [
+              "gru.layers.0.0.hidden_gates",
+              "gru.layers.0.0.hidden_candidate",
+              "gru.layers.0.0.input_projection.weight",
+              "gru.layers.0.1.hidden_gates",
+              "gru.layers.0.1.hidden_candidate",
+              "gru.layers.0.1.input_projection.weight",
+              "gru.layers.1.0.hidden_gates",
+              "gru.layers.1.0.hidden_candidate",
+              "gru.layers.1.0.input_projection.weight",
+              "gru.layers.1.1.hidden_gates",
+              "gru.layers.1.1.hidden_candidate",
+              "gru.layers.1.1.input_projection.weight"
+            ],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_bmes": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "uniform_lexicon": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "fixed_gate": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_rope": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "gp_reset": {
+          "transfer": {
+            "loaded_tensors": 65,
+            "loaded_numel": 21131,
+            "new_or_reset_tensors": [
+              "global_pointer.inv_freq",
+              "global_pointer.projection.weight"
+            ],
+            "dropped_parent_tensors": [
+              "global_pointer.inv_freq",
+              "global_pointer.projection.weight"
+            ],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "crf": {
+          "transfer": {
+            "loaded_tensors": 65,
+            "loaded_numel": 21131,
+            "new_or_reset_tensors": [
+              "classifier.weight",
+              "classifier.bias",
+              "crf.transitions",
+              "crf.start",
+              "crf.end"
+            ],
+            "dropped_parent_tensors": [
+              "global_pointer.inv_freq",
+              "global_pointer.projection.weight"
+            ],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "encoder_gp": {
+          "transfer": {
+            "loaded_tensors": 23,
+            "loaded_numel": 11760,
+            "new_or_reset_tensors": [
+              "global_pointer.inv_freq",
+              "global_pointer.projection.weight"
+            ],
+            "dropped_parent_tensors": [
+              "char_scale",
+              "char_embedding.weight",
+              "char_projection.weight",
+              "adapter.word_embedding.weight",
+              "adapter.boundary_embedding.weight",
+              "adapter.projection.0.weight",
+              "adapter.projection.0.bias",
+              "adapter.projection.2.weight",
+              "adapter.projection.2.bias",
+              "adapter.bilinear.weight",
+              "adapter.gate.weight",
+              "adapter.gate.bias",
+              "adapter.norm.weight",
+              "adapter.norm.bias",
+              "gru.layers.0.0.hidden_gates",
+              "gru.layers.0.0.hidden_candidate",
+              "gru.layers.0.0.input_projection.weight",
+              "gru.layers.0.1.hidden_gates",
+              "gru.layers.0.1.hidden_candidate",
+              "gru.layers.0.1.input_projection.weight",
+              "gru.layers.1.0.hidden_gates",
+              "gru.layers.1.0.hidden_candidate",
+              "gru.layers.1.0.input_projection.weight",
+              "gru.layers.1.1.hidden_gates",
+              "gru.layers.1.1.hidden_candidate",
+              "gru.layers.1.1.input_projection.weight",
+              "sequence_norm.weight",
+              "sequence_norm.bias",
+              "attention.raw_temperature",
+              "attention.q.weight",
+              "attention.k.weight",
+              "attention.v.weight",
+              "attention.out.weight",
+              "attention.out.bias",
+              "attention.qnorm.weight",
+              "attention.qnorm.bias",
+              "attention.knorm.weight",
+              "attention.knorm.bias",
+              "attention.norm.weight",
+              "attention.norm.bias",
+              "global_pointer.inv_freq",
+              "global_pointer.projection.weight",
+              "boundary.weight",
+              "boundary.bias"
+            ],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "fgm_control": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "no_fgm": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "clean_two_pass": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "weighted_control": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        },
+        "unit_loss": {
+          "transfer": {
+            "loaded_tensors": 67,
+            "loaded_numel": 21647,
+            "new_or_reset_tensors": [],
+            "dropped_parent_tensors": [],
+            "parent_variant": "F",
+            "parent_seed": 42,
+            "conditional_on_trained_parent": true
+          },
+          "two_updates_finite": true,
+          "all_trainable_parameters_used": true,
+          "rank_sync": true
+        }
+      },
+      "baseline_matches_parent": true,
+      "no_boundary_inference_identical": true,
+      "no_recurrence_position_isolation": true,
+      "synthetic_only": true
+    },
+    "real_trainer_synthetic_resume": {
+      "synthetic_only": true,
+      "F_exact_resume_model_scheduler_ema": true,
+      "optimizer_max_absolute_difference": 1.1641532182693481e-10,
+      "optimizer_tolerance": {
+        "atol": 1e-09,
+        "rtol": 1e-05
+      },
+      "optimizer_not_bitwise_identical": true,
+      "probes_run_inside_real_trainer": true,
+      "CRF_no_boundary_no_gru_linear_trainers": true,
+      "fixed_ema_and_best_exported": true
+    },
+    "latest_probe_real_dev_zero_update_control_checks": {
+      "fgm_control": {
+        "endpoint": {
+          "checkpoint": "final_ema.pt",
+          "sha256": "094e372a7da0ab93e599304a78ae63576ffc5113cfb6e9992063532215ed3dd9",
+          "epoch": 3,
+          "weight_source": "ema",
+          "dev": {
+            "micro": {
+              "precision": 0.9455157489781197,
+              "recall": 0.9461072081609084,
+              "f1": 0.9458113861028934,
+              "true_positive": 19662,
+              "predicted": 20795,
+              "support": 20782
+            },
+            "macro_f1": 0.8806529982386322,
+            "per_type": {
+              "BIS": {
+                "precision": 0.9317073170731708,
+                "recall": 0.9744897959183674,
+                "f1": 0.9526184538653366,
+                "true_positive": 191,
+                "predicted": 205,
+                "support": 196
+              },
+              "COM": {
+                "precision": 0.7258064516129032,
+                "recall": 0.703125,
+                "f1": 0.7142857142857143,
+                "true_positive": 45,
+                "predicted": 62,
+                "support": 64
+              },
+              "CRO": {
+                "precision": 0.9615912208504801,
+                "recall": 0.9729354614850798,
+                "f1": 0.9672300793377027,
+                "true_positive": 4206,
+                "predicted": 4374,
+                "support": 4323
+              },
+              "CUL": {
+                "precision": 0.907103825136612,
+                "recall": 0.891674127126231,
+                "f1": 0.8993227990970655,
+                "true_positive": 996,
+                "predicted": 1098,
+                "support": 1117
+              },
+              "DIS": {
+                "precision": 0.9818709209572154,
+                "recall": 0.9850854856311386,
+                "f1": 0.9834755765389505,
+                "true_positive": 2708,
+                "predicted": 2758,
+                "support": 2749
+              },
+              "DRUG": {
+                "precision": 0.9415755748209574,
+                "recall": 0.9327856609410008,
+                "f1": 0.9371600075032827,
+                "true_positive": 2498,
+                "predicted": 2653,
+                "support": 2678
+              },
+              "FER": {
+                "precision": 0.8214285714285714,
+                "recall": 0.8846153846153846,
+                "f1": 0.8518518518518519,
+                "true_positive": 69,
+                "predicted": 84,
+                "support": 78
+              },
+              "ORG": {
+                "precision": 0.7713310580204779,
+                "recall": 0.7220447284345048,
+                "f1": 0.7458745874587459,
+                "true_positive": 226,
+                "predicted": 293,
+                "support": 313
+              },
+              "OTH": {
+                "precision": 0.7243243243243244,
+                "recall": 0.5677966101694916,
+                "f1": 0.6365795724465558,
+                "true_positive": 134,
+                "predicted": 185,
+                "support": 236
+              },
+              "PAOG": {
+                "precision": 0.9460043196544277,
+                "recall": 0.9605263157894737,
+                "f1": 0.9532100108813928,
+                "true_positive": 438,
+                "predicted": 463,
+                "support": 456
+              },
+              "PART": {
+                "precision": 0.9124788255223037,
+                "recall": 0.9145444255800792,
+                "f1": 0.9135104578858112,
+                "true_positive": 1616,
+                "predicted": 1771,
+                "support": 1767
+              },
+              "PER": {
+                "precision": 0.9190432382704692,
+                "recall": 0.9160935350756534,
+                "f1": 0.9175660160734788,
+                "true_positive": 1998,
+                "predicted": 2174,
+                "support": 2181
+              },
+              "PET": {
+                "precision": 0.9704812834224599,
+                "recall": 0.9811851211072664,
+                "f1": 0.9758038498763308,
+                "true_positive": 4537,
+                "predicted": 4675,
+                "support": 4624
+              }
+            },
+            "total_samples": 5963,
+            "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+            "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+            "loss": 0.11311459585481891,
+            "windows": 6099,
+            "seconds": 34.06058996601496,
+            "threshold": 0.0,
+            "coverage": {
+              "sentences": 5963,
+              "windows": 6099,
+              "gold_entities": 20782,
+              "gold_not_fully_contained_in_any_window": 0,
+              "max_encoder_tokens_observed": 223,
+              "max_chars_observed": 192,
+              "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+            },
+            "world_size": 2,
+            "device": "cuda:0",
+            "amp": "bf16"
+          },
+          "reused_completed_phase": "C"
+        },
+        "zero_new_updates": true,
+        "exact_micro_replay": true,
+        "current_source_hashes_match": true,
+        "lexical_rows": 19688,
+        "max_candidate_weight_sum_error": 1.1442170944064856e-07,
+        "gold_margin_rows": 449
+      },
+      "weighted_control": {
+        "endpoint": {
+          "checkpoint": "final_ema.pt",
+          "sha256": "fb979a82bad3eadfd5093b7539e88219b40cae93db891339511645027a32a46b",
+          "epoch": 5,
+          "weight_source": "ema",
+          "dev": {
+            "micro": {
+              "precision": 0.9455443148264678,
+              "recall": 0.9399480319507266,
+              "f1": 0.942737868294684,
+              "true_positive": 19534,
+              "predicted": 20659,
+              "support": 20782
+            },
+            "macro_f1": 0.8759794035142547,
+            "per_type": {
+              "BIS": {
+                "precision": 0.9317073170731708,
+                "recall": 0.9744897959183674,
+                "f1": 0.9526184538653366,
+                "true_positive": 191,
+                "predicted": 205,
+                "support": 196
+              },
+              "COM": {
+                "precision": 0.7258064516129032,
+                "recall": 0.703125,
+                "f1": 0.7142857142857143,
+                "true_positive": 45,
+                "predicted": 62,
+                "support": 64
+              },
+              "CRO": {
+                "precision": 0.9647058823529412,
+                "recall": 0.9673837612768911,
+                "f1": 0.966042966042966,
+                "true_positive": 4182,
+                "predicted": 4335,
+                "support": 4323
+              },
+              "CUL": {
+                "precision": 0.9062784349408554,
+                "recall": 0.891674127126231,
+                "f1": 0.8989169675090253,
+                "true_positive": 996,
+                "predicted": 1099,
+                "support": 1117
+              },
+              "DIS": {
+                "precision": 0.9811115147112242,
+                "recall": 0.9825391051291379,
+                "f1": 0.9818247909850963,
+                "true_positive": 2701,
+                "predicted": 2753,
+                "support": 2749
+              },
+              "DRUG": {
+                "precision": 0.9404400606980273,
+                "recall": 0.9256908140403286,
+                "f1": 0.9330071509220926,
+                "true_positive": 2479,
+                "predicted": 2636,
+                "support": 2678
+              },
+              "FER": {
+                "precision": 0.8170731707317073,
+                "recall": 0.8589743589743589,
+                "f1": 0.8375,
+                "true_positive": 67,
+                "predicted": 82,
+                "support": 78
+              },
+              "ORG": {
+                "precision": 0.7542662116040956,
+                "recall": 0.7060702875399361,
+                "f1": 0.7293729372937293,
+                "true_positive": 221,
+                "predicted": 293,
+                "support": 313
+              },
+              "OTH": {
+                "precision": 0.7052631578947368,
+                "recall": 0.5677966101694916,
+                "f1": 0.6291079812206573,
+                "true_positive": 134,
+                "predicted": 190,
+                "support": 236
+              },
+              "PAOG": {
+                "precision": 0.9479392624728851,
+                "recall": 0.9583333333333334,
+                "f1": 0.9531079607415486,
+                "true_positive": 437,
+                "predicted": 461,
+                "support": 456
+              },
+              "PART": {
+                "precision": 0.9163323782234957,
+                "recall": 0.9049235993208828,
+                "f1": 0.9105922551252847,
+                "true_positive": 1599,
+                "predicted": 1745,
+                "support": 1767
+              },
+              "PER": {
+                "precision": 0.9134481154025128,
+                "recall": 0.900045850527281,
+                "f1": 0.9066974595842956,
+                "true_positive": 1963,
+                "predicted": 2149,
+                "support": 2181
+              },
+              "PET": {
+                "precision": 0.9720369972036997,
+                "recall": 0.9772923875432526,
+                "f1": 0.9746576081095654,
+                "true_positive": 4519,
+                "predicted": 4649,
+                "support": 4624
+              }
+            },
+            "total_samples": 5963,
+            "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+            "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+            "loss": 0.16749510108429896,
+            "windows": 6099,
+            "seconds": 27.73285915493034,
+            "threshold": 0.0,
+            "coverage": {
+              "sentences": 5963,
+              "windows": 6099,
+              "gold_entities": 20782,
+              "gold_not_fully_contained_in_any_window": 0,
+              "max_encoder_tokens_observed": 223,
+              "max_chars_observed": 192,
+              "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+            },
+            "world_size": 2,
+            "device": "cuda:0",
+            "amp": "bf16"
+          },
+          "reused_completed_phase": "B"
+        },
+        "zero_new_updates": true,
+        "exact_micro_replay": true,
+        "current_source_hashes_match": true,
+        "lexical_rows": 19688,
+        "max_candidate_weight_sum_error": 1.1703093605319737e-07,
+        "gold_margin_rows": 449
+      }
+    }
+  },
+  "qa_scope": "Synthetic tiny data validates mechanics, not scientific effects. Final plotting/launcher changes checked separately. Fixed historical interventions predate added lexical slot exports; PROTOCOL records provenance scope. Formal adaptation remains user-launched."
+}

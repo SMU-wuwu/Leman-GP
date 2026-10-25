@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-19T10:51:31.256144+00:00",
+  "parent_freeze_sha256": "0b86632a0e2f1734e546603123955bd6eb003c3b3155d8d3f2a37f94f545006b",
+  "models": [
+    "old",
+    "fgm43",
+    "fgm44",
+    "ema43",
+    "fgm46",
+    "soup2",
+    "soup3",
+    "parent",
+    "v4ema",
+    "v2ema",
+    "rdrop",
+    "fgm47"
+  ],
+  "parameters": {
+    "max_iter": 180,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 35,
+    "l2_regularization": 2.0,
+    "max_bins": 127,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "negative_weight": 1.5,
+  "cases": [
+    "wide_base85",
+    "wide_context6",
+    "wide_context6_consensus8"
+  ],
+  "cache_sha256": {
+    "old": "821d8d02b73d83414dc54a259670782d054670d5f72a0c9e963dc11ea9f1899e",
+    "fgm43": "66eb24aebf499af1efc0f95c0464ceebcbe5760029c1e131702bef48877d068b",
+    "fgm44": "a748e191cfe78387205f48df315a8d3b153413556d6426c7f3b1613bf660b31e",
+    "ema43": "d4bbdb7eccc084ed129a553e4e5fa3ea12e008e50fea7dca8bdb5cf35723e57c",
+    "fgm46": "18d80eaf6ea0f3eb0df890af7187560606d6c176efa550b2b5a54805172be6eb",
+    "soup2": "a26ece2fae0a2d0ddb04f70aece6fae8c38bb27c9031625b0af1dfd81d6b8bc2",
+    "soup3": "c196b96be3055a9ed98c15cc1e9ab46f73d54184a8570f23fbbccee788102aa0",
+    "parent": "b5fd5c7bbe02334ca6b6b4e0f4292472ee8196686445a8657b4e32e2f3301f78",
+    "v4ema": "95eed0483f8f3d7d4b42eae6ae9ee93935c4e1170e1099c4da94f076485e2e6d",
+    "v2ema": "99c1cf47080c1e6dd7dd710a311415aeb201006a1ae4c6c95654fcaab207e646",
+    "rdrop": "096e114ade91e6105d004d890b85ce70540ef5f9992c16861ae5d27971df4501",
+    "fgm47": "9ef228f3ed1f5778862809f4e1562480738d219961fccd3f20da41826fa812d6"
+  },
+  "candidate_rows": 23769,
+  "gold_covered": 20170,
+  "gold": 20782,
+  "boundary_priors_sha256": "30deed7dbdb32dbaae67ee9d513ae5830cca1b06ccb6eab8a3fe560a47c6da0a",
+  "test_accessed": false,
+  "neural_training": false,
+  "change": "Replace only the seed46/47 candidate caches by their already extracted floor=-32 versions. Keep the other ten sources, the missing-score convention, classifier parameters and threshold search unchanged."
+}

@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-10-21T00:36:52.291162+00:00",
+  "new_sources": {
+    "F42_C": {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/C/best.pt",
+      "sha256": "145224e85c808ddc84cda9177e7cd4a6731b004edbc713b03008bb0695fe01cd"
+    },
+    "F42_B": {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/B/best.pt",
+      "sha256": "f6eb2c4b472fd5e90063a6968054681ff2a52cdd4c155c34599fe3578f485fe2"
+    },
+    "no_lexicon": {
+      "path": "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_lexicon_seed42/best.pt",
+      "sha256": "4c49a858864a44854176dca43b462f8e939e8699b7081c1e46fca440ce42697d"
+    }
+  },
+  "groups": [
+    [
+      "F42_C"
+    ],
+    [
+      "F42_C",
+      "F42_B"
+    ],
+    [
+      "F42_C",
+      "F42_B",
+      "no_lexicon"
+    ]
+  ],
+  "model_families": [
+    "legacy 180/15/35/L2=2/negative=1.5",
+    "balanced 180/15/70/L2=4/negative=1",
+    "compact 200/7/100/L2=8/negative=1"
+  ],
+  "threshold_fit": [
+    "nested inner-3 OOF",
+    "self fitting-fold logits"
+  ],
+  "total_candidates": 18,
+  "outer_validation": "fixed original two text-hash folds; held labels never enter calibrator or threshold fitting",
+  "selection": "highest outer Micro F1; exact ties earlier case; test only if delta vs original >=0.03 percentage points",
+  "test_policy": "freeze one selected version before new test inference; keep every dev outcome; no test-error-guided retuning",
+  "new_neural_training": false,
+  "source_hashes": {
+    "fast_intervals.py": "93a7701e01928691e1e6ea8b3302ab183b261219f982ff1f22f2c09324818ad9",
+    "study_core.py": "b8606390e391f81c1ca05d57db2d0157f697b2e0909d70b0e8b834ef9aab1ccc",
+    "predict_hgb_v22.py": "b29464388adfd2173bd03debd3a5c5ce35b35888d3d9a08e7fd07cb50a80dada",
+    "coordinate.py": "99b196b4e93b145b4f1555664825d124e7f9b8cd46369c1544f7de77dd0efabb",
+    "evidence_core.py": "bc539a54f78030422cb54c5ae33540a24b53f6c0c61791f3c3a34e3355d329da",
+    "select_fusion.py": "11697b55c6d87f5c20c309de6c7337a6e9b2d1914df7ad9a37c089297da02dc0",
+    "settings.py": "9519de52baf0bf17e17a173f48d8586a91e230a84d6756d0a189a23ccc2ca394",
+    "infer.py": "ed43507a8c09ae15fd45b452e57c3cc4cea80e18b03192ecfaba267f90bcd18d",
+    "test.py": "c6de0e82519c18e494fd7d93a6b091798ad004e965b5fdc895a3e6a74245b5df"
+  }
+}

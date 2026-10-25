@@ -1,0 +1,66 @@
+{
+  "parent_config.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/parent_config.py",
+    "sha256": "73634cfe029342a0b7fa6f7746616f24f86a11f6759313e505a79792648c8c04"
+  },
+  "parent_model.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/parent_model.py",
+    "sha256": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2"
+  },
+  "paper_core.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/paper_core.py",
+    "sha256": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303"
+  },
+  "data.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/data.py",
+    "sha256": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee"
+  },
+  "controlled_data.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/controlled_data.py",
+    "sha256": "aa1074d687fe8bc9f7eb5d222e767399a15951e46471cb873b6d983586359c62"
+  },
+  "controlled_evaluate.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/controlled_evaluate.py",
+    "sha256": "ed519d4017853204538bf4a29b3842cef0cd13eff41fff109c05aad82095b16a"
+  },
+  "evaluate.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/evaluate.py",
+    "sha256": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3"
+  },
+  "runtime.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/runtime.py",
+    "sha256": "1d21fd4b208b0c5a0aad6e6f4a350ed32142aca7bdcee0767d18a72e0190ebdb"
+  },
+  "transfer.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/transfer.py",
+    "sha256": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+  },
+  "recipe.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/recipe.py",
+    "sha256": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc"
+  },
+  "adversarial.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/adversarial.py",
+    "sha256": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa"
+  },
+  "crf_reference.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/crf_reference.py",
+    "sha256": "7d6f7b8eedb456ea099a8681ad673c3b9b75869dc1bd778a66c7c13c033a6085"
+  },
+  "crf_data_reference.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/crf_data_reference.py",
+    "sha256": "1c008c24e8b24305e2e44385763c3500ac79ff371aa74c47d5a1ec90bb8c9594"
+  },
+  "requirements.txt": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/requirements.txt",
+    "sha256": "a7b7f442174d0a846ccd5a8f766c8609442517ce0a1a71007ca888f57eb955e6"
+  },
+  "architecture_base.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261020/leman_controlled_ablation/model.py",
+    "sha256": "8fbcddab8a4d5b9e277e3906a7d53a790624f9fc0cc6b2d2ce73d292c578baab"
+  },
+  "evidence_core.py": {
+    "source": "/Users/zhaowu/Desktop/Leman_GP_Codex_V2/manuscript_revision_20261019/execution/evidence_core.py",
+    "sha256": "bc539a54f78030422cb54c5ae33540a24b53f6c0c61791f3c3a34e3355d329da"
+  }
+}

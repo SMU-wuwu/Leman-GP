@@ -1,0 +1,301 @@
+{
+  "frozen_utc": "2026-10-21T00:44:50.613701+00:00",
+  "selected_case": {
+    "name": "plus2_balanced_oof_self",
+    "new_sources": [
+      "F42_C",
+      "F42_B"
+    ],
+    "model": {
+      "name": "balanced_oof",
+      "iterations": 180,
+      "leaves": 15,
+      "minimum": 70,
+      "l2": 4.0,
+      "negative": 1.0,
+      "conflicts": false
+    },
+    "threshold_fit": "self",
+    "crossfit": {
+      "micro": {
+        "tp": 19681,
+        "fp": 1004,
+        "fn": 1101,
+        "predicted": 20685,
+        "support": 20782,
+        "precision": 0.951462412376118,
+        "recall": 0.9470214608796074,
+        "f1": 0.9492367424699159
+      },
+      "macro13": 0.8908374147599145,
+      "per_type": {
+        "BIS": {
+          "tp": 190,
+          "fp": 14,
+          "fn": 6,
+          "predicted": 204,
+          "support": 196,
+          "precision": 0.9313725490196079,
+          "recall": 0.9693877551020408,
+          "f1": 0.95
+        },
+        "COM": {
+          "tp": 50,
+          "fp": 14,
+          "fn": 14,
+          "predicted": 64,
+          "support": 64,
+          "precision": 0.78125,
+          "recall": 0.78125,
+          "f1": 0.78125
+        },
+        "CRO": {
+          "tp": 4187,
+          "fp": 138,
+          "fn": 136,
+          "predicted": 4325,
+          "support": 4323,
+          "precision": 0.968092485549133,
+          "recall": 0.9685403654869303,
+          "f1": 0.9683163737280296
+        },
+        "CUL": {
+          "tp": 1023,
+          "fp": 112,
+          "fn": 94,
+          "predicted": 1135,
+          "support": 1117,
+          "precision": 0.9013215859030838,
+          "recall": 0.9158460161145927,
+          "f1": 0.9085257548845471
+        },
+        "DIS": {
+          "tp": 2703,
+          "fp": 29,
+          "fn": 46,
+          "predicted": 2732,
+          "support": 2749,
+          "precision": 0.989385065885798,
+          "recall": 0.9832666424154238,
+          "f1": 0.9863163656267104
+        },
+        "DRUG": {
+          "tp": 2517,
+          "fp": 130,
+          "fn": 161,
+          "predicted": 2647,
+          "support": 2678,
+          "precision": 0.9508877975066112,
+          "recall": 0.9398805078416729,
+          "f1": 0.9453521126760563
+        },
+        "FER": {
+          "tp": 70,
+          "fp": 13,
+          "fn": 8,
+          "predicted": 83,
+          "support": 78,
+          "precision": 0.8433734939759037,
+          "recall": 0.8974358974358975,
+          "f1": 0.8695652173913043
+        },
+        "ORG": {
+          "tp": 232,
+          "fp": 75,
+          "fn": 81,
+          "predicted": 307,
+          "support": 313,
+          "precision": 0.755700325732899,
+          "recall": 0.7412140575079872,
+          "f1": 0.7483870967741936
+        },
+        "OTH": {
+          "tp": 138,
+          "fp": 45,
+          "fn": 98,
+          "predicted": 183,
+          "support": 236,
+          "precision": 0.7540983606557377,
+          "recall": 0.5847457627118644,
+          "f1": 0.6587112171837709
+        },
+        "PAOG": {
+          "tp": 436,
+          "fp": 25,
+          "fn": 20,
+          "predicted": 461,
+          "support": 456,
+          "precision": 0.9457700650759219,
+          "recall": 0.956140350877193,
+          "f1": 0.95092693565976
+        },
+        "PART": {
+          "tp": 1599,
+          "fp": 124,
+          "fn": 168,
+          "predicted": 1723,
+          "support": 1767,
+          "precision": 0.9280325014509576,
+          "recall": 0.9049235993208828,
+          "f1": 0.9163323782234957
+        },
+        "PER": {
+          "tp": 2012,
+          "fp": 188,
+          "fn": 169,
+          "predicted": 2200,
+          "support": 2181,
+          "precision": 0.9145454545454546,
+          "recall": 0.9225126088950023,
+          "f1": 0.9185117553070076
+        },
+        "PET": {
+          "tp": 4524,
+          "fp": 97,
+          "fn": 100,
+          "predicted": 4621,
+          "support": 4624,
+          "precision": 0.9790088725384116,
+          "recall": 0.9783737024221453,
+          "f1": 0.9786911844240129
+        }
+      }
+    },
+    "folds": [
+      {
+        "held": 0,
+        "decoder": {
+          "strategy": "weighted_interval",
+          "thresholds_array": [
+            -0.5,
+            -0.5,
+            -0.270703933747412,
+            -0.6847258485639687,
+            -0.0629326620516048,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.9011627906976744,
+            0.11313868613138689,
+            -0.2909165302782324,
+            -0.03999999999999998
+          ],
+          "global_threshold": -0.5,
+          "fit_micro_f1": 0.9605579605579606,
+          "fit_support": [
+            92,
+            30,
+            2215,
+            566,
+            1389,
+            1354,
+            45,
+            155,
+            123,
+            230,
+            896,
+            1022,
+            2300
+          ],
+          "threshold_source": "inner OOF logits; one support-shrunk coarse type pass"
+        }
+      },
+      {
+        "held": 1,
+        "decoder": {
+          "strategy": "weighted_interval",
+          "thresholds_array": [
+            -0.25,
+            -0.25,
+            -0.021663778162911623,
+            -0.43342210386151797,
+            0.40384615384615385,
+            -0.4671916010498688,
+            -0.25,
+            -0.25,
+            -0.25,
+            0.147887323943662,
+            -0.45331465919701214,
+            -0.6764164827078734,
+            0.21038034865293187
+          ],
+          "global_threshold": -0.25,
+          "fit_micro_f1": 0.9595392507985674,
+          "fit_support": [
+            104,
+            34,
+            2108,
+            551,
+            1360,
+            1324,
+            33,
+            158,
+            113,
+            226,
+            871,
+            1159,
+            2324
+          ],
+          "threshold_source": "inner OOF logits; one support-shrunk coarse type pass"
+        }
+      }
+    ],
+    "delta_pp": 0.44752062408358606
+  },
+  "new_sources": [
+    "F42_C",
+    "F42_B"
+  ],
+  "models": [
+    "old",
+    "fgm43",
+    "fgm44",
+    "ema43",
+    "fgm46",
+    "soup2",
+    "soup3",
+    "parent",
+    "v4ema",
+    "v2ema",
+    "rdrop",
+    "fgm47",
+    "F42_C",
+    "F42_B"
+  ],
+  "types": [
+    "BIS",
+    "COM",
+    "CRO",
+    "CUL",
+    "DIS",
+    "DRUG",
+    "FER",
+    "ORG",
+    "OTH",
+    "PAOG",
+    "PART",
+    "PER",
+    "PET"
+  ],
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "original_freeze_sha256": "c1a3326e2099b662866479d445ebc7e5a3af898d463dea285c3dc841547fd842",
+  "files": {
+    "PROTOCOL.json": "2a359913b9497b93e10f0f67d5e9a9d38cd3f8e7a0faf3b1ef5630ef4fb04a2c",
+    "selected_hgb.joblib": "465cea136f17defab7b182ab6821f52124a45854a461035ee04802ddccbb9223",
+    "selected_decoder.json": "feebc76e38ab4fab0e2633e56a2926959c3c85efb64992b69a24c4f3ac8b5363"
+  },
+  "source_hashes": {
+    "fast_intervals.py": "93a7701e01928691e1e6ea8b3302ab183b261219f982ff1f22f2c09324818ad9",
+    "study_core.py": "b8606390e391f81c1ca05d57db2d0157f697b2e0909d70b0e8b834ef9aab1ccc",
+    "predict_hgb_v22.py": "b29464388adfd2173bd03debd3a5c5ce35b35888d3d9a08e7fd07cb50a80dada",
+    "coordinate.py": "99b196b4e93b145b4f1555664825d124e7f9b8cd46369c1544f7de77dd0efabb",
+    "evidence_core.py": "bc539a54f78030422cb54c5ae33540a24b53f6c0c61791f3c3a34e3355d329da",
+    "select_fusion.py": "11697b55c6d87f5c20c309de6c7337a6e9b2d1914df7ad9a37c089297da02dc0",
+    "settings.py": "9519de52baf0bf17e17a173f48d8586a91e230a84d6756d0a189a23ccc2ca394",
+    "infer.py": "ed43507a8c09ae15fd45b452e57c3cc4cea80e18b03192ecfaba267f90bcd18d",
+    "test.py": "c6de0e82519c18e494fd7d93a6b091798ad004e965b5fdc895a3e6a74245b5df"
+  },
+  "test_read_during_selection": false,
+  "evaluation_policy": "only selected frozen version; no test-error-driven threshold edits"
+}

@@ -1,0 +1,19 @@
+{
+  "removed_completed_resume_states": [
+    {
+      "name": "last.pt",
+      "bytes": 7745968227,
+      "sha256": "6d8c0ceae442bd6ac3f684b32fdee4cc906409c7d4fab71857649e75fd59a5c4"
+    },
+    {
+      "name": "epoch_005.pt",
+      "bytes": 7745968227,
+      "sha256": "6d8c0ceae442bd6ac3f684b32fdee4cc906409c7d4fab71857649e75fd59a5c4"
+    }
+  ],
+  "kept": [
+    "best.pt",
+    "final_ema.pt"
+  ],
+  "reason": "fixed budget completed; intermediate optimizer state no longer needed; explicit CLI option"
+}

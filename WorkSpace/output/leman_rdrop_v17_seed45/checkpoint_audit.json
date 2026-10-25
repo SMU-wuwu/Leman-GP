@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "parent_sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4",
+  "checkpoint_sha256": "bc94979d39e8857164496eda617d05c99edd9ddb51f1b222ccbed8f7625b6271",
+  "tensors": 208,
+  "elements": 387904067,
+  "different_tensors": [],
+  "all_model_tensors_bitwise_identical": true,
+  "best_epoch": 0,
+  "weight_source": "parent",
+  "lexicon_identical": true,
+  "test_accessed": false
+}

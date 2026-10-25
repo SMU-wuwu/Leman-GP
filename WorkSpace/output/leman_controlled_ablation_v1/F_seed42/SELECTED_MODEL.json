@@ -1,0 +1,10 @@
+{
+  "checkpoint": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/C/best.pt",
+  "sha256": "145224e85c808ddc84cda9177e7cd4a6731b004edbc713b03008bb0695fe01cd",
+  "variant": "F",
+  "seed": 42,
+  "raw_dev_micro_f1": 0.9458113861028934,
+  "stage": "C",
+  "best_epoch_in_stage": 3,
+  "test_evaluated": false
+}

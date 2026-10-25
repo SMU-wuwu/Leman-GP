@@ -1,0 +1,29 @@
+{
+  "unit": {
+    "crf_exhaustive_nll_and_viterbi": "PASS",
+    "padding_loss_gradient_and_decode": "PASS",
+    "empty_and_partial_lexicon_mask": "PASS",
+    "bioes_and_exact_spans": "PASS",
+    "overlapping_windows_gold_coverage": "PASS",
+    "tiny_bert_adapter_backward": "PASS",
+    "word_vector_parser": "PASS"
+  },
+  "integration": {
+    "synthetic_root": "/tmp/lebert-ddp-p49njk6g",
+    "ddp_bf16_two_epochs": "PASS",
+    "resume_parameter_max_difference": 0.0,
+    "resume_dev_predictions_and_metrics": "PASS",
+    "training_without_test_file": "PASS",
+    "explicit_test": "PASS",
+    "torch": "2.7.0+cu126",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "world_size": 2
+  },
+  "tested_sources_sha256": {
+    "model.py": "7d6f7b8eedb456ea099a8681ad673c3b9b75869dc1bd778a66c7c13c033a6085",
+    "train.py": "abf0bd8a808e2355e100e332ef3fa33d8932e3d58a5662f471e8bd7513f5b357",
+    "data.py": "eadc9adf7020ac6884d0ec6697092c78ad0849d2fe7352e65925cab313316da6",
+    "prepare_resources.py": "a2512325ff1e21e35167909077d817fe04e823866eef158ed56691bb434dead7",
+    "qa.py": "8b6d7fe2dc730011a50cf62c8dc2d490e10c23976124f07f0ca3f9a16eaccc7a"
+  }
+}

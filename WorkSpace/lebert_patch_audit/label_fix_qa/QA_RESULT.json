@@ -1,0 +1,23 @@
+{
+  "unit": {
+    "crf_exhaustive_nll_and_viterbi": "PASS",
+    "padding_loss_gradient_and_decode": "PASS",
+    "empty_and_partial_lexicon_mask": "PASS",
+    "bioes_and_exact_spans": "PASS",
+    "overlapping_windows_gold_coverage": "PASS",
+    "tiny_bert_adapter_backward": "PASS",
+    "word_vector_parser": "PASS",
+    "one_and_two_column_label_schema_with_pet": "PASS"
+  },
+  "integration": {
+    "synthetic_root": "/tmp/lebert-ddp-9u7tnz6c",
+    "ddp_bf16_two_epochs": "PASS",
+    "resume_parameter_max_difference": 0.0,
+    "resume_dev_predictions_and_metrics": "PASS",
+    "training_without_test_file": "PASS",
+    "explicit_test": "PASS",
+    "torch": "2.7.0+cu126",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "world_size": 2
+  }
+}

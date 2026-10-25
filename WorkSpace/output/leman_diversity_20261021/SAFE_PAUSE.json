@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-21T00:37:12.353059+00:00",
+  "active": "no_boundary",
+  "complete_before_pause": false,
+  "global_step": 3245,
+  "epoch": 4,
+  "next_batch": 189,
+  "checkpoint_sha256": "1458b40dcc8efdd189d58a13a483e1f91c7c8b7e474edcd8d03c8995b44d232f",
+  "complete_resume_state": true
+}

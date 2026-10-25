@@ -1,0 +1,15 @@
+{
+  "files": {
+    "analyze.py": "653ff3f56e488e7b570fcca813bc700629fa97a3ea2c1c517ff9cc4d64f53d10",
+    "audit_training.py": "276983e3f6ceb2b19ca6e8684b14ba11afe0258a5d52113e6393464a89cbb3f3",
+    "collect.py": "f340dc3dac5028a6f9e24bc42b2b0ded7a09178d5a77727a204ebc11c429522a",
+    "extract.py": "5ee28ed284bd411d0edd7af98e2533c7c96700598ef34957c93231fc70c158be"
+  },
+  "shared_dependencies": {
+    "leman_gp_fgm_v10": "8f30cf112dbc26696afaefb633ae635adc0cb0484a5297fdc5d20cb8cced5a4e",
+    "leman_gp_fgm_v10_analysis": "32299f85994ddcefa42878f1036bfc1afae21caade346c9dbd65c2c8ce68fe0c",
+    "leman_gp_candidates_v11": "ee8797fb5af7c7670ebf7ce9e0b7bfe681851cb8ca58be03fd7a62c144854e57",
+    "leman_gp_fgm_seed44_v14": "91c6382db4e5a7dcff9471325903fd352e7e8e7727259dfe7136b85a9fe0c858",
+    "leman_gp_typecal_v9": "9feb7005d4de355bc4419536be8416dc4c2c88721fe0527e5975cc7769aefd97"
+  }
+}

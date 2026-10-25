@@ -1,0 +1,62 @@
+{
+  "frozen_utc": "2026-10-21T00:24:31.033103+00:00",
+  "selected_case": {
+    "name": "compact_oof",
+    "iterations": 200,
+    "leaves": 7,
+    "minimum": 100,
+    "l2": 8.0,
+    "negative": 1.0,
+    "conflicts": false
+  },
+  "types": [
+    "BIS",
+    "COM",
+    "CRO",
+    "CUL",
+    "DIS",
+    "DRUG",
+    "FER",
+    "ORG",
+    "OTH",
+    "PAOG",
+    "PART",
+    "PER",
+    "PET"
+  ],
+  "models": [
+    "old",
+    "fgm43",
+    "fgm44",
+    "ema43",
+    "fgm46",
+    "soup2",
+    "soup3",
+    "parent",
+    "v4ema",
+    "v2ema",
+    "rdrop",
+    "fgm47"
+  ],
+  "original_freeze_sha256": "c1a3326e2099b662866479d445ebc7e5a3af898d463dea285c3dc841547fd842",
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "selection_delta_pp": 0.05847972090928799,
+  "test_read_during_selection": false,
+  "files": {
+    "PROTOCOL.json": "4ccacbb93859875f4daffe93d20781ff52bc1ad52aa48409758a1eff4db4910c",
+    "AUDIT.json": "db385e36916d75b7062dc4ac6eadfb0186701537379f6a266da74cc0f9f50e68",
+    "selected_hgb.joblib": "d7dfd4029967802a19bd82ee526519871b4c1b07d7b614c54db9780ff630fcc0",
+    "selected_decoder.json": "bdbca634bceb9f13ef1a0fa1e94265ca1e971db30aae9f48551723f09d6881a3"
+  },
+  "source_sha256": {
+    "fast_intervals.py": "93a7701e01928691e1e6ea8b3302ab183b261219f982ff1f22f2c09324818ad9",
+    "optimize.py": "b8606390e391f81c1ca05d57db2d0157f697b2e0909d70b0e8b834ef9aab1ccc",
+    "predict_hgb_v22.py": "b29464388adfd2173bd03debd3a5c5ce35b35888d3d9a08e7fd07cb50a80dada",
+    "._evidence_core.py": "0a81923fac5bd70273e9050d2369129d34b9050bbb4fccbb69aaebb587388adb",
+    "._predict_hgb_v22.py": "0a81923fac5bd70273e9050d2369129d34b9050bbb4fccbb69aaebb587388adb",
+    "._fast_intervals.py": "0a81923fac5bd70273e9050d2369129d34b9050bbb4fccbb69aaebb587388adb",
+    "._optimize.py": "0a81923fac5bd70273e9050d2369129d34b9050bbb4fccbb69aaebb587388adb",
+    "evidence_core.py": "bc539a54f78030422cb54c5ae33540a24b53f6c0c61791f3c3a34e3355d329da"
+  },
+  "evaluation_policy": "one evaluation of this selected frozen version; no test-based retuning"
+}

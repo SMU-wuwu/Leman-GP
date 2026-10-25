@@ -1,0 +1,25 @@
+{
+  "experiment": "v6 train-only gazetteer span calibration",
+  "created_before_scoring_utc": "2026-10-17T12:11:25.544970+00:00",
+  "families": [
+    "v5",
+    "train_gazetteer"
+  ],
+  "ridge": 10.0,
+  "base_features": "unchanged v5 single-v4 features; same maximum-GP window and attached boundary confidence",
+  "added_features": [
+    "log1p(train mentions of exact surface with candidate type)",
+    "log1p(train mentions of exact surface with another type)"
+  ],
+  "gazetteer": "count each original train2 gold mention once before windowing; exact original surface; no dev/test entries",
+  "normalization_and_loss": "unchanged v5 ridge-logistic fitting; only fitting-half means/std and labels",
+  "decoder": "unchanged v5 original/expanded logit threshold search and optimal nonoverlapping intervals",
+  "baseline": "audited server v5 full/held0/held1 fits and predictions reused unchanged",
+  "selection": "within each fitting partition by (Micro, Macro13, prefer_v5_on_tie); no held-out labels in family selection",
+  "crossfit": "same text-hash halves as v5; every fit, eligibility and threshold uses opposite half",
+  "acceptance": "full-dev Micro >= v5, combined crossfit Micro > v5, neither held-out Micro decreases; otherwise deploy v5",
+  "train_sha256": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "test_accessed": false,
+  "scope": "Exploratory dev tuning on the same previously selected v4 checkpoint."
+}

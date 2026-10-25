@@ -1,0 +1,8 @@
+transformers==4.56.2
+tokenizers>=0.22.0,<0.23
+numpy>=1.26,<3
+jieba==0.42.1
+tqdm>=4.66,<5
+safetensors>=0.4.3
+sentencepiece>=0.2,<0.3
+protobuf>=4,<7

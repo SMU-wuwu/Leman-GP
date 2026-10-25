@@ -1,0 +1,48 @@
+{
+  "variants": {
+    "F": {
+      "transfer": {
+        "loaded_tensors": 67,
+        "loaded_numel": 21647,
+        "new_or_reset_tensors": [],
+        "dropped_parent_tensors": [],
+        "parent_variant": "F",
+        "parent_seed": 42,
+        "conditional_on_trained_parent": true
+      },
+      "two_updates_finite": true,
+      "all_trainable_parameters_used": true,
+      "rank_sync": true
+    },
+    "attention_norm_only": {
+      "transfer": {
+        "loaded_tensors": 67,
+        "loaded_numel": 21647,
+        "new_or_reset_tensors": [],
+        "dropped_parent_tensors": [],
+        "parent_variant": "F",
+        "parent_seed": 42,
+        "conditional_on_trained_parent": true
+      },
+      "two_updates_finite": true,
+      "all_trainable_parameters_used": true,
+      "rank_sync": true
+    },
+    "uniform_attention": {
+      "transfer": {
+        "loaded_tensors": 67,
+        "loaded_numel": 21647,
+        "new_or_reset_tensors": [],
+        "dropped_parent_tensors": [],
+        "parent_variant": "F",
+        "parent_seed": 42,
+        "conditional_on_trained_parent": true
+      },
+      "two_updates_finite": true,
+      "all_trainable_parameters_used": true,
+      "rank_sync": true
+    }
+  },
+  "baseline_matches_parent": true,
+  "synthetic_only": true
+}

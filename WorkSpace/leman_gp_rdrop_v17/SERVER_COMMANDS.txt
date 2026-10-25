@@ -1,0 +1,5 @@
+cd /root/data/WorkSpace/leman_gp_rdrop_v17
+bash train.sh
+
+# 中断后仍用上面两条命令，自动恢复 last.pt。
+# 训练完成后通知 Codex，由其通过 SSH 读取结果并做 dev 分析。

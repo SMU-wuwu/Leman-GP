@@ -1,0 +1,10 @@
+{
+  "best_epoch": 3,
+  "best_dev_micro_f1": 0.9419148529973272,
+  "completed_epochs": 3,
+  "global_step": 2292,
+  "per_gpu_batch_size": 32,
+  "effective_batch_size": 64,
+  "seed": 47,
+  "test_evaluated": false
+}

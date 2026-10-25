@@ -1,0 +1,14 @@
+{
+  "old": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/old.jsonl.gz",
+  "fgm43": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/fgm43.jsonl.gz",
+  "fgm44": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/fgm44.jsonl.gz",
+  "ema43": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/ema43.jsonl.gz",
+  "fgm46": "/root/data/WorkSpace/output/leman_wide_v23/inputs/seed46_wide.jsonl.gz",
+  "soup2": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/soup2.jsonl.gz",
+  "soup3": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/soup3.jsonl.gz",
+  "parent": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/parent.jsonl.gz",
+  "v4ema": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/v4ema.jsonl.gz",
+  "v2ema": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/v2ema.jsonl.gz",
+  "rdrop": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/rdrop.jsonl.gz",
+  "fgm47": "/root/data/WorkSpace/output/leman_wide_v23/inputs/seed47_wide.jsonl.gz"
+}

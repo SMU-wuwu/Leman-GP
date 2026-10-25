@@ -1,0 +1,4 @@
+{
+  "full_dev_skipped": true,
+  "reason": "cold head; no meaningful trained predictor; fixed panel only"
+}

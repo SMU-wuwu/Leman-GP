@@ -1,0 +1,1974 @@
+{
+  "old": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/old.jsonl.gz",
+    "cache_sha256": "821d8d02b73d83414dc54a259670782d054670d5f72a0c9e963dc11ea9f1899e",
+    "header": {
+      "checkpoint": {
+        "candidate": "upgraded",
+        "checkpoint": "/root/data/WorkSpace/output/leman_finetune_v4_seed42/best.pt",
+        "checkpoint_sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4",
+        "checkpoint_epoch": 1,
+        "weight_source": "ema",
+        "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1",
+        "model_logit_divisor": 8.0,
+        "recorded_checkpoint_dev": {
+          "micro": {
+            "precision": 0.9357047108387591,
+            "recall": 0.9404773361562891,
+            "f1": 0.9380849532037437,
+            "true_positive": 19545,
+            "predicted": 20888,
+            "support": 20782
+          },
+          "macro_f1": 0.8744478094163151,
+          "per_type": {
+            "BIS": {
+              "precision": 0.9261083743842364,
+              "recall": 0.9591836734693877,
+              "f1": 0.9423558897243107,
+              "true_positive": 188,
+              "predicted": 203,
+              "support": 196
+            },
+            "COM": {
+              "precision": 0.746268656716418,
+              "recall": 0.78125,
+              "f1": 0.7633587786259542,
+              "true_positive": 50,
+              "predicted": 67,
+              "support": 64
+            },
+            "CRO": {
+              "precision": 0.9560540169375144,
+              "recall": 0.9662271570668517,
+              "f1": 0.961113667740451,
+              "true_positive": 4177,
+              "predicted": 4369,
+              "support": 4323
+            },
+            "CUL": {
+              "precision": 0.8942133815551537,
+              "recall": 0.8854073410922113,
+              "f1": 0.8897885739991003,
+              "true_positive": 989,
+              "predicted": 1106,
+              "support": 1117
+            },
+            "DIS": {
+              "precision": 0.9821753364859949,
+              "recall": 0.9821753364859949,
+              "f1": 0.9821753364859949,
+              "true_positive": 2700,
+              "predicted": 2749,
+              "support": 2749
+            },
+            "DRUG": {
+              "precision": 0.9332333083270817,
+              "recall": 0.9290515309932785,
+              "f1": 0.9311377245508982,
+              "true_positive": 2488,
+              "predicted": 2666,
+              "support": 2678
+            },
+            "FER": {
+              "precision": 0.8023255813953488,
+              "recall": 0.8846153846153846,
+              "f1": 0.8414634146341463,
+              "true_positive": 69,
+              "predicted": 86,
+              "support": 78
+            },
+            "ORG": {
+              "precision": 0.7125748502994012,
+              "recall": 0.7603833865814696,
+              "f1": 0.7357032457496137,
+              "true_positive": 238,
+              "predicted": 334,
+              "support": 313
+            },
+            "OTH": {
+              "precision": 0.665,
+              "recall": 0.5635593220338984,
+              "f1": 0.6100917431192661,
+              "true_positive": 133,
+              "predicted": 200,
+              "support": 236
+            },
+            "PAOG": {
+              "precision": 0.9337606837606838,
+              "recall": 0.9583333333333334,
+              "f1": 0.9458874458874459,
+              "true_positive": 437,
+              "predicted": 468,
+              "support": 456
+            },
+            "PART": {
+              "precision": 0.8892013498312711,
+              "recall": 0.8947368421052632,
+              "f1": 0.8919605077574048,
+              "true_positive": 1581,
+              "predicted": 1778,
+              "support": 1767
+            },
+            "PER": {
+              "precision": 0.8913535536441829,
+              "recall": 0.9027968821641449,
+              "f1": 0.8970387243735763,
+              "true_positive": 1969,
+              "predicted": 2209,
+              "support": 2181
+            },
+            "PET": {
+              "precision": 0.9727057812164195,
+              "recall": 0.9788062283737025,
+              "f1": 0.9757464697639323,
+              "true_positive": 4526,
+              "predicted": 4653,
+              "support": 4624
+            }
+          },
+          "total_samples": 5963,
+          "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+          "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+          "loss": 0.24585557147032278,
+          "windows": 6099,
+          "seconds": 8.836623577401042,
+          "threshold": 0.0,
+          "coverage": {
+            "sentences": 5963,
+            "windows": 6099,
+            "gold_entities": 20782,
+            "gold_not_fully_contained_in_any_window": 0,
+            "max_encoder_tokens_observed": 223,
+            "max_chars_observed": 192,
+            "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+          },
+          "world_size": 4,
+          "device": "cuda:0",
+          "amp": "bf16",
+          "weight_source": "ema"
+        },
+        "windows": {
+          "sentences": 5963,
+          "windows": 6099,
+          "gold_entities": 20782,
+          "gold_not_fully_contained_in_any_window": 0,
+          "max_encoder_tokens_observed": 223,
+          "max_chars_observed": 192,
+          "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+        }
+      },
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "score_scale": 8.0,
+      "policy": {
+        "floor": -4.0,
+        "upper": 16.0,
+        "step": 0.25,
+        "boundary_weights": [
+          0.0,
+          0.25,
+          0.5,
+          1.0
+        ],
+        "min_support": 200,
+        "type_radius": 1.0,
+        "type_passes": 1,
+        "primary": "exact character-span Micro F1",
+        "secondary": "Macro13",
+        "boundary_penalty": "(logsigmoid(start_logit) + logsigmoid(end_logit)) / 2",
+        "refined_score": "sqrt(gp_head_size) * (GP_native_logit + lambda * boundary_penalty)",
+        "window_merge": "max AFTER adding the boundary penalty, separately for each lambda",
+        "fold_rule": "sha256(leman-f1-v2-folds-20261016\\0 + text), first 8 bytes big endian modulo 2"
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca"
+    }
+  },
+  "fgm43": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/fgm43.jsonl.gz",
+    "cache_sha256": "66eb24aebf499af1efc0f95c0464ceebcbe5760029c1e131702bef48877d068b",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint": {
+        "checkpoint": "/root/data/WorkSpace/output/leman_fgm_v10_seed43/best.pt",
+        "checkpoint_sha256": "efdeaaa83bc483b376837ee5bcb35df7bcb5a9b1b10d2f120eb32868f1d80506",
+        "checkpoint_epoch": 1,
+        "weight_source": "live",
+        "dev": {
+          "micro": {
+            "precision": 0.9338545368396115,
+            "recall": 0.9483687806755846,
+            "f1": 0.9410556974717693,
+            "true_positive": 19709,
+            "predicted": 21105,
+            "support": 20782
+          },
+          "macro_f1": 0.8816906539589259,
+          "per_type": {
+            "BIS": {
+              "precision": 0.9317073170731708,
+              "recall": 0.9744897959183674,
+              "f1": 0.9526184538653366,
+              "true_positive": 191,
+              "predicted": 205,
+              "support": 196
+            },
+            "COM": {
+              "precision": 0.7464788732394366,
+              "recall": 0.828125,
+              "f1": 0.7851851851851852,
+              "true_positive": 53,
+              "predicted": 71,
+              "support": 64
+            },
+            "CRO": {
+              "precision": 0.9602194787379973,
+              "recall": 0.9715475364330326,
+              "f1": 0.9658502932045533,
+              "true_positive": 4200,
+              "predicted": 4374,
+              "support": 4323
+            },
+            "CUL": {
+              "precision": 0.8904593639575972,
+              "recall": 0.9024171888988362,
+              "f1": 0.8963983992885727,
+              "true_positive": 1008,
+              "predicted": 1132,
+              "support": 1117
+            },
+            "DIS": {
+              "precision": 0.9822528069540022,
+              "recall": 0.9865405602037104,
+              "f1": 0.9843920145190562,
+              "true_positive": 2712,
+              "predicted": 2761,
+              "support": 2749
+            },
+            "DRUG": {
+              "precision": 0.9271449704142012,
+              "recall": 0.9361463778939507,
+              "f1": 0.9316239316239316,
+              "true_positive": 2507,
+              "predicted": 2704,
+              "support": 2678
+            },
+            "FER": {
+              "precision": 0.8023255813953488,
+              "recall": 0.8846153846153846,
+              "f1": 0.8414634146341463,
+              "true_positive": 69,
+              "predicted": 86,
+              "support": 78
+            },
+            "ORG": {
+              "precision": 0.6901408450704225,
+              "recall": 0.7827476038338658,
+              "f1": 0.7335329341317365,
+              "true_positive": 245,
+              "predicted": 355,
+              "support": 313
+            },
+            "OTH": {
+              "precision": 0.6990291262135923,
+              "recall": 0.6101694915254238,
+              "f1": 0.6515837104072398,
+              "true_positive": 144,
+              "predicted": 206,
+              "support": 236
+            },
+            "PAOG": {
+              "precision": 0.9261603375527426,
+              "recall": 0.9627192982456141,
+              "f1": 0.9440860215053763,
+              "true_positive": 439,
+              "predicted": 474,
+              "support": 456
+            },
+            "PART": {
+              "precision": 0.8840419657647709,
+              "recall": 0.9060554612337295,
+              "f1": 0.8949133594186697,
+              "true_positive": 1601,
+              "predicted": 1811,
+              "support": 1767
+            },
+            "PER": {
+              "precision": 0.8944071588366891,
+              "recall": 0.916552040348464,
+              "f1": 0.9053442028985508,
+              "true_positive": 1999,
+              "predicted": 2235,
+              "support": 2181
+            },
+            "PET": {
+              "precision": 0.9680238755062887,
+              "recall": 0.9820501730103807,
+              "f1": 0.9749865807836823,
+              "true_positive": 4541,
+              "predicted": 4691,
+              "support": 4624
+            }
+          },
+          "total_samples": 5963,
+          "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+          "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+          "loss": 0.1547399175450008,
+          "windows": 6099,
+          "seconds": 8.915867287665606,
+          "threshold": 0.0,
+          "coverage": {
+            "sentences": 5963,
+            "windows": 6099,
+            "gold_entities": 20782,
+            "gold_not_fully_contained_in_any_window": 0,
+            "max_encoder_tokens_observed": 223,
+            "max_chars_observed": 192,
+            "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+          },
+          "world_size": 4,
+          "device": "cuda:0",
+          "amp": "bf16",
+          "weight_source": "live"
+        },
+        "source_hashes": {
+          "adversarial.py": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa",
+          "calibrate.py": "11825d68a07b6d10a51720589605f5e0fe180f65cd2f15fe768eb0f10a596d8e",
+          "collect.py": "57a7f1e84a2b4f0c2634b0e313df24c1bf1d1f316607171200dcb2ee231fc48b",
+          "config.py": "7cabc08f40113a41f74d4b673204907edb9d4f485cf10ca4d99f4a6736b7131c",
+          "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+          "decoding.py": "5fba8537050607edc9c02c726c5af3ec03761c0770306e85a8e0bbfa1b4b5a33",
+          "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+          "features.py": "babc0d5d6dd97aaecf279f9134a1b5474d2f7fa94e8abeb720f5714f88ea2b54",
+          "inference.py": "2242226ad872bb58872aeb2d98fc4c2413487812ab192abf3ef584b180bdf4b3",
+          "model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+          "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+          "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+          "runtime.py": "99491da1358f20e8fe06642a270181f76bbd9ad0122461c9f08813a20b6e548f",
+          "search.py": "cfb58c82b70ab7ee2fba551bcadbc9759b95a50300d03b119b6c0192a72202c7",
+          "test.py": "abf3af3233956cb494308be2b9b9daaeb94ab6e5937e1276f5329faaa91bd577",
+          "train.py": "e5b83839e4058b756105e2585a72ea30591eecc0d2a1489db46fed7bc73d4b1a",
+          "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+        },
+        "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1"
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "plan_sha256": "acdc1e449a33707f559bff3ebaa84883bb1900343df7dadcbe61057c9282285c",
+      "floor": -4.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 4,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "test_accessed": false
+    }
+  },
+  "fgm44": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/fgm44.jsonl.gz",
+    "cache_sha256": "a748e191cfe78387205f48df315a8d3b153413556d6426c7f3b1613bf660b31e",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint": {
+        "checkpoint": "/root/data/WorkSpace/output/leman_fgm_v14_seed44/best.pt",
+        "checkpoint_sha256": "a3020f91bdf471069a58e25f4c016daa45d246c03b648a8ad6e760cce20dc625",
+        "checkpoint_epoch": 1,
+        "weight_source": "live",
+        "dev": {
+          "micro": {
+            "precision": 0.9339872997820112,
+            "recall": 0.9483687806755846,
+            "f1": 0.9411231019004871,
+            "true_positive": 19709,
+            "predicted": 21102,
+            "support": 20782
+          },
+          "macro_f1": 0.8796170387430065,
+          "per_type": {
+            "BIS": {
+              "precision": 0.9227053140096618,
+              "recall": 0.9744897959183674,
+              "f1": 0.9478908188585607,
+              "true_positive": 191,
+              "predicted": 207,
+              "support": 196
+            },
+            "COM": {
+              "precision": 0.7428571428571429,
+              "recall": 0.8125,
+              "f1": 0.7761194029850746,
+              "true_positive": 52,
+              "predicted": 70,
+              "support": 64
+            },
+            "CRO": {
+              "precision": 0.9617323556370303,
+              "recall": 0.970853573907009,
+              "f1": 0.9662714400828825,
+              "true_positive": 4197,
+              "predicted": 4364,
+              "support": 4323
+            },
+            "CUL": {
+              "precision": 0.8952972493345164,
+              "recall": 0.9033124440465533,
+              "f1": 0.8992869875222816,
+              "true_positive": 1009,
+              "predicted": 1127,
+              "support": 1117
+            },
+            "DIS": {
+              "precision": 0.9790613718411553,
+              "recall": 0.9865405602037104,
+              "f1": 0.982786736727668,
+              "true_positive": 2712,
+              "predicted": 2770,
+              "support": 2749
+            },
+            "DRUG": {
+              "precision": 0.9256532940743467,
+              "recall": 0.9391336818521284,
+              "f1": 0.9323447636700649,
+              "true_positive": 2515,
+              "predicted": 2717,
+              "support": 2678
+            },
+            "FER": {
+              "precision": 0.8023255813953488,
+              "recall": 0.8846153846153846,
+              "f1": 0.8414634146341463,
+              "true_positive": 69,
+              "predicted": 86,
+              "support": 78
+            },
+            "ORG": {
+              "precision": 0.6776859504132231,
+              "recall": 0.7859424920127795,
+              "f1": 0.727810650887574,
+              "true_positive": 246,
+              "predicted": 363,
+              "support": 313
+            },
+            "OTH": {
+              "precision": 0.7348066298342542,
+              "recall": 0.5635593220338984,
+              "f1": 0.6378896882494005,
+              "true_positive": 133,
+              "predicted": 181,
+              "support": 236
+            },
+            "PAOG": {
+              "precision": 0.9284210526315789,
+              "recall": 0.9671052631578947,
+              "f1": 0.9473684210526315,
+              "true_positive": 441,
+              "predicted": 475,
+              "support": 456
+            },
+            "PART": {
+              "precision": 0.8810307017543859,
+              "recall": 0.9094510469722694,
+              "f1": 0.8950153160679476,
+              "true_positive": 1607,
+              "predicted": 1824,
+              "support": 1767
+            },
+            "PER": {
+              "precision": 0.8933987511150758,
+              "recall": 0.9183860614397066,
+              "f1": 0.905720099479991,
+              "true_positive": 2003,
+              "predicted": 2242,
+              "support": 2181
+            },
+            "PET": {
+              "precision": 0.9696321642429427,
+              "recall": 0.9805363321799307,
+              "f1": 0.9750537634408603,
+              "true_positive": 4534,
+              "predicted": 4676,
+              "support": 4624
+            }
+          },
+          "total_samples": 5963,
+          "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+          "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+          "loss": 0.15737161740042535,
+          "windows": 6099,
+          "seconds": 8.723780618980527,
+          "threshold": 0.0,
+          "coverage": {
+            "sentences": 5963,
+            "windows": 6099,
+            "gold_entities": 20782,
+            "gold_not_fully_contained_in_any_window": 0,
+            "max_encoder_tokens_observed": 223,
+            "max_chars_observed": 192,
+            "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+          },
+          "world_size": 4,
+          "device": "cuda:0",
+          "amp": "bf16",
+          "weight_source": "live"
+        },
+        "source_hashes": {
+          "adversarial.py": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa",
+          "calibrate.py": "11825d68a07b6d10a51720589605f5e0fe180f65cd2f15fe768eb0f10a596d8e",
+          "collect.py": "57a7f1e84a2b4f0c2634b0e313df24c1bf1d1f316607171200dcb2ee231fc48b",
+          "config.py": "7cabc08f40113a41f74d4b673204907edb9d4f485cf10ca4d99f4a6736b7131c",
+          "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+          "decoding.py": "5fba8537050607edc9c02c726c5af3ec03761c0770306e85a8e0bbfa1b4b5a33",
+          "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+          "features.py": "babc0d5d6dd97aaecf279f9134a1b5474d2f7fa94e8abeb720f5714f88ea2b54",
+          "inference.py": "2242226ad872bb58872aeb2d98fc4c2413487812ab192abf3ef584b180bdf4b3",
+          "model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+          "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+          "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+          "runtime.py": "99491da1358f20e8fe06642a270181f76bbd9ad0122461c9f08813a20b6e548f",
+          "search.py": "cfb58c82b70ab7ee2fba551bcadbc9759b95a50300d03b119b6c0192a72202c7",
+          "test.py": "abf3af3233956cb494308be2b9b9daaeb94ab6e5937e1276f5329faaa91bd577",
+          "train.py": "e5b83839e4058b756105e2585a72ea30591eecc0d2a1489db46fed7bc73d4b1a",
+          "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+        },
+        "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1"
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "plan_sha256": "4c269a10842bb464b94d094092d16d47575ba635dd4988d51d42afd5763e369b",
+      "floor": -4.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 4,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "test_accessed": false
+    }
+  },
+  "ema43": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/ema43.jsonl.gz",
+    "cache_sha256": "d4bbdb7eccc084ed129a553e4e5fa3ea12e008e50fea7dca8bdb5cf35723e57c",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint": {
+        "checkpoint": "/root/data/WorkSpace/output/leman_fgm_v10_seed43/last.pt",
+        "checkpoint_sha256": "36b341622a634ea305000a5776950e8d93ae0e9fdc73a73fbbb5b8c7b7833a34",
+        "checkpoint_epoch": 3,
+        "weight_source": "ema",
+        "dev": {
+          "micro": {
+            "precision": 0.9322530353852695,
+            "recall": 0.9495236262149938,
+            "f1": 0.9408090776895754,
+            "true_positive": 19733,
+            "predicted": 21167,
+            "support": 20782
+          },
+          "macro_f1": 0.8820007414789324,
+          "per_type": {
+            "BIS": {
+              "precision": 0.9317073170731708,
+              "recall": 0.9744897959183674,
+              "f1": 0.9526184538653366,
+              "true_positive": 191,
+              "predicted": 205,
+              "support": 196
+            },
+            "COM": {
+              "precision": 0.7297297297297297,
+              "recall": 0.84375,
+              "f1": 0.782608695652174,
+              "true_positive": 54,
+              "predicted": 74,
+              "support": 64
+            },
+            "CRO": {
+              "precision": 0.9576020059266013,
+              "recall": 0.9717788572750404,
+              "f1": 0.9646383467278989,
+              "true_positive": 4201,
+              "predicted": 4387,
+              "support": 4323
+            },
+            "CUL": {
+              "precision": 0.8847161572052402,
+              "recall": 0.9068934646374217,
+              "f1": 0.8956675508399646,
+              "true_positive": 1013,
+              "predicted": 1145,
+              "support": 1117
+            },
+            "DIS": {
+              "precision": 0.9797833935018051,
+              "recall": 0.9872680974899963,
+              "f1": 0.9835115057075557,
+              "true_positive": 2714,
+              "predicted": 2770,
+              "support": 2749
+            },
+            "DRUG": {
+              "precision": 0.9275951237532324,
+              "recall": 0.9376400298730396,
+              "f1": 0.9325905292479109,
+              "true_positive": 2511,
+              "predicted": 2707,
+              "support": 2678
+            },
+            "FER": {
+              "precision": 0.7931034482758621,
+              "recall": 0.8846153846153846,
+              "f1": 0.8363636363636363,
+              "true_positive": 69,
+              "predicted": 87,
+              "support": 78
+            },
+            "ORG": {
+              "precision": 0.6888888888888889,
+              "recall": 0.792332268370607,
+              "f1": 0.736998514115899,
+              "true_positive": 248,
+              "predicted": 360,
+              "support": 313
+            },
+            "OTH": {
+              "precision": 0.7033492822966507,
+              "recall": 0.6228813559322034,
+              "f1": 0.6606741573033708,
+              "true_positive": 147,
+              "predicted": 209,
+              "support": 236
+            },
+            "PAOG": {
+              "precision": 0.9299363057324841,
+              "recall": 0.9605263157894737,
+              "f1": 0.9449838187702265,
+              "true_positive": 438,
+              "predicted": 471,
+              "support": 456
+            },
+            "PART": {
+              "precision": 0.8808743169398907,
+              "recall": 0.9122807017543859,
+              "f1": 0.8963024742841257,
+              "true_positive": 1612,
+              "predicted": 1830,
+              "support": 1767
+            },
+            "PER": {
+              "precision": 0.8909171861086376,
+              "recall": 0.9174690508940853,
+              "f1": 0.9039981929071607,
+              "true_positive": 2001,
+              "predicted": 2246,
+              "support": 2181
+            },
+            "PET": {
+              "precision": 0.9696321642429427,
+              "recall": 0.9805363321799307,
+              "f1": 0.9750537634408603,
+              "true_positive": 4534,
+              "predicted": 4676,
+              "support": 4624
+            }
+          },
+          "total_samples": 5963,
+          "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+          "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+          "loss": 0.1568442817641797,
+          "windows": 6099,
+          "seconds": 8.761790929362178,
+          "threshold": 0.0,
+          "coverage": {
+            "sentences": 5963,
+            "windows": 6099,
+            "gold_entities": 20782,
+            "gold_not_fully_contained_in_any_window": 0,
+            "max_encoder_tokens_observed": 223,
+            "max_chars_observed": 192,
+            "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+          },
+          "world_size": 4,
+          "device": "cuda:0",
+          "amp": "bf16"
+        },
+        "source_hashes": {
+          "adversarial.py": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa",
+          "calibrate.py": "11825d68a07b6d10a51720589605f5e0fe180f65cd2f15fe768eb0f10a596d8e",
+          "collect.py": "57a7f1e84a2b4f0c2634b0e313df24c1bf1d1f316607171200dcb2ee231fc48b",
+          "config.py": "7cabc08f40113a41f74d4b673204907edb9d4f485cf10ca4d99f4a6736b7131c",
+          "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+          "decoding.py": "5fba8537050607edc9c02c726c5af3ec03761c0770306e85a8e0bbfa1b4b5a33",
+          "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+          "features.py": "babc0d5d6dd97aaecf279f9134a1b5474d2f7fa94e8abeb720f5714f88ea2b54",
+          "inference.py": "2242226ad872bb58872aeb2d98fc4c2413487812ab192abf3ef584b180bdf4b3",
+          "model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+          "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+          "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+          "runtime.py": "99491da1358f20e8fe06642a270181f76bbd9ad0122461c9f08813a20b6e548f",
+          "search.py": "cfb58c82b70ab7ee2fba551bcadbc9759b95a50300d03b119b6c0192a72202c7",
+          "test.py": "abf3af3233956cb494308be2b9b9daaeb94ab6e5937e1276f5329faaa91bd577",
+          "train.py": "e5b83839e4058b756105e2585a72ea30591eecc0d2a1489db46fed7bc73d4b1a",
+          "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+        },
+        "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1"
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "policy_sha256": "e26cfbe0e4befeeceff21c938a25d5043eabb0ae21f072fa3c7c94b6ce823294",
+      "floor": -4.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 4,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "test_accessed": false
+    }
+  },
+  "fgm46": {
+    "original_cache": "/root/data/WorkSpace/output/leman_wide_v23/inputs/seed46_wide.jsonl.gz",
+    "cache_sha256": "18d80eaf6ea0f3eb0df890af7187560606d6c176efa550b2b5a54805172be6eb",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint": {
+        "checkpoint": "/root/data/WorkSpace/output/leman_fgm_seed46_dual4090/best.pt",
+        "checkpoint_sha256": "3d790b4796c31932d7ad51a01f57dcfb9ebb573ebae021ca757995961a4eb605",
+        "checkpoint_epoch": 3,
+        "weight_source": "ema",
+        "dev": {
+          "micro": {
+            "precision": 0.9341325877837274,
+            "recall": 0.9485612549321528,
+            "f1": 0.9412916318491107,
+            "true_positive": 19713,
+            "predicted": 21103,
+            "support": 20782
+          },
+          "macro_f1": 0.879571996798911,
+          "per_type": {
+            "BIS": {
+              "precision": 0.9317073170731708,
+              "recall": 0.9744897959183674,
+              "f1": 0.9526184538653366,
+              "true_positive": 191,
+              "predicted": 205,
+              "support": 196
+            },
+            "COM": {
+              "precision": 0.7246376811594203,
+              "recall": 0.78125,
+              "f1": 0.7518796992481203,
+              "true_positive": 50,
+              "predicted": 69,
+              "support": 64
+            },
+            "CRO": {
+              "precision": 0.9583904892546868,
+              "recall": 0.9696969696969697,
+              "f1": 0.9640105783603542,
+              "true_positive": 4192,
+              "predicted": 4374,
+              "support": 4323
+            },
+            "CUL": {
+              "precision": 0.8859649122807017,
+              "recall": 0.9042076991942704,
+              "f1": 0.8949933540097474,
+              "true_positive": 1010,
+              "predicted": 1140,
+              "support": 1117
+            },
+            "DIS": {
+              "precision": 0.9819037278320666,
+              "recall": 0.9869043288468534,
+              "f1": 0.9843976777939042,
+              "true_positive": 2713,
+              "predicted": 2763,
+              "support": 2749
+            },
+            "DRUG": {
+              "precision": 0.9307407407407408,
+              "recall": 0.938386855862584,
+              "f1": 0.9345481591669765,
+              "true_positive": 2513,
+              "predicted": 2700,
+              "support": 2678
+            },
+            "FER": {
+              "precision": 0.7840909090909091,
+              "recall": 0.8846153846153846,
+              "f1": 0.8313253012048193,
+              "true_positive": 69,
+              "predicted": 88,
+              "support": 78
+            },
+            "ORG": {
+              "precision": 0.6873239436619718,
+              "recall": 0.7795527156549521,
+              "f1": 0.7305389221556886,
+              "true_positive": 244,
+              "predicted": 355,
+              "support": 313
+            },
+            "OTH": {
+              "precision": 0.7081339712918661,
+              "recall": 0.6271186440677966,
+              "f1": 0.6651685393258427,
+              "true_positive": 148,
+              "predicted": 209,
+              "support": 236
+            },
+            "PAOG": {
+              "precision": 0.9339019189765458,
+              "recall": 0.9605263157894737,
+              "f1": 0.947027027027027,
+              "true_positive": 438,
+              "predicted": 469,
+              "support": 456
+            },
+            "PART": {
+              "precision": 0.8853362734288864,
+              "recall": 0.9088851160158461,
+              "f1": 0.8969561574979056,
+              "true_positive": 1606,
+              "predicted": 1814,
+              "support": 1767
+            },
+            "PER": {
+              "precision": 0.8925546143557735,
+              "recall": 0.9179275561668959,
+              "f1": 0.9050632911392406,
+              "true_positive": 2002,
+              "predicted": 2243,
+              "support": 2181
+            },
+            "PET": {
+              "precision": 0.9706889174154899,
+              "recall": 0.9811851211072664,
+              "f1": 0.9759087975908798,
+              "true_positive": 4537,
+              "predicted": 4674,
+              "support": 4624
+            }
+          },
+          "total_samples": 5963,
+          "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+          "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+          "loss": 0.1591512025963832,
+          "windows": 6099,
+          "seconds": 16.958099817857146,
+          "threshold": 0.0,
+          "coverage": {
+            "sentences": 5963,
+            "windows": 6099,
+            "gold_entities": 20782,
+            "gold_not_fully_contained_in_any_window": 0,
+            "max_encoder_tokens_observed": 223,
+            "max_chars_observed": 192,
+            "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+          },
+          "world_size": 2,
+          "device": "cuda:0",
+          "amp": "bf16",
+          "weight_source": "ema"
+        },
+        "source_hashes": {
+          "adversarial.py": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa",
+          "calibrate.py": "11825d68a07b6d10a51720589605f5e0fe180f65cd2f15fe768eb0f10a596d8e",
+          "collect.py": "70067052252b12ce4b77a1e11b2505e06fb37c0b75417ee5a23664fa766ba9a1",
+          "config.py": "73634cfe029342a0b7fa6f7746616f24f86a11f6759313e505a79792648c8c04",
+          "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+          "decoding.py": "5fba8537050607edc9c02c726c5af3ec03761c0770306e85a8e0bbfa1b4b5a33",
+          "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+          "features.py": "babc0d5d6dd97aaecf279f9134a1b5474d2f7fa94e8abeb720f5714f88ea2b54",
+          "inference.py": "2242226ad872bb58872aeb2d98fc4c2413487812ab192abf3ef584b180bdf4b3",
+          "model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+          "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+          "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+          "runtime.py": "1d21fd4b208b0c5a0aad6e6f4a350ed32142aca7bdcee0767d18a72e0190ebdb",
+          "search.py": "cfb58c82b70ab7ee2fba551bcadbc9759b95a50300d03b119b6c0192a72202c7",
+          "test.py": "abf3af3233956cb494308be2b9b9daaeb94ab6e5937e1276f5329faaa91bd577",
+          "train.py": "437ce331159e4841e4a8962aaa90f2efc2d8f7e453e9578a588c2f409107a1f5",
+          "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+        },
+        "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1"
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "floor": -32.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 2,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "test_accessed": false
+    }
+  },
+  "soup2": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/soup2.jsonl.gz",
+    "cache_sha256": "a26ece2fae0a2d0ddb04f70aece6fae8c38bb27c9031625b0af1dfd81d6b8bc2",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint_sha256": "bc5ef68b6f733ccdd9e96d558e501ebef24d1584c1aedd02f6ca09316d8e0b23",
+      "recipe": "soup2",
+      "parents": {
+        "fgm43": {
+          "path": "/root/data/WorkSpace/output/leman_fgm_v10_seed43/best.pt",
+          "sha256": "efdeaaa83bc483b376837ee5bcb35df7bcb5a9b1b10d2f120eb32868f1d80506",
+          "best_epoch": 1,
+          "weight_source": "live"
+        },
+        "fgm44": {
+          "path": "/root/data/WorkSpace/output/leman_fgm_v14_seed44/best.pt",
+          "sha256": "a3020f91bdf471069a58e25f4c016daa45d246c03b648a8ad6e760cce20dc625",
+          "best_epoch": 1,
+          "weight_source": "live"
+        }
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "policy_sha256": "198815b32faeb3ec2b071e18c4bd5dc012aeed51562af7138bbcc8d0c917991b",
+      "floor": -4.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 2,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "test_accessed": false
+    }
+  },
+  "soup3": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/soup3.jsonl.gz",
+    "cache_sha256": "c196b96be3055a9ed98c15cc1e9ab46f73d54184a8570f23fbbccee788102aa0",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint_sha256": "3061466ac2f6782ec6694818ee0317b8a6fb8ad51567b18c97fa2ac763837a83",
+      "recipe": "soup3",
+      "parents": {
+        "fgm43": {
+          "path": "/root/data/WorkSpace/output/leman_fgm_v10_seed43/best.pt",
+          "sha256": "efdeaaa83bc483b376837ee5bcb35df7bcb5a9b1b10d2f120eb32868f1d80506",
+          "best_epoch": 1,
+          "weight_source": "live"
+        },
+        "fgm44": {
+          "path": "/root/data/WorkSpace/output/leman_fgm_v14_seed44/best.pt",
+          "sha256": "a3020f91bdf471069a58e25f4c016daa45d246c03b648a8ad6e760cce20dc625",
+          "best_epoch": 1,
+          "weight_source": "live"
+        },
+        "old": {
+          "path": "/root/data/WorkSpace/output/leman_finetune_v4_seed42/best.pt",
+          "sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4",
+          "best_epoch": 1,
+          "weight_source": "ema"
+        }
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "policy_sha256": "198815b32faeb3ec2b071e18c4bd5dc012aeed51562af7138bbcc8d0c917991b",
+      "floor": -4.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 2,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "test_accessed": false
+    }
+  },
+  "parent": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/parent.jsonl.gz",
+    "cache_sha256": "b5fd5c7bbe02334ca6b6b4e0f4292472ee8196686445a8657b4e32e2f3301f78",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint": {
+        "candidate": "parent",
+        "checkpoint": "/root/data/WorkSpace/output/leman_f1_4x4090_seed42/best.pt",
+        "checkpoint_sha256": "22a4efe6a31021bda0d62fc6c1b73294dadfca79f00e79ab83bb89a9c9177bc1",
+        "checkpoint_epoch": 3,
+        "weight_source": "live",
+        "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1",
+        "model_logit_divisor": 8.0,
+        "recorded_checkpoint_dev": {
+          "micro": {
+            "precision": 0.9344262295081968,
+            "recall": 0.9407660475411413,
+            "f1": 0.9375854214123007,
+            "true_positive": 19551,
+            "predicted": 20923,
+            "support": 20782
+          },
+          "macro_f1": 0.873784518072688,
+          "per_type": {
+            "BIS": {
+              "precision": 0.9313725490196079,
+              "recall": 0.9693877551020408,
+              "f1": 0.95,
+              "true_positive": 190,
+              "predicted": 204,
+              "support": 196
+            },
+            "COM": {
+              "precision": 0.7538461538461538,
+              "recall": 0.765625,
+              "f1": 0.7596899224806202,
+              "true_positive": 49,
+              "predicted": 65,
+              "support": 64
+            },
+            "CRO": {
+              "precision": 0.9515799045237554,
+              "recall": 0.9683090446449225,
+              "f1": 0.9598715890850722,
+              "true_positive": 4186,
+              "predicted": 4399,
+              "support": 4323
+            },
+            "CUL": {
+              "precision": 0.8861209964412812,
+              "recall": 0.891674127126231,
+              "f1": 0.8888888888888888,
+              "true_positive": 996,
+              "predicted": 1124,
+              "support": 1117
+            },
+            "DIS": {
+              "precision": 0.9772069464544139,
+              "recall": 0.9825391051291379,
+              "f1": 0.9798657718120806,
+              "true_positive": 2701,
+              "predicted": 2764,
+              "support": 2749
+            },
+            "DRUG": {
+              "precision": 0.9316654219566841,
+              "recall": 0.9316654219566841,
+              "f1": 0.9316654219566841,
+              "true_positive": 2495,
+              "predicted": 2678,
+              "support": 2678
+            },
+            "FER": {
+              "precision": 0.7954545454545454,
+              "recall": 0.8974358974358975,
+              "f1": 0.8433734939759037,
+              "true_positive": 70,
+              "predicted": 88,
+              "support": 78
+            },
+            "ORG": {
+              "precision": 0.6997084548104956,
+              "recall": 0.7667731629392971,
+              "f1": 0.7317073170731707,
+              "true_positive": 240,
+              "predicted": 343,
+              "support": 313
+            },
+            "OTH": {
+              "precision": 0.6939890710382514,
+              "recall": 0.538135593220339,
+              "f1": 0.6062052505966588,
+              "true_positive": 127,
+              "predicted": 183,
+              "support": 236
+            },
+            "PAOG": {
+              "precision": 0.9294871794871795,
+              "recall": 0.9539473684210527,
+              "f1": 0.9415584415584416,
+              "true_positive": 435,
+              "predicted": 468,
+              "support": 456
+            },
+            "PART": {
+              "precision": 0.8928571428571429,
+              "recall": 0.8913412563667232,
+              "f1": 0.8920985556499575,
+              "true_positive": 1575,
+              "predicted": 1764,
+              "support": 1767
+            },
+            "PER": {
+              "precision": 0.9,
+              "recall": 0.8995873452544704,
+              "f1": 0.8997936253152946,
+              "true_positive": 1962,
+              "predicted": 2180,
+              "support": 2181
+            },
+            "PET": {
+              "precision": 0.9704053184645078,
+              "recall": 0.9785899653979239,
+              "f1": 0.9744804565521697,
+              "true_positive": 4525,
+              "predicted": 4663,
+              "support": 4624
+            }
+          },
+          "total_samples": 5963,
+          "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+          "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+          "loss": 0.23558778243524497,
+          "windows": 6099,
+          "seconds": 9.2407390717417,
+          "threshold": 0.0,
+          "coverage": {
+            "sentences": 5963,
+            "windows": 6099,
+            "gold_entities": 20782,
+            "gold_not_fully_contained_in_any_window": 0,
+            "max_encoder_tokens_observed": 223,
+            "max_chars_observed": 192,
+            "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+          },
+          "world_size": 4,
+          "device": "cuda:0",
+          "amp": "bf16",
+          "weight_source": "live"
+        },
+        "windows": {
+          "sentences": 5963,
+          "windows": 6099,
+          "gold_entities": 20782,
+          "gold_not_fully_contained_in_any_window": 0,
+          "max_encoder_tokens_observed": 223,
+          "max_chars_observed": 192,
+          "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+        }
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "policy_sha256": "81380823febde18d53eee676f64b2c500653986031dd6703d169803cadf3e795",
+      "floor": -32.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 4,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "seconds": 33.362582836300135,
+      "test_accessed": false
+    }
+  },
+  "v4ema": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/v4ema.jsonl.gz",
+    "cache_sha256": "95eed0483f8f3d7d4b42eae6ae9ee93935c4e1170e1099c4da94f076485e2e6d",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint": {
+        "candidate": "final_v4",
+        "origin": "/root/data/WorkSpace/output/leman_finetune_v4_seed42/last.pt",
+        "origin_sha256": "5c281cda42f510b0300aa37d8cf7e3825f814e9a43da36f7ae7d916052e284ff",
+        "checkpoint_epoch": 5,
+        "weight_source": "ema.shadow",
+        "ema_updates": 1910
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "policy_sha256": "c229cd34b1dc12839c7caddeb462c086518df0acdf08ed83e6d6b6ff028c1d60",
+      "floor": -32.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 4,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "seconds": 31.466534044593573,
+      "test_accessed": false
+    }
+  },
+  "v2ema": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/v2ema.jsonl.gz",
+    "cache_sha256": "99c1cf47080c1e6dd7dd710a311415aeb201006a1ae4c6c95654fcaab207e646",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint": {
+        "candidate": "final_v2",
+        "origin": "/root/data/WorkSpace/output/leman_f1_4x4090_seed42/last.pt",
+        "origin_sha256": "40e537c6c411509604045e348e3cc75753152682f7c005c5de157ec1e2386b02",
+        "checkpoint_epoch": 12,
+        "weight_source": "ema.shadow",
+        "ema_updates": 4584
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "policy_sha256": "c229cd34b1dc12839c7caddeb462c086518df0acdf08ed83e6d6b6ff028c1d60",
+      "floor": -32.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 4,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "seconds": 43.122361125424504,
+      "test_accessed": false
+    }
+  },
+  "rdrop": {
+    "original_cache": "/root/data/WorkSpace/output/leman_final_v1_20261019/caches/rdrop.jsonl.gz",
+    "cache_sha256": "096e114ade91e6105d004d890b85ce70540ef5f9992c16861ae5d27971df4501",
+    "header": {
+      "checkpoint": {
+        "candidate": "upgraded",
+        "checkpoint": "/root/data/WorkSpace/output/leman_rdrop_v17_seed45/best.pt",
+        "checkpoint_sha256": "bc94979d39e8857164496eda617d05c99edd9ddb51f1b222ccbed8f7625b6271",
+        "checkpoint_epoch": 0,
+        "weight_source": "parent",
+        "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1",
+        "model_logit_divisor": 8.0,
+        "recorded_checkpoint_dev": {
+          "micro": {
+            "precision": 0.9357973859338344,
+            "recall": 0.9405254547204311,
+            "f1": 0.9381554632940555,
+            "true_positive": 19546,
+            "predicted": 20887,
+            "support": 20782
+          },
+          "macro_f1": 0.8746976511726472,
+          "per_type": {
+            "BIS": {
+              "precision": 0.9261083743842364,
+              "recall": 0.9591836734693877,
+              "f1": 0.9423558897243107,
+              "true_positive": 188,
+              "predicted": 203,
+              "support": 196
+            },
+            "COM": {
+              "precision": 0.746268656716418,
+              "recall": 0.78125,
+              "f1": 0.7633587786259542,
+              "true_positive": 50,
+              "predicted": 67,
+              "support": 64
+            },
+            "CRO": {
+              "precision": 0.9562728937728938,
+              "recall": 0.9662271570668517,
+              "f1": 0.9612242549764124,
+              "true_positive": 4177,
+              "predicted": 4368,
+              "support": 4323
+            },
+            "CUL": {
+              "precision": 0.8934056007226739,
+              "recall": 0.8854073410922113,
+              "f1": 0.8893884892086331,
+              "true_positive": 989,
+              "predicted": 1107,
+              "support": 1117
+            },
+            "DIS": {
+              "precision": 0.9821753364859949,
+              "recall": 0.9821753364859949,
+              "f1": 0.9821753364859949,
+              "true_positive": 2700,
+              "predicted": 2749,
+              "support": 2749
+            },
+            "DRUG": {
+              "precision": 0.9332333083270817,
+              "recall": 0.9290515309932785,
+              "f1": 0.9311377245508982,
+              "true_positive": 2488,
+              "predicted": 2666,
+              "support": 2678
+            },
+            "FER": {
+              "precision": 0.8023255813953488,
+              "recall": 0.8846153846153846,
+              "f1": 0.8414634146341463,
+              "true_positive": 69,
+              "predicted": 86,
+              "support": 78
+            },
+            "ORG": {
+              "precision": 0.7125748502994012,
+              "recall": 0.7603833865814696,
+              "f1": 0.7357032457496137,
+              "true_positive": 238,
+              "predicted": 334,
+              "support": 313
+            },
+            "OTH": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5677966101694916,
+              "f1": 0.6132723112128147,
+              "true_positive": 134,
+              "predicted": 201,
+              "support": 236
+            },
+            "PAOG": {
+              "precision": 0.9337606837606838,
+              "recall": 0.9583333333333334,
+              "f1": 0.9458874458874459,
+              "true_positive": 437,
+              "predicted": 468,
+              "support": 456
+            },
+            "PART": {
+              "precision": 0.8897017445132246,
+              "recall": 0.8947368421052632,
+              "f1": 0.8922121896162528,
+              "true_positive": 1581,
+              "predicted": 1777,
+              "support": 1767
+            },
+            "PER": {
+              "precision": 0.8913535536441829,
+              "recall": 0.9027968821641449,
+              "f1": 0.8970387243735763,
+              "true_positive": 1969,
+              "predicted": 2209,
+              "support": 2181
+            },
+            "PET": {
+              "precision": 0.9729148753224419,
+              "recall": 0.9788062283737025,
+              "f1": 0.9758516601983613,
+              "true_positive": 4526,
+              "predicted": 4652,
+              "support": 4624
+            }
+          },
+          "total_samples": 5963,
+          "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+          "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+          "loss": 0.24593029638737376,
+          "windows": 6099,
+          "seconds": 28.173208644613624,
+          "threshold": 0.0,
+          "coverage": {
+            "sentences": 5963,
+            "windows": 6099,
+            "gold_entities": 20782,
+            "gold_not_fully_contained_in_any_window": 0,
+            "max_encoder_tokens_observed": 223,
+            "max_chars_observed": 192,
+            "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+          },
+          "world_size": 2,
+          "device": "cuda:0",
+          "amp": "bf16",
+          "weight_source": "parent"
+        },
+        "windows": {
+          "sentences": 5963,
+          "windows": 6099,
+          "gold_entities": 20782,
+          "gold_not_fully_contained_in_any_window": 0,
+          "max_encoder_tokens_observed": 223,
+          "max_chars_observed": 192,
+          "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+        }
+      },
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "score_scale": 8.0,
+      "policy": {
+        "floor": -4.0,
+        "upper": 16.0,
+        "step": 0.25,
+        "boundary_weights": [
+          0.0,
+          0.25,
+          0.5,
+          1.0
+        ],
+        "min_support": 200,
+        "type_radius": 1.0,
+        "type_passes": 1,
+        "primary": "exact character-span Micro F1",
+        "secondary": "Macro13",
+        "boundary_penalty": "(logsigmoid(start_logit) + logsigmoid(end_logit)) / 2",
+        "refined_score": "sqrt(gp_head_size) * (GP_native_logit + lambda * boundary_penalty)",
+        "window_merge": "max AFTER adding the boundary penalty, separately for each lambda",
+        "fold_rule": "sha256(leman-f1-v2-folds-20261016\\0 + text), first 8 bytes big endian modulo 2"
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca"
+    }
+  },
+  "fgm47": {
+    "original_cache": "/root/data/WorkSpace/output/leman_wide_v23/inputs/seed47_wide.jsonl.gz",
+    "cache_sha256": "9ef228f3ed1f5778862809f4e1562480738d219961fccd3f20da41826fa812d6",
+    "header": {
+      "types": [
+        "BIS",
+        "COM",
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "FER",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "checkpoint": {
+        "checkpoint": "/root/data/WorkSpace/output/leman_fgm_seed47_dual4090/best.pt",
+        "checkpoint_sha256": "c68b55b30f3f0caa229344f71151fefcba0170b8e75ddea9ef9a06cf6d2c97e3",
+        "checkpoint_epoch": 3,
+        "weight_source": "ema",
+        "dev": {
+          "micro": {
+            "precision": 0.9343338698986838,
+            "recall": 0.9496198633432779,
+            "f1": 0.9419148529973272,
+            "true_positive": 19735,
+            "predicted": 21122,
+            "support": 20782
+          },
+          "macro_f1": 0.8819710063602559,
+          "per_type": {
+            "BIS": {
+              "precision": 0.926829268292683,
+              "recall": 0.9693877551020408,
+              "f1": 0.9476309226932669,
+              "true_positive": 190,
+              "predicted": 205,
+              "support": 196
+            },
+            "COM": {
+              "precision": 0.7333333333333333,
+              "recall": 0.859375,
+              "f1": 0.7913669064748201,
+              "true_positive": 55,
+              "predicted": 75,
+              "support": 64
+            },
+            "CRO": {
+              "precision": 0.958904109589041,
+              "recall": 0.9715475364330326,
+              "f1": 0.9651844191658049,
+              "true_positive": 4200,
+              "predicted": 4380,
+              "support": 4323
+            },
+            "CUL": {
+              "precision": 0.8888888888888888,
+              "recall": 0.909579230080573,
+              "f1": 0.8991150442477877,
+              "true_positive": 1016,
+              "predicted": 1143,
+              "support": 1117
+            },
+            "DIS": {
+              "precision": 0.9826023921710765,
+              "recall": 0.9861767915605675,
+              "f1": 0.9843863471314451,
+              "true_positive": 2711,
+              "predicted": 2759,
+              "support": 2749
+            },
+            "DRUG": {
+              "precision": 0.9297856614929786,
+              "recall": 0.9395070948469006,
+              "f1": 0.9346210995542348,
+              "true_positive": 2516,
+              "predicted": 2706,
+              "support": 2678
+            },
+            "FER": {
+              "precision": 0.7840909090909091,
+              "recall": 0.8846153846153846,
+              "f1": 0.8313253012048193,
+              "true_positive": 69,
+              "predicted": 88,
+              "support": 78
+            },
+            "ORG": {
+              "precision": 0.6951566951566952,
+              "recall": 0.7795527156549521,
+              "f1": 0.7349397590361446,
+              "true_positive": 244,
+              "predicted": 351,
+              "support": 313
+            },
+            "OTH": {
+              "precision": 0.6966824644549763,
+              "recall": 0.6228813559322034,
+              "f1": 0.6577181208053692,
+              "true_positive": 147,
+              "predicted": 211,
+              "support": 236
+            },
+            "PAOG": {
+              "precision": 0.919831223628692,
+              "recall": 0.956140350877193,
+              "f1": 0.9376344086021505,
+              "true_positive": 436,
+              "predicted": 474,
+              "support": 456
+            },
+            "PART": {
+              "precision": 0.8883977900552487,
+              "recall": 0.9100169779286927,
+              "f1": 0.899077439194856,
+              "true_positive": 1608,
+              "predicted": 1810,
+              "support": 1767
+            },
+            "PER": {
+              "precision": 0.891496899911426,
+              "recall": 0.922971114167813,
+              "f1": 0.9069610272583916,
+              "true_positive": 2013,
+              "predicted": 2258,
+              "support": 2181
+            },
+            "PET": {
+              "precision": 0.9716859716859717,
+              "recall": 0.9796712802768166,
+              "f1": 0.9756622873142364,
+              "true_positive": 4530,
+              "predicted": 4662,
+              "support": 4624
+            }
+          },
+          "total_samples": 5963,
+          "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+          "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+          "loss": 0.15828795890792763,
+          "windows": 6099,
+          "seconds": 17.231891995295882,
+          "threshold": 0.0,
+          "coverage": {
+            "sentences": 5963,
+            "windows": 6099,
+            "gold_entities": 20782,
+            "gold_not_fully_contained_in_any_window": 0,
+            "max_encoder_tokens_observed": 223,
+            "max_chars_observed": 192,
+            "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+          },
+          "world_size": 2,
+          "device": "cuda:0",
+          "amp": "bf16",
+          "weight_source": "ema"
+        },
+        "source_hashes": {
+          "adversarial.py": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa",
+          "calibrate.py": "11825d68a07b6d10a51720589605f5e0fe180f65cd2f15fe768eb0f10a596d8e",
+          "collect.py": "32023c37dadb4a8b46cde509cac4cbec582baec19978573768f871e8af05006f",
+          "config.py": "bf2bd20f9b7965a67b7deaf195aa33921d83e99e1a573e311573d189c295810e",
+          "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+          "decoding.py": "5fba8537050607edc9c02c726c5af3ec03761c0770306e85a8e0bbfa1b4b5a33",
+          "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+          "features.py": "babc0d5d6dd97aaecf279f9134a1b5474d2f7fa94e8abeb720f5714f88ea2b54",
+          "inference.py": "2242226ad872bb58872aeb2d98fc4c2413487812ab192abf3ef584b180bdf4b3",
+          "model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+          "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+          "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+          "runtime.py": "1d21fd4b208b0c5a0aad6e6f4a350ed32142aca7bdcee0767d18a72e0190ebdb",
+          "search.py": "cfb58c82b70ab7ee2fba551bcadbc9759b95a50300d03b119b6c0192a72202c7",
+          "test.py": "abf3af3233956cb494308be2b9b9daaeb94ab6e5937e1276f5329faaa91bd577",
+          "train.py": "735e05c4327f5548277c86a6781d6d3af837c3599aec3c64affc8752f74fcf9e",
+          "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+        },
+        "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1"
+      },
+      "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+      "floor": -32.0,
+      "environment": {
+        "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+        "torch": "2.7.0+cu126",
+        "transformers": "4.56.2",
+        "cuda": "12.6",
+        "cudnn": 90501,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "memory_gib": 23.5164794921875,
+        "driver_gpu_listing": [
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+          "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+        ],
+        "world_size": 2,
+        "amp": "bf16",
+        "tf32": true,
+        "numerical_policy": {
+          "revision": "f1-v2-based-on-a100-step0-fix2",
+          "encoder_autocast": "bf16",
+          "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+          "custom_layers": "fp32_autocast_disabled_before_projections",
+          "gradient_norm": "fp64_before_clipping",
+          "fp16_bf16_reduced_precision_reduction": false,
+          "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+          "score_clamping": false,
+          "replace_nonfinite_loss": false,
+          "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+          "cdist_backward_max_elements": 134217728
+        }
+      },
+      "test_accessed": false
+    }
+  }
+}

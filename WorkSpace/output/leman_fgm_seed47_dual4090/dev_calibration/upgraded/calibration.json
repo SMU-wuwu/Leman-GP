@@ -1,0 +1,692 @@
+{
+  "candidate": "upgraded",
+  "checkpoint": "/root/data/WorkSpace/output/leman_fgm_seed47_dual4090/best.pt",
+  "checkpoint_sha256": "c68b55b30f3f0caa229344f71151fefcba0170b8e75ddea9ef9a06cf6d2c97e3",
+  "checkpoint_epoch": 3,
+  "weight_source": "ema",
+  "lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1",
+  "model_logit_divisor": 8.0,
+  "recorded_checkpoint_dev": {
+    "micro": {
+      "precision": 0.9343338698986838,
+      "recall": 0.9496198633432779,
+      "f1": 0.9419148529973272,
+      "true_positive": 19735,
+      "predicted": 21122,
+      "support": 20782
+    },
+    "macro_f1": 0.8819710063602559,
+    "per_type": {
+      "BIS": {
+        "precision": 0.926829268292683,
+        "recall": 0.9693877551020408,
+        "f1": 0.9476309226932669,
+        "true_positive": 190,
+        "predicted": 205,
+        "support": 196
+      },
+      "COM": {
+        "precision": 0.7333333333333333,
+        "recall": 0.859375,
+        "f1": 0.7913669064748201,
+        "true_positive": 55,
+        "predicted": 75,
+        "support": 64
+      },
+      "CRO": {
+        "precision": 0.958904109589041,
+        "recall": 0.9715475364330326,
+        "f1": 0.9651844191658049,
+        "true_positive": 4200,
+        "predicted": 4380,
+        "support": 4323
+      },
+      "CUL": {
+        "precision": 0.8888888888888888,
+        "recall": 0.909579230080573,
+        "f1": 0.8991150442477877,
+        "true_positive": 1016,
+        "predicted": 1143,
+        "support": 1117
+      },
+      "DIS": {
+        "precision": 0.9826023921710765,
+        "recall": 0.9861767915605675,
+        "f1": 0.9843863471314451,
+        "true_positive": 2711,
+        "predicted": 2759,
+        "support": 2749
+      },
+      "DRUG": {
+        "precision": 0.9297856614929786,
+        "recall": 0.9395070948469006,
+        "f1": 0.9346210995542348,
+        "true_positive": 2516,
+        "predicted": 2706,
+        "support": 2678
+      },
+      "FER": {
+        "precision": 0.7840909090909091,
+        "recall": 0.8846153846153846,
+        "f1": 0.8313253012048193,
+        "true_positive": 69,
+        "predicted": 88,
+        "support": 78
+      },
+      "ORG": {
+        "precision": 0.6951566951566952,
+        "recall": 0.7795527156549521,
+        "f1": 0.7349397590361446,
+        "true_positive": 244,
+        "predicted": 351,
+        "support": 313
+      },
+      "OTH": {
+        "precision": 0.6966824644549763,
+        "recall": 0.6228813559322034,
+        "f1": 0.6577181208053692,
+        "true_positive": 147,
+        "predicted": 211,
+        "support": 236
+      },
+      "PAOG": {
+        "precision": 0.919831223628692,
+        "recall": 0.956140350877193,
+        "f1": 0.9376344086021505,
+        "true_positive": 436,
+        "predicted": 474,
+        "support": 456
+      },
+      "PART": {
+        "precision": 0.8883977900552487,
+        "recall": 0.9100169779286927,
+        "f1": 0.899077439194856,
+        "true_positive": 1608,
+        "predicted": 1810,
+        "support": 1767
+      },
+      "PER": {
+        "precision": 0.891496899911426,
+        "recall": 0.922971114167813,
+        "f1": 0.9069610272583916,
+        "true_positive": 2013,
+        "predicted": 2258,
+        "support": 2181
+      },
+      "PET": {
+        "precision": 0.9716859716859717,
+        "recall": 0.9796712802768166,
+        "f1": 0.9756622873142364,
+        "true_positive": 4530,
+        "predicted": 4662,
+        "support": 4624
+      }
+    },
+    "total_samples": 5963,
+    "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+    "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+    "loss": 0.15828795890792763,
+    "windows": 6099,
+    "seconds": 17.231891995295882,
+    "threshold": 0.0,
+    "coverage": {
+      "sentences": 5963,
+      "windows": 6099,
+      "gold_entities": 20782,
+      "gold_not_fully_contained_in_any_window": 0,
+      "max_encoder_tokens_observed": 223,
+      "max_chars_observed": 192,
+      "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+    },
+    "world_size": 2,
+    "device": "cuda:0",
+    "amp": "bf16",
+    "weight_source": "ema"
+  },
+  "windows": {
+    "sentences": 5963,
+    "windows": 6099,
+    "gold_entities": 20782,
+    "gold_not_fully_contained_in_any_window": 0,
+    "max_encoder_tokens_observed": 223,
+    "max_chars_observed": 192,
+    "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+  },
+  "decoder": {
+    "strategy": "weighted_interval",
+    "global_threshold": 13.5,
+    "thresholds": {
+      "BIS": 13.5,
+      "COM": 13.5,
+      "CRO": 13.75,
+      "CUL": 13.5,
+      "DIS": 12.5,
+      "DRUG": 14.5,
+      "FER": 13.5,
+      "ORG": 14.5,
+      "OTH": 13.5,
+      "PAOG": 13.5,
+      "PART": 12.5,
+      "PER": 13.5,
+      "PET": 12.5
+    },
+    "fit_sentences": 5963,
+    "fit_micro_f1": 0.9452519379844961,
+    "fit_macro_f1": 0.8836728600177157,
+    "eligible": [
+      "CRO",
+      "CUL",
+      "DIS",
+      "DRUG",
+      "ORG",
+      "OTH",
+      "PAOG",
+      "PART",
+      "PER",
+      "PET"
+    ],
+    "fit_support": {
+      "BIS": 196,
+      "COM": 64,
+      "CRO": 4323,
+      "CUL": 1117,
+      "DIS": 2749,
+      "DRUG": 2678,
+      "FER": 78,
+      "ORG": 313,
+      "OTH": 236,
+      "PAOG": 456,
+      "PART": 1767,
+      "PER": 2181,
+      "PET": 4624
+    },
+    "min_support": 200,
+    "global_upper_bound_hit": false,
+    "boundary_weight": 0.0
+  },
+  "full_dev": {
+    "micro": {
+      "precision": 0.9518001756268905,
+      "recall": 0.9387931864113175,
+      "f1": 0.9452519379844961,
+      "true_positive": 19510,
+      "predicted": 20498,
+      "support": 20782
+    },
+    "macro_f1": 0.8836728600177158,
+    "per_type": {
+      "BIS": {
+        "precision": 0.9547738693467337,
+        "recall": 0.9693877551020408,
+        "f1": 0.9620253164556962,
+        "true_positive": 190,
+        "predicted": 199,
+        "support": 196
+      },
+      "COM": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "true_positive": 48,
+        "predicted": 64,
+        "support": 64
+      },
+      "CRO": {
+        "precision": 0.9670915411355736,
+        "recall": 0.9653018736988203,
+        "f1": 0.9661958786756194,
+        "true_positive": 4173,
+        "predicted": 4315,
+        "support": 4323
+      },
+      "CUL": {
+        "precision": 0.9142857142857143,
+        "recall": 0.8880931065353626,
+        "f1": 0.9009990917347865,
+        "true_positive": 992,
+        "predicted": 1085,
+        "support": 1117
+      },
+      "DIS": {
+        "precision": 0.987235594456601,
+        "recall": 0.9847217169879956,
+        "f1": 0.9859770533600437,
+        "true_positive": 2707,
+        "predicted": 2742,
+        "support": 2749
+      },
+      "DRUG": {
+        "precision": 0.9515384615384616,
+        "recall": 0.9238237490664675,
+        "f1": 0.9374763167866617,
+        "true_positive": 2474,
+        "predicted": 2600,
+        "support": 2678
+      },
+      "FER": {
+        "precision": 0.8117647058823529,
+        "recall": 0.8846153846153846,
+        "f1": 0.8466257668711656,
+        "true_positive": 69,
+        "predicted": 85,
+        "support": 78
+      },
+      "ORG": {
+        "precision": 0.7467105263157895,
+        "recall": 0.7252396166134185,
+        "f1": 0.7358184764991896,
+        "true_positive": 227,
+        "predicted": 304,
+        "support": 313
+      },
+      "OTH": {
+        "precision": 0.7928994082840237,
+        "recall": 0.5677966101694916,
+        "f1": 0.6617283950617284,
+        "true_positive": 134,
+        "predicted": 169,
+        "support": 236
+      },
+      "PAOG": {
+        "precision": 0.9493392070484582,
+        "recall": 0.9451754385964912,
+        "f1": 0.9472527472527472,
+        "true_positive": 431,
+        "predicted": 454,
+        "support": 456
+      },
+      "PART": {
+        "precision": 0.9170533642691415,
+        "recall": 0.8947368421052632,
+        "f1": 0.9057576625608708,
+        "true_positive": 1581,
+        "predicted": 1724,
+        "support": 1767
+      },
+      "PER": {
+        "precision": 0.9207317073170732,
+        "recall": 0.900045850527281,
+        "f1": 0.9102712728958962,
+        "true_positive": 1963,
+        "predicted": 2132,
+        "support": 2181
+      },
+      "PET": {
+        "precision": 0.9775135135135136,
+        "recall": 0.9777249134948097,
+        "f1": 0.9776192020759001,
+        "true_positive": 4521,
+        "predicted": 4625,
+        "support": 4624
+      }
+    },
+    "total_samples": 5963,
+    "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+    "overlap_policy": "selected on full dev"
+  },
+  "crossfit": {
+    "micro": {
+      "precision": 0.9490281827016521,
+      "recall": 0.9398036762583004,
+      "f1": 0.9443934045742469,
+      "true_positive": 19531,
+      "predicted": 20580,
+      "support": 20782
+    },
+    "macro_f1": 0.883374728869724,
+    "per_type": {
+      "BIS": {
+        "precision": 0.945273631840796,
+        "recall": 0.9693877551020408,
+        "f1": 0.9571788413098237,
+        "true_positive": 190,
+        "predicted": 201,
+        "support": 196
+      },
+      "COM": {
+        "precision": 0.7575757575757576,
+        "recall": 0.78125,
+        "f1": 0.7692307692307693,
+        "true_positive": 50,
+        "predicted": 66,
+        "support": 64
+      },
+      "CRO": {
+        "precision": 0.9648636153490523,
+        "recall": 0.9655331945408281,
+        "f1": 0.9651982888195167,
+        "true_positive": 4174,
+        "predicted": 4326,
+        "support": 4323
+      },
+      "CUL": {
+        "precision": 0.9079307201458523,
+        "recall": 0.891674127126231,
+        "f1": 0.8997289972899729,
+        "true_positive": 996,
+        "predicted": 1097,
+        "support": 1117
+      },
+      "DIS": {
+        "precision": 0.986870897155361,
+        "recall": 0.9843579483448527,
+        "f1": 0.9856128209797851,
+        "true_positive": 2706,
+        "predicted": 2742,
+        "support": 2749
+      },
+      "DRUG": {
+        "precision": 0.9491006505931879,
+        "recall": 0.9260642270351008,
+        "f1": 0.9374409374409375,
+        "true_positive": 2480,
+        "predicted": 2613,
+        "support": 2678
+      },
+      "FER": {
+        "precision": 0.8023255813953488,
+        "recall": 0.8846153846153846,
+        "f1": 0.8414634146341463,
+        "true_positive": 69,
+        "predicted": 86,
+        "support": 78
+      },
+      "ORG": {
+        "precision": 0.7331189710610932,
+        "recall": 0.7284345047923323,
+        "f1": 0.7307692307692307,
+        "true_positive": 228,
+        "predicted": 311,
+        "support": 313
+      },
+      "OTH": {
+        "precision": 0.7758620689655172,
+        "recall": 0.5720338983050848,
+        "f1": 0.6585365853658537,
+        "true_positive": 135,
+        "predicted": 174,
+        "support": 236
+      },
+      "PAOG": {
+        "precision": 0.9494505494505494,
+        "recall": 0.9473684210526315,
+        "f1": 0.9484083424807903,
+        "true_positive": 432,
+        "predicted": 455,
+        "support": 456
+      },
+      "PART": {
+        "precision": 0.9132947976878613,
+        "recall": 0.8941709111488398,
+        "f1": 0.9036316843008293,
+        "true_positive": 1580,
+        "predicted": 1730,
+        "support": 1767
+      },
+      "PER": {
+        "precision": 0.9158139534883721,
+        "recall": 0.9027968821641449,
+        "f1": 0.9092588316785961,
+        "true_positive": 1969,
+        "predicted": 2150,
+        "support": 2181
+      },
+      "PET": {
+        "precision": 0.9768848563404623,
+        "recall": 0.9779411764705882,
+        "f1": 0.9774127310061602,
+        "true_positive": 4522,
+        "predicted": 4629,
+        "support": 4624
+      }
+    },
+    "total_samples": 5963,
+    "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+    "overlap_policy": "selected on opposite dev half"
+  },
+  "fold_records": [
+    {
+      "held_out_fold": 0,
+      "evaluated_sentences": 2944,
+      "fit": {
+        "strategy": "weighted_interval",
+        "global_threshold": 7.5,
+        "thresholds": {
+          "BIS": 7.5,
+          "COM": 7.5,
+          "CRO": 7.5,
+          "CUL": 7.5,
+          "DIS": 7.75,
+          "DRUG": 7.5,
+          "FER": 7.5,
+          "ORG": 7.5,
+          "OTH": 7.5,
+          "PAOG": 7.5,
+          "PART": 7.5,
+          "PER": 8.5,
+          "PET": 8.25
+        },
+        "fit_sentences": 3019,
+        "fit_micro_f1": 0.947038998555609,
+        "fit_macro_f1": 0.8942561258910516,
+        "eligible": [
+          "CRO",
+          "CUL",
+          "DIS",
+          "DRUG",
+          "PAOG",
+          "PART",
+          "PER",
+          "PET"
+        ],
+        "fit_support": {
+          "BIS": 92,
+          "COM": 30,
+          "CRO": 2215,
+          "CUL": 566,
+          "DIS": 1389,
+          "DRUG": 1354,
+          "FER": 45,
+          "ORG": 155,
+          "OTH": 123,
+          "PAOG": 230,
+          "PART": 896,
+          "PER": 1022,
+          "PET": 2300
+        },
+        "min_support": 200,
+        "global_upper_bound_hit": false,
+        "boundary_weight": 0.0
+      }
+    },
+    {
+      "held_out_fold": 1,
+      "evaluated_sentences": 3019,
+      "fit": {
+        "strategy": "weighted_interval",
+        "global_threshold": 15.0,
+        "thresholds": {
+          "BIS": 15.0,
+          "COM": 15.0,
+          "CRO": 14.0,
+          "CUL": 15.0,
+          "DIS": 15.0,
+          "DRUG": 16.0,
+          "FER": 15.0,
+          "ORG": 15.0,
+          "OTH": 15.0,
+          "PAOG": 15.0,
+          "PART": 15.25,
+          "PER": 15.75,
+          "PET": 14.25
+        },
+        "fit_sentences": 2944,
+        "fit_micro_f1": 0.9439875419728454,
+        "fit_macro_f1": 0.8760551360978801,
+        "eligible": [
+          "CRO",
+          "CUL",
+          "DIS",
+          "DRUG",
+          "PAOG",
+          "PART",
+          "PER",
+          "PET"
+        ],
+        "fit_support": {
+          "BIS": 104,
+          "COM": 34,
+          "CRO": 2108,
+          "CUL": 551,
+          "DIS": 1360,
+          "DRUG": 1324,
+          "FER": 33,
+          "ORG": 158,
+          "OTH": 113,
+          "PAOG": 226,
+          "PART": 871,
+          "PER": 1159,
+          "PET": 2324
+        },
+        "min_support": 200,
+        "global_upper_bound_hit": false,
+        "boundary_weight": 0.0
+      }
+    }
+  ],
+  "delta_vs_baseline_pp": {
+    "full_dev": {
+      "micro": 0.1252322701608799,
+      "macro": -0.04155568533535936
+    },
+    "crossfit": {
+      "micro": 0.08438541583215553,
+      "macro": -0.009703220063739249
+    }
+  },
+  "family": "expanded",
+  "raw": {
+    "micro": {
+      "precision": 0.9343338698986838,
+      "recall": 0.9496198633432779,
+      "f1": 0.9419148529973272,
+      "true_positive": 19735,
+      "predicted": 21122,
+      "support": 20782
+    },
+    "macro_f1": 0.8819710063602559,
+    "per_type": {
+      "BIS": {
+        "precision": 0.926829268292683,
+        "recall": 0.9693877551020408,
+        "f1": 0.9476309226932669,
+        "true_positive": 190,
+        "predicted": 205,
+        "support": 196
+      },
+      "COM": {
+        "precision": 0.7333333333333333,
+        "recall": 0.859375,
+        "f1": 0.7913669064748201,
+        "true_positive": 55,
+        "predicted": 75,
+        "support": 64
+      },
+      "CRO": {
+        "precision": 0.958904109589041,
+        "recall": 0.9715475364330326,
+        "f1": 0.9651844191658049,
+        "true_positive": 4200,
+        "predicted": 4380,
+        "support": 4323
+      },
+      "CUL": {
+        "precision": 0.8888888888888888,
+        "recall": 0.909579230080573,
+        "f1": 0.8991150442477877,
+        "true_positive": 1016,
+        "predicted": 1143,
+        "support": 1117
+      },
+      "DIS": {
+        "precision": 0.9826023921710765,
+        "recall": 0.9861767915605675,
+        "f1": 0.9843863471314451,
+        "true_positive": 2711,
+        "predicted": 2759,
+        "support": 2749
+      },
+      "DRUG": {
+        "precision": 0.9297856614929786,
+        "recall": 0.9395070948469006,
+        "f1": 0.9346210995542348,
+        "true_positive": 2516,
+        "predicted": 2706,
+        "support": 2678
+      },
+      "FER": {
+        "precision": 0.7840909090909091,
+        "recall": 0.8846153846153846,
+        "f1": 0.8313253012048193,
+        "true_positive": 69,
+        "predicted": 88,
+        "support": 78
+      },
+      "ORG": {
+        "precision": 0.6951566951566952,
+        "recall": 0.7795527156549521,
+        "f1": 0.7349397590361446,
+        "true_positive": 244,
+        "predicted": 351,
+        "support": 313
+      },
+      "OTH": {
+        "precision": 0.6966824644549763,
+        "recall": 0.6228813559322034,
+        "f1": 0.6577181208053692,
+        "true_positive": 147,
+        "predicted": 211,
+        "support": 236
+      },
+      "PAOG": {
+        "precision": 0.919831223628692,
+        "recall": 0.956140350877193,
+        "f1": 0.9376344086021505,
+        "true_positive": 436,
+        "predicted": 474,
+        "support": 456
+      },
+      "PART": {
+        "precision": 0.8883977900552487,
+        "recall": 0.9100169779286927,
+        "f1": 0.899077439194856,
+        "true_positive": 1608,
+        "predicted": 1810,
+        "support": 1767
+      },
+      "PER": {
+        "precision": 0.891496899911426,
+        "recall": 0.922971114167813,
+        "f1": 0.9069610272583916,
+        "true_positive": 2013,
+        "predicted": 2258,
+        "support": 2181
+      },
+      "PET": {
+        "precision": 0.9716859716859717,
+        "recall": 0.9796712802768166,
+        "f1": 0.9756622873142364,
+        "true_positive": 4530,
+        "predicted": 4662,
+        "support": 4624
+      }
+    },
+    "total_samples": 5963,
+    "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+    "overlap_policy": "retain all; deduplicate identical spans from overlapping windows"
+  },
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "decoder_score_scale": 8.0,
+  "candidate_floor": -4.0,
+  "selection_scope": "Exploratory dev-only comparison. Each half fits lambda, strategy and thresholds without its held-out labels. Checkpoint and final family were selected using dev; this is not an independent test estimate."
+}

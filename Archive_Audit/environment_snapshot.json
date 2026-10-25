@@ -1,0 +1,21 @@
+{
+  "python": "3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0]",
+  "platform": "Linux-5.15.0-177-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": null,
+    "transformers": null,
+    "tokenizers": null,
+    "numpy": null,
+    "scikit-learn": null,
+    "scipy": null,
+    "joblib": null,
+    "pandas": null,
+    "matplotlib": null,
+    "jieba": null,
+    "safetensors": null,
+    "sentencepiece": null,
+    "protobuf": null,
+    "tqdm": null
+  },
+  "purpose": "Server environment at archive time; historical per-run versions remain in run_config.json"
+}

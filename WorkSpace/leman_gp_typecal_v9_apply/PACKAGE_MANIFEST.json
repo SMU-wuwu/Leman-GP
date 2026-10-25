@@ -1,0 +1,8 @@
+{
+  "frozen_calibration_manifest_sha256": "9feb7005d4de355bc4419536be8416dc4c2c88721fe0527e5975cc7769aefd97",
+  "frozen_selection_sha256": "cc251754565f385a937fc6f80b7591c642a0ad7909ddaefeb307003b92f1305a",
+  "files": {
+    "predict.py": "e8f0f48c7c83922431ccba5a4d00be4ec50185d4b1a5bf91a4c2a5f017b7361a",
+    "predict.sh": "8eaaa3eb340dc37c5fdc21de24c508b71d61e5fa84109232d1547d25a89fed01"
+  }
+}

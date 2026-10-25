@@ -1,0 +1,28 @@
+{
+  "purpose": "Separate attention normalization, global value aggregation, and content-specific affinity after equal-budget adaptation",
+  "variants": [
+    "F",
+    "attention_norm_only",
+    "uniform_attention"
+  ],
+  "seeds": [
+    42,
+    43
+  ],
+  "epochs_each": 3,
+  "parent_sha256": "145224e85c808ddc84cda9177e7cd4a6731b004edbc713b03008bb0695fe01cd",
+  "primary_endpoint": "epoch3 EMA; every condition, no best selection",
+  "secondary": "all epochs and entry endpoint",
+  "new_training_runs": 6,
+  "new_training_epochs": 18,
+  "training_started": false,
+  "interpretation": "adaptation variability conditional on a common trained parent",
+  "mechanisms": [
+    "lexical weights and gate",
+    "per-head attention allocation; omitted for normalization-only",
+    "gold-span margins",
+    "boundary detection AP",
+    "module gradient norms",
+    "all-sentence exact predictions"
+  ]
+}

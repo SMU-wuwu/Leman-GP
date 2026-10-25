@@ -1,0 +1,363 @@
+{
+  "micro": {
+    "precision": 0.950967052191661,
+    "recall": 0.9416321816956982,
+    "f1": 0.9462765957446808,
+    "true_positive": 19569,
+    "predicted": 20578,
+    "support": 20782
+  },
+  "macro_f1": 0.8861357827442369,
+  "per_type": {
+    "BIS": {
+      "precision": 0.95,
+      "recall": 0.9693877551020408,
+      "f1": 0.9595959595959596,
+      "true_positive": 190,
+      "predicted": 200,
+      "support": 196
+    },
+    "COM": {
+      "precision": 0.78125,
+      "recall": 0.78125,
+      "f1": 0.78125,
+      "true_positive": 50,
+      "predicted": 64,
+      "support": 64
+    },
+    "CRO": {
+      "precision": 0.9676375404530745,
+      "recall": 0.9683090446449225,
+      "f1": 0.9679731760897213,
+      "true_positive": 4186,
+      "predicted": 4326,
+      "support": 4323
+    },
+    "CUL": {
+      "precision": 0.9101633393829401,
+      "recall": 0.8979409131602507,
+      "f1": 0.90401081568274,
+      "true_positive": 1003,
+      "predicted": 1102,
+      "support": 1117
+    },
+    "DIS": {
+      "precision": 0.9847050254916242,
+      "recall": 0.9836304110585667,
+      "f1": 0.9841674249317561,
+      "true_positive": 2704,
+      "predicted": 2746,
+      "support": 2749
+    },
+    "DRUG": {
+      "precision": 0.9461917392951875,
+      "recall": 0.9324122479462286,
+      "f1": 0.9392514575888659,
+      "true_positive": 2497,
+      "predicted": 2639,
+      "support": 2678
+    },
+    "FER": {
+      "precision": 0.8117647058823529,
+      "recall": 0.8846153846153846,
+      "f1": 0.8466257668711656,
+      "true_positive": 69,
+      "predicted": 85,
+      "support": 78
+    },
+    "ORG": {
+      "precision": 0.7491525423728813,
+      "recall": 0.7060702875399361,
+      "f1": 0.7269736842105263,
+      "true_positive": 221,
+      "predicted": 295,
+      "support": 313
+    },
+    "OTH": {
+      "precision": 0.72,
+      "recall": 0.6101694915254238,
+      "f1": 0.6605504587155964,
+      "true_positive": 144,
+      "predicted": 200,
+      "support": 236
+    },
+    "PAOG": {
+      "precision": 0.9495614035087719,
+      "recall": 0.9495614035087719,
+      "f1": 0.9495614035087719,
+      "true_positive": 433,
+      "predicted": 456,
+      "support": 456
+    },
+    "PART": {
+      "precision": 0.9248520710059172,
+      "recall": 0.8845500848896435,
+      "f1": 0.9042522418281748,
+      "true_positive": 1563,
+      "predicted": 1690,
+      "support": 1767
+    },
+    "PER": {
+      "precision": 0.925839552238806,
+      "recall": 0.9101329665291151,
+      "f1": 0.9179190751445087,
+      "true_positive": 1985,
+      "predicted": 2144,
+      "support": 2181
+    },
+    "PET": {
+      "precision": 0.9768948391276182,
+      "recall": 0.9783737024221453,
+      "f1": 0.9776337115072934,
+      "true_positive": 4524,
+      "predicted": 4631,
+      "support": 4624
+    }
+  },
+  "total_samples": 5963,
+  "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+  "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+  "version": 14,
+  "split": "dev",
+  "test_accessed": false,
+  "environment": {
+    "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+    "torch": "2.7.0+cu126",
+    "transformers": "4.56.2",
+    "cuda": "12.6",
+    "cudnn": 90501,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "memory_gib": 23.5164794921875,
+    "driver_gpu_listing": [
+      "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+      "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "world_size": 2,
+    "amp": "bf16",
+    "tf32": true,
+    "numerical_policy": {
+      "revision": "f1-v2-based-on-a100-step0-fix2",
+      "encoder_autocast": "bf16",
+      "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+      "custom_layers": "fp32_autocast_disabled_before_projections",
+      "gradient_norm": "fp64_before_clipping",
+      "fp16_bf16_reduced_precision_reduction": false,
+      "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+      "score_clamping": false,
+      "replace_nonfinite_loss": false,
+      "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+      "cdist_backward_max_elements": 134217728
+    },
+    "world_size_scope": "completed feature extraction; CPU recovery has no distributed group"
+  },
+  "cache_sha256": {
+    "old": "14578bbab3e40a0f48b1da9ace287ce939e55ea95a7fb7dc4918c750d946cc1e",
+    "fgm43": "f93550c46968300c9c29ebd201adb9b8ae3c785421652a08affae710496470a7",
+    "fgm44": "c8a7c1c1768fe5760700b8a6947bee81113c216273a54503d0f59af12e8a64c3"
+  },
+  "selection_sha256": "050dd074323902f6be3352ebaab1ded1dfec93e3f386abc27488f416e62f5385",
+  "recovered_from_completed_cache": true,
+  "historical_predictions_identical": false,
+  "different_sentences": 6,
+  "differences": [
+    {
+      "sid": 512,
+      "text": "小麦白粉病在我国麦区均有发生，以长江流域和西南地区较多，华北地区以水浇地和密植麦较多",
+      "added": [],
+      "removed": [
+        [
+          2,
+          39,
+          40
+        ]
+      ]
+    },
+    {
+      "sid": 2887,
+      "text": "通过试验探索，阐述了在早稻二化螟化蛹期实施灌水杀蛹的效果",
+      "added": [],
+      "removed": [
+        [
+          11,
+          24,
+          25
+        ]
+      ]
+    },
+    {
+      "sid": 2994,
+      "text": "短光周对幼虫的滞育诱导无特定的敏感龄期，但以3龄与2龄对短光周刺激敏感性较强;短光周的诱导强度具积累效应",
+      "added": [],
+      "removed": [
+        [
+          11,
+          17,
+          19
+        ]
+      ]
+    },
+    {
+      "sid": 3732,
+      "text": "根据科学家们公认的意见，在分类上，黑粉菌目是担子菌纲的一个成员，下分黑粉菌科与腥黑粉菌科二科，其下又分为若干属",
+      "added": [],
+      "removed": [
+        [
+          0,
+          44,
+          46
+        ]
+      ]
+    },
+    {
+      "sid": 3880,
+      "text": "MRDV属于植物呼肠弧病毒，是一种具有双层衣壳的双链RNA球形病毒，由灰飞虱以持久方式传播",
+      "added": [
+        [
+          8,
+          8,
+          13
+        ]
+      ],
+      "removed": [
+        [
+          8,
+          6,
+          13
+        ]
+      ]
+    },
+    {
+      "sid": 4006,
+      "text": "通过2年多点广泛和系统的田间调查和观察，结合以往调查结果，确定了草地螟取食和产卵植物种类､方式，阐述了不同地区间､幼虫不同龄期，草地螟对不同植物种类表现喜好度有差异;且观察到草地螟产卵寄主和取食寄主不完全一致，产卵部位和所占比率随环境温度和湿度不同而有所变化",
+      "added": [
+        [
+          11,
+          61,
+          63
+        ]
+      ],
+      "removed": []
+    }
+  ],
+  "historical_metrics": {
+    "micro": {
+      "precision": 0.9509256110004373,
+      "recall": 0.9417284188239823,
+      "f1": 0.9463046684234703,
+      "true_positive": 19571,
+      "predicted": 20581,
+      "support": 20782
+    },
+    "macro_f1": 0.8863133417865895,
+    "per_type": {
+      "BIS": {
+        "precision": 0.945273631840796,
+        "recall": 0.9693877551020408,
+        "f1": 0.9571788413098237,
+        "true_positive": 190,
+        "predicted": 201,
+        "support": 196
+      },
+      "COM": {
+        "precision": 0.78125,
+        "recall": 0.78125,
+        "f1": 0.78125,
+        "true_positive": 50,
+        "predicted": 64,
+        "support": 64
+      },
+      "CRO": {
+        "precision": 0.9674139126415531,
+        "recall": 0.9683090446449225,
+        "f1": 0.9678612716763005,
+        "true_positive": 4186,
+        "predicted": 4327,
+        "support": 4323
+      },
+      "CUL": {
+        "precision": 0.9101633393829401,
+        "recall": 0.8979409131602507,
+        "f1": 0.90401081568274,
+        "true_positive": 1003,
+        "predicted": 1102,
+        "support": 1117
+      },
+      "DIS": {
+        "precision": 0.9847050254916242,
+        "recall": 0.9836304110585667,
+        "f1": 0.9841674249317561,
+        "true_positive": 2704,
+        "predicted": 2746,
+        "support": 2749
+      },
+      "DRUG": {
+        "precision": 0.9461917392951875,
+        "recall": 0.9324122479462286,
+        "f1": 0.9392514575888659,
+        "true_positive": 2497,
+        "predicted": 2639,
+        "support": 2678
+      },
+      "FER": {
+        "precision": 0.8117647058823529,
+        "recall": 0.8846153846153846,
+        "f1": 0.8466257668711656,
+        "true_positive": 69,
+        "predicted": 85,
+        "support": 78
+      },
+      "ORG": {
+        "precision": 0.7491525423728813,
+        "recall": 0.7060702875399361,
+        "f1": 0.7269736842105263,
+        "true_positive": 221,
+        "predicted": 295,
+        "support": 313
+      },
+      "OTH": {
+        "precision": 0.725,
+        "recall": 0.614406779661017,
+        "f1": 0.6651376146788991,
+        "true_positive": 145,
+        "predicted": 200,
+        "support": 236
+      },
+      "PAOG": {
+        "precision": 0.9495614035087719,
+        "recall": 0.9495614035087719,
+        "f1": 0.9495614035087719,
+        "true_positive": 433,
+        "predicted": 456,
+        "support": 456
+      },
+      "PART": {
+        "precision": 0.9248520710059172,
+        "recall": 0.8845500848896435,
+        "f1": 0.9042522418281748,
+        "true_positive": 1563,
+        "predicted": 1690,
+        "support": 1767
+      },
+      "PER": {
+        "precision": 0.9258741258741259,
+        "recall": 0.9105914718019257,
+        "f1": 0.9181692094313454,
+        "true_positive": 1986,
+        "predicted": 2145,
+        "support": 2181
+      },
+      "PET": {
+        "precision": 0.9768948391276182,
+        "recall": 0.9783737024221453,
+        "f1": 0.9776337115072934,
+        "true_positive": 4524,
+        "predicted": 4631,
+        "support": 4624
+      }
+    },
+    "total_samples": 5963,
+    "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+    "overlap_policy": "retain all; deduplicate identical spans from overlapping windows"
+  },
+  "exact_replay_requirement_passed": false
+}

@@ -1,0 +1,62 @@
+{
+  "experiment": "v16 two-GPU weight soups of existing aligned FGM fine-tunes",
+  "created_before_scoring_utc": "2026-10-18T02:48:58.324948+00:00",
+  "routes": [
+    "v14",
+    "soup2",
+    "soup3",
+    "old_soup2"
+  ],
+  "recipes": {
+    "soup2": {
+      "fgm43": 0.5,
+      "fgm44": 0.5
+    },
+    "soup3": {
+      "fgm43": 0.3333333333333333,
+      "fgm44": 0.3333333333333333,
+      "old": 0.3333333333333333
+    }
+  },
+  "parents": {
+    "old": {
+      "path": "output/leman_finetune_v4_seed42/best.pt",
+      "sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4"
+    },
+    "fgm43": {
+      "path": "output/leman_fgm_v10_seed43/best.pt",
+      "sha256": "efdeaaa83bc483b376837ee5bcb35df7bcb5a9b1b10d2f120eb32868f1d80506"
+    },
+    "fgm44": {
+      "path": "output/leman_fgm_v14_seed44/best.pt",
+      "sha256": "a3020f91bdf471069a58e25f4c016daa45d246c03b648a8ad6e760cce20dc625"
+    }
+  },
+  "architecture_fields": [
+    "max_chars",
+    "overlap_chars",
+    "max_encoder_tokens",
+    "max_span",
+    "max_words",
+    "word_dim",
+    "boundary_dim",
+    "char_dim",
+    "gru_hidden",
+    "gru_layers",
+    "attention_heads",
+    "gp_head_size"
+  ],
+  "averaging": "equal arithmetic mean in float64; cast once to source dtype; all nonfloating buffers must agree",
+  "candidate_floor": -4,
+  "calibration": "unchanged v9 type-intercepts and GP/boundary slopes, ridge10/50; same decoder grid and folds; all fitting and route selection fit-only",
+  "baseline_comparison_sha256": "d3bf9f3fab3092f332de3a976fff32b6810f11cbccf5c9300aa46cffc66e2da1",
+  "baseline_selection_sha256": "050dd074323902f6be3352ebaab1ded1dfec93e3f386abc27488f416e62f5385",
+  "acceptance": "full-dev Micro >= v14; workflow crossfit Micro strictly higher; neither held-out half lower",
+  "hardware": "2x RTX4090 24GB; inference batch16 per GPU; no neural training",
+  "scope": "exploratory dev; test not accessed",
+  "references": [
+    "https://proceedings.mlr.press/v162/wortsman22a.html",
+    "https://arxiv.org/abs/1803.05407"
+  ],
+  "test_accessed": false
+}

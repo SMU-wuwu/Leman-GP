@@ -1,0 +1,16 @@
+{
+  "train2.txt": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+  "dev2.txt": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "label.txt": "e21a9f50c981c53fc4f599c950d5f49f682087e04240e60687e3a22238fa8223",
+  "encoder_files": {
+    "config.json": "5918624eab9c56ba3552672a97481bd2743abf2567611caca758df1939935a56",
+    "tokenizer.json": "4e5b4d49475d27c7ef7a61eea2d675f9cc013e91e3ddb5e06d964f5027c1814a",
+    "tokenizer_config.json": "e9bc80502f0e997cc36b4d1f2bd025a3ca549a108736f7a1cef014229db0a82d",
+    "tokenizer.model": "34ef7db83df785924fb83d7b887b6e822a031c56e15cff40aaf9b982988180df",
+    "special_tokens_map.json": "d96a4630d4a8bbddabc3e1ad272a0e6a42f37a515239c8d25626d09154d7603b",
+    "added_tokens.json": "08ab98258652553a53455b164c258488ce840322f0949877676d962a1d958cad"
+  },
+  "encoder_weights": {
+    "model.safetensors": "2fa450d7550b5600b030f09b9a954ffad3ef31476e44fb87e2154e9ac23b51d3"
+  }
+}

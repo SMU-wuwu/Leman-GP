@@ -1,0 +1,25 @@
+{
+  "test_prediction_sha256": "95a6f9e3e2e699f54025577a16358df3b9be97ba55ed8fd5f5bacd976a11d6de",
+  "test_annotation_sha256": "287377cead6f2a2990bb21e08793532c850e2c343cda614e0cdca6bc8ee01810",
+  "sentences": 5974,
+  "counts_and_unrounded_metrics": {
+    "tp": 19437,
+    "fp": 949,
+    "fn": 1087,
+    "predicted": 20386,
+    "support": 20524,
+    "precision": 0.9534484450112822,
+    "recall": 0.9470376145000975,
+    "f1": 0.950232217061843
+  },
+  "publication_display_percent": {
+    "precision": 95.34,
+    "recall": 94.7,
+    "f1": 95.02
+  },
+  "harmonic_mean_of_displayed_PR": 95.01892233214059,
+  "test_baseline_rows_unchanged": true,
+  "matched_ablation_endpoints_recounted": 22,
+  "ablation_values_and_intervals_unchanged": true,
+  "publication_note": "Test headline and development ablations retain their respective evaluation labels; no cross-split deltas are computed."
+}

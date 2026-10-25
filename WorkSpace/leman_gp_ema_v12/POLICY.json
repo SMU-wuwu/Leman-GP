@@ -1,0 +1,31 @@
+{
+  "created_before_scoring_utc": "2026-10-17T14:12:02.716119+00:00",
+  "experiment": "v12 fixed final FGM EMA added as third fusion member",
+  "routes": [
+    "v10",
+    "ema_fusion"
+  ],
+  "checkpoint_last_sha256": "36b341622a634ea305000a5776950e8d93ae0e9fdc73a73fbbb5b8c7b7833a34",
+  "ema_selection": "fixed final epoch3 EMA from last.pt, no epoch sweep",
+  "baseline_selection_sha256": "35cd4fc0381dedb090e5636f2ba63f09f8940e95655195df38eb4d1f160b9b69",
+  "v11_comparison_sha256": "013cc93b7017a1a03a6402b4c5b1c0d7ddc0815a18f8c9286eb00ef4717f45ce",
+  "features": "concatenate same six v10 features per model in order v4, FGM best live epoch1, FGM final EMA epoch3; no presence features",
+  "candidate_floor": -4.0,
+  "missing_model_GP": -4.0,
+  "missing_model_boundary_logprob": -16.0,
+  "ridge_base": 10.0,
+  "ridge_type_slopes": 50.0,
+  "type_intercept_min_support": 200,
+  "type_slope_min_support": 500,
+  "slopes": [
+    0,
+    1,
+    6,
+    7,
+    12,
+    13
+  ],
+  "selection": "fit-only Micro, Macro13, prefer v10; same fixed text-hash folds; unchanged decoder search",
+  "acceptance": "full dev >= v10, nested crossfit > both v10 and v11, neither held-out half decreases versus either v10 or v11",
+  "no_training_or_test": true
+}

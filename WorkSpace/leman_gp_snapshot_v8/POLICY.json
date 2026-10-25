@@ -1,0 +1,33 @@
+{
+  "experiment": "v8 existing final EMA snapshot ensembles",
+  "created_before_scoring_utc": "2026-10-17T12:43:32.965086+00:00",
+  "routes": [
+    "v6",
+    "v4_final_ensemble",
+    "v2_final_ensemble",
+    "three_snapshot_ensemble"
+  ],
+  "ridge": 10.0,
+  "raw_candidate_floor": -32.0,
+  "raw_scale": 8.0,
+  "baseline_floor": -4.0,
+  "candidates": "all valid character spans with scaled GP logit > -32 in any original inference window; no gold-based proposal",
+  "deduplication": "maximum GP window and attached boundary confidence retained together for each model",
+  "fusion_missing": "GP=-32, boundary logprob=-16 and boundary probability=exp(-16), with separate presence indicators",
+  "features": "per model: GP/8, boundary logprob, exp(boundary); log1p span length; per-model presence; same/other train entity counts",
+  "baseline": "audited v6 fits and predictions reused without modification",
+  "selection": "fit-only Micro, then Macro13, then prefer baseline, then fewer models; same fixed text-hash halves",
+  "acceptance": "full-dev Micro >= v6, combined crossfit Micro > v6 and neither held-out half decreases; otherwise retain v6",
+  "normalization": "fit-only means, std, type eligibility and ridge-logistic coefficients",
+  "decoder": "unchanged original/expanded Micro threshold search from v4; no extra threshold sweeps",
+  "train_sha256": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "test_accessed": false,
+  "scope": "exploratory dev only, checkpoint snapshots already saved by completed training; no parameter updates or test access",
+  "snapshots": {
+    "upgraded": "v4 best epoch1 EMA",
+    "final_v4": "v4 last.pt epoch5 EMA shadow",
+    "final_v2": "v2 last.pt epoch12 EMA shadow"
+  },
+  "reused_upgraded_cache_sha256": "b3ee694b968a84c79bad962933c33f03e939b5c0d20cd137282036daf49a3523"
+}

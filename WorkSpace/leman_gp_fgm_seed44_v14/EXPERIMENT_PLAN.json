@@ -1,0 +1,57 @@
+{
+  "created_before_training_utc": "2026-10-17T14:22:36.089961+00:00",
+  "experiment": "v14 second FGM fine-tuning seed with identical v10 recipe",
+  "known_results": [
+    "v6",
+    "v7",
+    "v8",
+    "v9",
+    "v10",
+    "v11",
+    "v12",
+    "v13"
+  ],
+  "base_package_manifest_sha256": "8f30cf112dbc26696afaefb633ae635adc0cb0484a5297fdc5d20cb8cced5a4e",
+  "baseline_selection_sha256": "35cd4fc0381dedb090e5636f2ba63f09f8940e95655195df38eb4d1f160b9b69",
+  "baseline_v10_comparison_sha256": "8c15bfd9a9cfdf29f463ea0822d5f617acc6350f711176ccb5639a6c62f42fb2",
+  "baseline_v11_comparison_sha256": "013cc93b7017a1a03a6402b4c5b1c0d7ddc0815a18f8c9286eb00ef4717f45ce",
+  "training": {
+    "seed": 44,
+    "epochs": 3,
+    "world_size": 4,
+    "per_gpu_batch_size": 32,
+    "global_batch_size": 128,
+    "encoder_lr": 3e-06,
+    "head_lr": 1e-05,
+    "reused_head_lr": 1e-05,
+    "fgm_epsilon": 0.5,
+    "fgm_clean_weight": 0.5,
+    "ema_decay": 0.995,
+    "grad_clip": 1.0,
+    "amp": "bf16 encoder / fp32 custom layers",
+    "parent": "v4 best epoch1 EMA seed42",
+    "parent_checkpoint_sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4",
+    "parent_path": "output/leman_finetune_v4_seed42/best.pt",
+    "output_dir": "output/leman_fgm_v14_seed44",
+    "training_source": "byte-for-byte existing leman_gp_fgm_v10; only seed and output overridden",
+    "checkpoint_selection": "unchanged raw-dev Micro at threshold0; parent epoch0 plus live/EMA after each epoch",
+    "resume": "same full state last.pt and 4 rank RNG; repeat same command"
+  },
+  "analysis": {
+    "routes": [
+      "inherited v10",
+      "inherited v11 fit-only selected pipeline",
+      "FGM seed44 single",
+      "v4 + FGM43 + FGM44 fusion"
+    ],
+    "feature_definition": "same six audited v10 features per model; same type intercept and GP/boundary type slopes; same ridge10/50; no new feature/hyperparameter search",
+    "new_candidate_floor": -4.0,
+    "missing_GP": -4.0,
+    "missing_boundary": -16.0,
+    "folds": "same frozen text-hash halves, no reshuffle",
+    "normalization_support_calibration_decoder_route_selection": "fit partition only; Micro then Macro then prefer inherited/simpler model",
+    "acceptance": "full >= current v10; nested crossfit > both v10 and v11; neither held half lower than either reference",
+    "test_accessed": false
+  },
+  "purpose": "test repeatability and complementary predictions; one extra short run, no guaranteed 95 or statistical significance"
+}

@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+    "torch": "2.7.0+cu126",
+    "transformers": "4.56.2",
+    "cuda": "12.6",
+    "cudnn": 90501,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "memory_gib": 23.5164794921875,
+    "driver_gpu_listing": [
+      "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB",
+      "580.65.06, NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "world_size": 2,
+    "amp": "bf16",
+    "tf32": true,
+    "numerical_policy": {
+      "revision": "f1-v2-based-on-a100-step0-fix2",
+      "encoder_autocast": "bf16",
+      "encoder_sdpa_backend": "automatic_pytorch_sdpa",
+      "custom_layers": "fp32_autocast_disabled_before_projections",
+      "gradient_norm": "fp64_before_clipping",
+      "fp16_bf16_reduced_precision_reduction": false,
+      "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+      "score_clamping": false,
+      "replace_nonfinite_loss": false,
+      "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+      "cdist_backward_max_elements": 134217728
+    }
+  },
+  "ranks": [
+    {
+      "rank": 0,
+      "loss": 1.8532648086547852,
+      "gradient_norm": 21.655366732866096,
+      "stats": {
+        "supervised_loss": 1.850085735321045,
+        "symmetric_kl": 0.0031791264191269875
+      },
+      "peak_gib": 18.82236957550049,
+      "reserved_state_gib": 4.335165414959192,
+      "original_examples_per_rank": 16,
+      "forward_batch_size": 32,
+      "probe_tokens": 247,
+      "probe_chars": 192,
+      "optimizer_steps": 0
+    },
+    {
+      "rank": 1,
+      "loss": 1.8599716424942017,
+      "gradient_norm": 21.655366732866096,
+      "stats": {
+        "supervised_loss": 1.853107213973999,
+        "symmetric_kl": 0.0068644145503640175
+      },
+      "peak_gib": 18.8206148147583,
+      "reserved_state_gib": 4.335165414959192,
+      "original_examples_per_rank": 16,
+      "forward_batch_size": 32,
+      "probe_tokens": 247,
+      "probe_chars": 192,
+      "optimizer_steps": 0
+    }
+  ],
+  "model_weights_updated": false,
+  "formal_training_started": false,
+  "test_accessed": false
+}

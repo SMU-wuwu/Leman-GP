@@ -1,0 +1,13 @@
+{
+  "SUMMARY.json": "9e894883390850e2f6fef09752e5af2108fa0455a78af81c8db596c433e4040c",
+  "RESULT.json": "af2b697e8746c9b7c8e0dd37844783daed5aaff035eee243b2c0634c7393346f",
+  "selected_decoder.json": "feebc76e38ab4fab0e2633e56a2926959c3c85efb64992b69a24c4f3ac8b5363",
+  "LOCAL_RECOUNT.json": "8ca3a89c56e393ae5795f000524bfb75cf00e8b8ea00bfecfd38c5ee87f898e6",
+  "selected_hgb.joblib": "465cea136f17defab7b182ab6821f52124a45854a461035ee04802ddccbb9223",
+  "CANDIDATE_COVERAGE.json": "04ccfa2efd1c5007ea7554d50425e6bb4ca22cabb0e441c381a82aa03b11d0a7",
+  "WEIGHT_MANIFEST.json": "4db5f41f5cb32c2f6f13e36a312f3a3ffc049f4af6fe96fa8f08a29062750acf",
+  "SELECTED_FREEZE.json": "e60586d798e02df07d917f7c707749e6bb0a931e88f77a79ea677237f15def74",
+  "PROTOCOL.json": "2a359913b9497b93e10f0f67d5e9a9d38cd3f8e7a0faf3b1ef5630ef4fb04a2c",
+  "RESULT_REPORT.md": "eff52c71b342528baefbf2c3f4debe6026f3ccf79b30a7690e7e83739ea9a66c",
+  "test_predictions.jsonl": "95a6f9e3e2e699f54025577a16358df3b9be97ba55ed8fd5f5bacd976a11d6de"
+}

@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/liuwei1206/LEBERT",
+  "ref": "60668c0ac7dea72d684db531e996cdaefff1d634",
+  "purpose": "Read-only reference for independent compatibility implementation",
+  "paper": "Lexicon Enhanced Chinese Sequence Labeling Using BERT Adapter",
+  "doi": "10.18653/v1/2021.acl-long.454",
+  "paper_url": "https://aclanthology.org/2021.acl-long.454/",
+  "implementation": "Independent modern compatibility implementation; AgCNER adaptations listed in README",
+  "user_decision": "Use published LEBERT; retire old 74.56 as a reproduction result",
+  "new_training_started": false
+}

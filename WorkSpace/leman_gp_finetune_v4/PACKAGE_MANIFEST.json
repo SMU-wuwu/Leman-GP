@@ -1,0 +1,232 @@
+{
+  "package": "leman_gp_finetune_v4",
+  "schema": "leman-f1-v2",
+  "experiment": "leman-f1-v4-recall",
+  "server_root": "/root/data/WorkSpace",
+  "world_size": 4,
+  "batch_per_gpu": 32,
+  "global_batch": 128,
+  "epochs": 5,
+  "encoder_lr": 1e-06,
+  "head_lr": 1e-05,
+  "ema_decay": 0.995,
+  "parent_checkpoint_sha256": "22a4efe6a31021bda0d62fc6c1b73294dadfca79f00e79ab83bb89a9c9177bc1",
+  "parent_lexicon_sha256": "982e8dfb75e3e2195e06907861cddd3684594f75db94ea0807a263c6da33f7d1",
+  "training_recipe_reference": {
+    "source": "train2.txt original gold mentions; each mention counted once before windowing",
+    "train_sha256": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+    "types": [
+      "BIS",
+      "COM",
+      "CRO",
+      "CUL",
+      "DIS",
+      "DRUG",
+      "FER",
+      "ORG",
+      "OTH",
+      "PAOG",
+      "PART",
+      "PER",
+      "PET"
+    ],
+    "counts": {
+      "BIS": 1480,
+      "COM": 549,
+      "CRO": 33788,
+      "CUL": 9815,
+      "DIS": 22291,
+      "DRUG": 19689,
+      "FER": 864,
+      "ORG": 2346,
+      "OTH": 1892,
+      "PAOG": 3779,
+      "PART": 14400,
+      "PER": 18035,
+      "PET": 36758
+    },
+    "median_type_count": 9815.0,
+    "type_weights": {
+      "BIS": 1.5,
+      "COM": 1.5,
+      "CRO": 1.0,
+      "CUL": 1.0,
+      "DIS": 1.0,
+      "DRUG": 1.0,
+      "FER": 1.5,
+      "ORG": 1.4300636412253682,
+      "OTH": 1.5,
+      "PAOG": 1.26943564087804,
+      "PART": 1.0,
+      "PER": 1.0,
+      "PET": 1.0
+    },
+    "ordered_weights": [
+      1.5,
+      1.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.5,
+      1.4300636412253682,
+      1.5,
+      1.26943564087804,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "formula": "clip(((median_train_type_count + 1)/(n_t + 1))**0.25, 1, 1.5)",
+    "loss": "sum_b,t w_t * (1.1 * positive_logsumexp + negative_logsumexp) / (B * sum_t w_t)",
+    "positive_weight": 1.1,
+    "rare_type_exponent": 0.25,
+    "rare_type_cap": 1.5,
+    "boundary_loss": "unchanged parent MLCCE; boundary_weight=0.1",
+    "test_accessed": false
+  },
+  "checkpoint_selection": "raw exact character-span dev Micro; parent epoch0, live and EMA",
+  "final_selection": "same decode-v3 search/folds for parent and upgraded; upgrade only if selected crossfit Micro strictly increases and selected full-dev Micro does not decrease",
+  "default_pipeline_reads_test": false,
+  "validation": {
+    "loss_formula_and_gradient": "PASS",
+    "strict_transfer_and_forward_identity": "PASS",
+    "real_cpu_mid_epoch_resume": "PASS; CUDA and DDP adapters mocked",
+    "checkpoint_loader_and_epoch0_fallback": "PASS",
+    "complete_tiny_dev_decoder_pipeline": "PASS",
+    "CUDA_NCCL": "not run locally",
+    "local_torch": "2.8.0",
+    "local_transformers": "4.56.2"
+  },
+  "files": {
+    "PARENT_SOURCE_HASHES.json": "0e8c4df29a203f86ede3bb7321ce8b5d345ec2623f2fd943b805278fb73f13ff",
+    "README.md": "abbf2b1f540e02fe2e789e377d65ea34f911059db7ee4c4050afea19226ab6a1",
+    "SERVER_COMMANDS.txt": "b9ac146a20fdca71eacbf361469c649be99920579a0582cc2c90b145b372b0d2",
+    "calibrate.py": "11825d68a07b6d10a51720589605f5e0fe180f65cd2f15fe768eb0f10a596d8e",
+    "calibrate.sh": "147602d786ab8317aac4ceac40b1fb4a73dbf180d46ff0096bc20c7f1a10f11a",
+    "collect.py": "604f69df7d1fcb853ed31b01f7cc132225ffc1b9101191023c5d627628c50454",
+    "config.py": "06e2277e181b98e65150a63a143c9cbdf6921804a1f60cef55c52ef7f70ef4c4",
+    "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+    "decoding.py": "5fba8537050607edc9c02c726c5af3ec03761c0770306e85a8e0bbfa1b4b5a33",
+    "env.sh": "74ed28ccc9225d9b3ba72f1e988120a0d73650fe1d3c53218bff57f5a23d5314",
+    "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+    "features.py": "babc0d5d6dd97aaecf279f9134a1b5474d2f7fa94e8abeb720f5714f88ea2b54",
+    "inference.py": "2242226ad872bb58872aeb2d98fc4c2413487812ab192abf3ef584b180bdf4b3",
+    "install.sh": "9f10e5880027ea0c384f4d9c6b2ea51f1226f70a264a3c9161fd67d2a4efae8f",
+    "model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+    "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+    "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+    "requirements.txt": "a7b7f442174d0a846ccd5a8f766c8609442517ce0a1a71007ca888f57eb955e6",
+    "run.sh": "ca1650d65887f09e98ab337e9ce8b4b3d117632e87e252c9ad6bab5a2dc74535",
+    "runtime.py": "99491da1358f20e8fe06642a270181f76bbd9ad0122461c9f08813a20b6e548f",
+    "search.py": "cfb58c82b70ab7ee2fba551bcadbc9759b95a50300d03b119b6c0192a72202c7",
+    "test.py": "abf3af3233956cb494308be2b9b9daaeb94ab6e5937e1276f5329faaa91bd577",
+    "test.sh": "a98dd1e92797b6408ff0c877b1b66daed6fccb04be44f75b42b925fbe69258d1",
+    "train.py": "95cc67fe7c6b91bb782a29dfdeedc3702f3e5eda796fa0bbe9049567219ba504",
+    "train.sh": "317342fed81cebf0c75a7c5504bb1f3d0d7b396ca8ca0c3053c126b45cf0244a",
+    "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+  },
+  "lineage": {
+    "PARENT_SOURCE_HASHES.json": {
+      "relation": "added"
+    },
+    "README.md": {
+      "origin": "leman_gp_f1_4x4090/README.md",
+      "relation": "modified"
+    },
+    "SERVER_COMMANDS.txt": {
+      "origin": "leman_gp_f1_4x4090/SERVER_COMMANDS.txt",
+      "relation": "modified"
+    },
+    "calibrate.py": {
+      "origin": "leman_gp_f1_4x4090/calibrate.py",
+      "relation": "modified"
+    },
+    "calibrate.sh": {
+      "origin": "leman_gp_f1_4x4090/calibrate.sh",
+      "relation": "copied byte-identical"
+    },
+    "collect.py": {
+      "origin": "leman_gp_f1_4x4090/collect.py",
+      "relation": "modified"
+    },
+    "config.py": {
+      "origin": "leman_gp_f1_4x4090/config.py",
+      "relation": "modified"
+    },
+    "data.py": {
+      "origin": "leman_gp_f1_4x4090/data.py",
+      "relation": "copied byte-identical"
+    },
+    "decoding.py": {
+      "origin": "leman_gp_f1_4x4090/decoding.py",
+      "relation": "copied byte-identical"
+    },
+    "env.sh": {
+      "origin": "leman_gp_f1_4x4090/env.sh",
+      "relation": "modified"
+    },
+    "evaluate.py": {
+      "origin": "leman_gp_f1_4x4090/evaluate.py",
+      "relation": "copied byte-identical"
+    },
+    "features.py": {
+      "origin": "leman_gp_decode_v3/features.py",
+      "relation": "copied byte-identical"
+    },
+    "inference.py": {
+      "origin": "leman_gp_f1_4x4090/inference.py",
+      "relation": "modified"
+    },
+    "install.sh": {
+      "origin": "leman_gp_f1_4x4090/install.sh",
+      "relation": "copied byte-identical"
+    },
+    "model.py": {
+      "origin": "leman_gp_f1_4x4090/model.py",
+      "relation": "modified"
+    },
+    "paper_core.py": {
+      "origin": "leman_gp_f1_4x4090/paper_core.py",
+      "relation": "copied byte-identical"
+    },
+    "recipe.py": {
+      "relation": "added"
+    },
+    "requirements.txt": {
+      "origin": "leman_gp_f1_4x4090/requirements.txt",
+      "relation": "copied byte-identical"
+    },
+    "run.sh": {
+      "origin": "leman_gp_f1_4x4090/run.sh",
+      "relation": "copied byte-identical"
+    },
+    "runtime.py": {
+      "origin": "leman_gp_f1_4x4090/runtime.py",
+      "relation": "copied byte-identical"
+    },
+    "search.py": {
+      "origin": "leman_gp_decode_v3/search.py",
+      "relation": "copied byte-identical"
+    },
+    "test.py": {
+      "origin": "leman_gp_f1_4x4090/test.py",
+      "relation": "modified"
+    },
+    "test.sh": {
+      "origin": "leman_gp_f1_4x4090/test.sh",
+      "relation": "copied byte-identical"
+    },
+    "train.py": {
+      "origin": "leman_gp_f1_4x4090/train.py",
+      "relation": "modified"
+    },
+    "train.sh": {
+      "origin": "leman_gp_f1_4x4090/train.sh",
+      "relation": "copied byte-identical"
+    },
+    "transfer.py": {
+      "origin": "leman_gp_f1_4x4090/transfer.py",
+      "relation": "modified"
+    }
+  }
+}

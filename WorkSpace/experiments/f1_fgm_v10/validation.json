@@ -1,0 +1,22 @@
+{
+  "norm_and_active_rows": "PASS",
+  "exact_restore_on_exception": "PASS",
+  "zero_gradient": "PASS",
+  "perturbation_rng_unchanged": "PASS",
+  "config_and_unchanged_graph": "PASS",
+  "two_rank_gloo_gradient_reference": [
+    {
+      "rank": 0,
+      "max_gradient_difference": 1.734723475976807e-17,
+      "repeated_steps": 2
+    },
+    {
+      "rank": 1,
+      "max_gradient_difference": 1.734723475976807e-17,
+      "repeated_steps": 2
+    }
+  ],
+  "status": "PASS",
+  "neural_training_started": false,
+  "torch": "2.7.0+cu126"
+}

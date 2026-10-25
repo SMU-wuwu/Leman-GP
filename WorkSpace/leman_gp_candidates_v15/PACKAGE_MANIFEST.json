@@ -1,0 +1,14 @@
+{
+  "files": {
+    "extract.py": "65460ba974b31dd73fd6c9441c84f7bf6458f00ec45657ab31e1265c6d49c6e7",
+    "analyze.py": "e6ceb4eecc678a278da717741f8170c33ca2ab5bbe4676267cf04500f7107d70",
+    "collect.py": "0e45540dd251203c8a01265f8c5ea2d775ba8b21889c6d7ba790f6731e4ccd6e",
+    "POLICY.json": "c34118e8be40f9377ca7e8b8937b53615d6112c12cb69c561147ead6955e3a49"
+  },
+  "shared_dependencies": {
+    "leman_gp_fgm_v10": "8f30cf112dbc26696afaefb633ae635adc0cb0484a5297fdc5d20cb8cced5a4e",
+    "leman_gp_fgm_v10_analysis": "32299f85994ddcefa42878f1036bfc1afae21caade346c9dbd65c2c8ce68fe0c",
+    "leman_gp_candidates_v11": "ee8797fb5af7c7670ebf7ce9e0b7bfe681851cb8ca58be03fd7a62c144854e57",
+    "leman_gp_typecal_v9": "9feb7005d4de355bc4419536be8416dc4c2c88721fe0527e5975cc7769aefd97"
+  }
+}

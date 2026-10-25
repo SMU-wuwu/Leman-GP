@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-19T12:36:19.917468+00:00",
+  "files": {
+    "QA_RESULT.json": "2dcb92e96fa4ddc5c9da81903c413f88abe644fe2c0c95caad22cf755879ca03",
+    "README.md": "d0aab1f39c93faed543b96e1ce63ab61b22469ff37bb5c2747eafbba625d98a0",
+    "SOURCE.json": "caaac1397d5a53716d6ae94c7af964016652988f5ea7cbc2dfbf9d34b17d371f",
+    "data.py": "1c008c24e8b24305e2e44385763c3500ac79ff371aa74c47d5a1ec90bb8c9594",
+    "model.py": "7d6f7b8eedb456ea099a8681ad673c3b9b75869dc1bd778a66c7c13c033a6085",
+    "prepare_resources.py": "a2512325ff1e21e35167909077d817fe04e823866eef158ed56691bb434dead7",
+    "qa.py": "81035da710025a29f22531b9ccfa2d6bc5004998fea8ba933c731b4b7051c16c",
+    "requirements.txt": "30661865b6982ecc66bf1887208f529fd1e2efccbf7cb30f503043d766a7d51b",
+    "run.sh": "b7d840dfd068ec47cb356c63941e149597a446190bc0b49292bb8ca20828f123",
+    "train.py": "7b863ea61c7b3cc2090a7cd490cdfa56150d01db60ee6eda9c3bea8c5854ac43",
+    "安装依赖.txt": "6a6dc1924980b4f6fcdfc4427c4a7daa85eccb551555e1eec9794cdc14f99d4b"
+  },
+  "qa": "QA_RESULT.json",
+  "training_started": false,
+  "resources_downloaded": true,
+  "updated_utc": "2026-10-19T13:55:15.297230+00:00",
+  "patch": "label-first-column-20261019",
+  "parent_bundle_sha256": "e215cae3c640b3ddf6ed9c92fdf01208fad0624cbab6de7f1acd3157057a201e"
+}

@@ -1,0 +1,76 @@
+{
+  "package": "leman_gp_paper_a100",
+  "hardware": "2 x NVIDIA A100 80GB",
+  "parent_source": {
+    "config.py": "b44b8d131c4e1223fb54920c6395855736e2a7101980c6489adcb25838fb5373",
+    "model.py": "5c969623517971fb3b0846db95e0c1b8656a1c5eb051c90a04b1215eb00b62c0",
+    "test.py": "70e737f6b276a3deff46010721597690f878ab288837d7cbbdf0bbe9438dc867",
+    "train.py": "06f35320a81ebfbf86626839dc989ea2af9bd608aedd58a0a7bb10a1b7fa6f50",
+    "utils.py": "8915f14c6b4516fe6e57fcd260ab7675e6011c7291252e7026da3c8701ad9795"
+  },
+  "manuscript_sha256": "4eb95f0bef76515cac3e01e00d3bb51431d57c80624dde9ba87ce9f679d867fe",
+  "model": "character-aligned ERNIE + four-candidate bilinear Lexicon Adapter + paper reset-before BiGRU + negative-L1 attention + RoPE GP",
+  "loss": "multilabel categorical cross-entropy, mean over batch and types",
+  "files": {
+    "FIX1_NOTES.md": "d62c016f0b6165aa2148518e79b64e20ea5d34806c6dc58bccf7b8d5ccfdd2a7",
+    "FIX2_NOTES.md": "2a8a91ea5d71578fd0c01563d5d26bccffa1c2b51188c09c3485f4da5b3bd689",
+    "SERVER_STEPS.md": "02d7619653825361c5a596822471a2f098b5cbc783a7101007e14e143cd73a6d",
+    "collect.py": "c0b8fb01ce8f813e8889914f942e7ffd51f4777dc263d66aa9fdf6c435ac0367",
+    "config.py": "51a873e0d8e848ef5e5009d5671ec5f6ec762aa5f572ea62d48f2c1c78985186",
+    "data.py": "fc4e2504459b9b6ed3194b3a3aed02a45d1e0c3ee916589764b010f6d471abd3",
+    "evaluate.py": "a4a4a99ebabad3272e10946f70310aa5c2b584712fef23c583b9e4868e7e0e49",
+    "install.sh": "9f10e5880027ea0c384f4d9c6b2ea51f1226f70a264a3c9161fd67d2a4efae8f",
+    "model.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+    "requirements.txt": "a7b7f442174d0a846ccd5a8f766c8609442517ce0a1a71007ca888f57eb955e6",
+    "runtime.py": "7c47af16f79d721ca0fbd8b6f4a442533a33efd772ec0cea3b6448326cff9ec7",
+    "test.py": "ceb5984fb1f40f30944cf03ec313a80c6a8b187dd58a69779be8d312e1b6dd40",
+    "test.sh": "fb870c761b6415dede7e2a0a81560404673e6bd096ac3eed19f1c7cf85a2d27d",
+    "train.py": "0dba76c775e621e56e20310ec2da631912f9fb7602604615e87cb8d84eb08301",
+    "train.sh": "fbba6e19258f6de6e88435005b1537f6b647d43d3e77ecdc13a93c3b5e1aca5b"
+  },
+  "local_checks": {
+    "device": "CPU",
+    "torch": "2.8.0",
+    "transformers": "4.56.2",
+    "exact_l1_value_and_both_input_gradients": "PASS: independent abs-difference reference, noncontiguous inputs, partial chunks, tied inputs, exact zero distances",
+    "attention_outputs_and_parameter_gradients": "PASS",
+    "configured_batch_index_bounds": "PASS with meta tensors for per-GPU batch 16/128/192/256/384/512",
+    "numerical_regression": "PASS",
+    "functional_regression_and_cpu_checkpoint_continuation": "PASS",
+    "a100_cuda_ddp_run_locally": false
+  },
+  "cuda_a100_measured_locally": false,
+  "default_workspace_root": "/root/data/WorkSpace",
+  "package_revision": "a100-step0-fix2",
+  "parent_package_sha256": "b794e58fa99f5e1fc0663b8633ab855393897da5bcd5ba1630b5474679626f57",
+  "numerical_policy": {
+    "revision": "a100-step0-fix2",
+    "encoder_autocast": "bf16",
+    "encoder_sdpa_backend": "math_fp32_intermediates",
+    "custom_layers": "fp32_autocast_disabled_before_projections",
+    "gradient_norm": "fp64_before_clipping",
+    "fp16_bf16_reduced_precision_reduction": false,
+    "nonfinite_handling": "record_per_rank_diagnostics_and_stop_before_update",
+    "score_clamping": false,
+    "replace_nonfinite_loss": false,
+    "l1_cdist": "exact_l1_chunked_over_independent_batch_head_matrices",
+    "cdist_backward_max_elements": 134217728
+  },
+  "changed_python_files_from_parent": [
+    "model.py",
+    "runtime.py",
+    "train.py"
+  ],
+  "upstream_source_evidence": {
+    "url": "https://github.com/pytorch/pytorch/blob/v2.7.0/aten/src/ATen/native/cuda/DistanceKernel.cu",
+    "git_blob_sha1": "e6f4dadb23df63b212fc78ac6dc8989973098f70",
+    "sha256": "a763e324c7eb3fa2d8efe959066ee7c002c187f4e96553bc93da7e6fdf6aa320",
+    "lines": [
+      130,
+      133,
+      146,
+      335
+    ],
+    "issue": "signed int32 multiplication l * l_size in cdist CUDA backward buffer offset"
+  }
+}

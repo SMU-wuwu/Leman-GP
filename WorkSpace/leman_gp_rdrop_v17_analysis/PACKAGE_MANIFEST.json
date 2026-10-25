@@ -1,0 +1,12 @@
+{
+  "files": {
+    "analyze.py": "f9c1977694cfddde7268af7dced6aca9c5d7cbca5c784a93fb0fedda64500841",
+    "EXPERIMENT_PLAN.json": "47dfa5c279683a9b922150e202335ff489d3774e46bdbd48e105f3feb1ce607f"
+  },
+  "shared_dependencies": {
+    "leman_gp_typecal_v9": "9feb7005d4de355bc4419536be8416dc4c2c88721fe0527e5975cc7769aefd97",
+    "leman_gp_fgm_v10_analysis": "32299f85994ddcefa42878f1036bfc1afae21caade346c9dbd65c2c8ce68fe0c",
+    "leman_gp_rdrop_v17": "8ea4ac417d14dee0477e1c509874c574d9e07e187704d729e22c7c250df5673a"
+  },
+  "note": "Analysis implementation only; routes and hyperparameters copied from the pretraining frozen plan; no training files modified"
+}

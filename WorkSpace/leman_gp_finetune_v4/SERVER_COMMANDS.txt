@@ -1,0 +1,29 @@
+4×RTX 4090 24GB；根目录 /root/data/WorkSpace。
+原 best.pt 和 lexicon.json 保留在 output/leman_f1_4x4090_seed42/。
+
+cd /root/data/WorkSpace
+unzip -q leman_gp_finetune_v4.zip
+cd leman_gp_finetune_v4
+bash run.sh
+
+若换了镜像尚未安装依赖，先运行 bash install.sh。
+
+中断后续训：
+cd /root/data/WorkSpace/leman_gp_finetune_v4
+bash run.sh
+
+主动暂停（另开终端）：
+touch /root/data/WorkSpace/output/leman_finetune_v4_seed42/STOP
+
+主动暂停后恢复：
+rm -f /root/data/WorkSpace/output/leman_finetune_v4_seed42/STOP
+cd /root/data/WorkSpace/leman_gp_finetune_v4
+bash run.sh
+
+每卡32、全局128、5 epoch；encoder LR=1e-6，head LR=1e-5。
+每250步及每轮保存last.pt，第5轮保存epoch_005.pt，保留best.pt。
+run.sh 会自动训练、比较两份权重的dev解码和crossfit、收集产物；默认不执行test。
+
+回传：
+/root/data/WorkSpace/output/leman_finetune_v4_seed42/return_leman_finetune_v4_*.zip
+无需回传pt。

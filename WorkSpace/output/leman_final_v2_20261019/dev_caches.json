@@ -1,0 +1,14 @@
+{
+  "old": "caches/old.jsonl.gz",
+  "fgm43": "caches/fgm43.jsonl.gz",
+  "fgm44": "caches/fgm44.jsonl.gz",
+  "ema43": "caches/ema43.jsonl.gz",
+  "fgm46": "caches/fgm46.jsonl.gz",
+  "soup2": "caches/soup2.jsonl.gz",
+  "soup3": "caches/soup3.jsonl.gz",
+  "parent": "caches/parent.jsonl.gz",
+  "v4ema": "caches/v4ema.jsonl.gz",
+  "v2ema": "caches/v2ema.jsonl.gz",
+  "rdrop": "caches/rdrop.jsonl.gz",
+  "fgm47": "caches/fgm47.jsonl.gz"
+}

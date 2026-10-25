@@ -1,0 +1,8 @@
+{
+  "gold_free_prediction_replay_equal": true,
+  "sentences": 5963,
+  "predicted_spans": 20629,
+  "replayed_sha256": "97c8ea666291c16ffb34f5c317eabb199cd4f1507b2bfe227814ab39d957c126",
+  "source_prediction_sha256": "9bd30bb486c0734902bb0524bf6b420c204df886046b09c613c0dae064246ff9",
+  "fit_or_search_performed": false
+}

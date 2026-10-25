@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-10-21T00:22:33.164090+00:00",
+  "cases": [
+    {
+      "name": "legacy_oof",
+      "iterations": 180,
+      "leaves": 15,
+      "minimum": 35,
+      "l2": 2.0,
+      "negative": 1.5,
+      "conflicts": false
+    },
+    {
+      "name": "balanced_oof",
+      "iterations": 180,
+      "leaves": 15,
+      "minimum": 70,
+      "l2": 4.0,
+      "negative": 1.0,
+      "conflicts": false
+    },
+    {
+      "name": "compact_oof",
+      "iterations": 200,
+      "leaves": 7,
+      "minimum": 100,
+      "l2": 8.0,
+      "negative": 1.0,
+      "conflicts": false
+    },
+    {
+      "name": "conflicts_oof",
+      "iterations": 180,
+      "leaves": 15,
+      "minimum": 70,
+      "l2": 4.0,
+      "negative": 1.0,
+      "conflicts": true
+    }
+  ],
+  "neural_training": false,
+  "test_read": false,
+  "selection": "largest outer-crossfit Micro F1; original baseline retained unless improvement >= 0.03 percentage points; ties prefer earlier case",
+  "validation": "fixed two text-grouped outer folds; three inner text-grouped OOF folds fit decoder; no outer held labels enter fitting",
+  "threshold_grid": "global -3 to 2 by .25; one per-type pass ±.75 by .25, support >=200, offsets shrunk by n/(n+200)",
+  "final_fit": "one HGB trained on all dev; final decoder calibrated on two-fold OOF logits of selected family",
+  "scope": "postprocessor crossfit only; neural checkpoints were historically dev-selected",
+  "threads": 2,
+  "source_sha256": {
+    "fast_intervals.py": "93a7701e01928691e1e6ea8b3302ab183b261219f982ff1f22f2c09324818ad9",
+    "optimize.py": "b8606390e391f81c1ca05d57db2d0157f697b2e0909d70b0e8b834ef9aab1ccc",
+    "predict_hgb_v22.py": "b29464388adfd2173bd03debd3a5c5ce35b35888d3d9a08e7fd07cb50a80dada",
+    "._evidence_core.py": "0a81923fac5bd70273e9050d2369129d34b9050bbb4fccbb69aaebb587388adb",
+    "._predict_hgb_v22.py": "0a81923fac5bd70273e9050d2369129d34b9050bbb4fccbb69aaebb587388adb",
+    "._fast_intervals.py": "0a81923fac5bd70273e9050d2369129d34b9050bbb4fccbb69aaebb587388adb",
+    "._optimize.py": "0a81923fac5bd70273e9050d2369129d34b9050bbb4fccbb69aaebb587388adb",
+    "evidence_core.py": "bc539a54f78030422cb54c5ae33540a24b53f6c0c61791f3c3a34e3355d329da"
+  }
+}

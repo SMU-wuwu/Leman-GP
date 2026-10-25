@@ -1,0 +1,144 @@
+{
+  "checkpoint": "final_ema.pt",
+  "sha256": "670ed518d009333fee668bb8d5771525d4fd85dfb103e244c7b66e7fd9342af9",
+  "epoch": 5,
+  "weight_source": "ema",
+  "dev": {
+    "micro": {
+      "precision": 0.9424091371049702,
+      "recall": 0.9370127995380618,
+      "f1": 0.9397032211364459,
+      "true_positive": 19473,
+      "predicted": 20663,
+      "support": 20782
+    },
+    "macro_f1": 0.8765246280958287,
+    "per_type": {
+      "BIS": {
+        "precision": 0.9444444444444444,
+        "recall": 0.9540816326530612,
+        "f1": 0.949238578680203,
+        "true_positive": 187,
+        "predicted": 198,
+        "support": 196
+      },
+      "COM": {
+        "precision": 0.7692307692307693,
+        "recall": 0.78125,
+        "f1": 0.7751937984496124,
+        "true_positive": 50,
+        "predicted": 65,
+        "support": 64
+      },
+      "CRO": {
+        "precision": 0.9601932811780948,
+        "recall": 0.9653018736988203,
+        "f1": 0.962740800553697,
+        "true_positive": 4173,
+        "predicted": 4346,
+        "support": 4323
+      },
+      "CUL": {
+        "precision": 0.9006381039197813,
+        "recall": 0.8845120859444942,
+        "f1": 0.8925022583559169,
+        "true_positive": 988,
+        "predicted": 1097,
+        "support": 1117
+      },
+      "DIS": {
+        "precision": 0.9782451051486585,
+        "recall": 0.981447799199709,
+        "f1": 0.9798438351189396,
+        "true_positive": 2698,
+        "predicted": 2758,
+        "support": 2749
+      },
+      "DRUG": {
+        "precision": 0.9443385436523065,
+        "recall": 0.9249439880507841,
+        "f1": 0.9345406527070365,
+        "true_positive": 2477,
+        "predicted": 2623,
+        "support": 2678
+      },
+      "FER": {
+        "precision": 0.8072289156626506,
+        "recall": 0.8589743589743589,
+        "f1": 0.8322981366459627,
+        "true_positive": 67,
+        "predicted": 83,
+        "support": 78
+      },
+      "ORG": {
+        "precision": 0.7466666666666667,
+        "recall": 0.7156549520766773,
+        "f1": 0.7308319738988581,
+        "true_positive": 224,
+        "predicted": 300,
+        "support": 313
+      },
+      "OTH": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5508474576271186,
+        "f1": 0.6220095693779905,
+        "true_positive": 130,
+        "predicted": 182,
+        "support": 236
+      },
+      "PAOG": {
+        "precision": 0.9291845493562232,
+        "recall": 0.9495614035087719,
+        "f1": 0.9392624728850325,
+        "true_positive": 433,
+        "predicted": 466,
+        "support": 456
+      },
+      "PART": {
+        "precision": 0.915606936416185,
+        "recall": 0.8964346349745331,
+        "f1": 0.9059193594509579,
+        "true_positive": 1584,
+        "predicted": 1730,
+        "support": 1767
+      },
+      "PER": {
+        "precision": 0.9018518518518519,
+        "recall": 0.8931682714351215,
+        "f1": 0.8974890578207786,
+        "true_positive": 1948,
+        "predicted": 2160,
+        "support": 2181
+      },
+      "PET": {
+        "precision": 0.9697099892588614,
+        "recall": 0.9762110726643599,
+        "f1": 0.9729496713007867,
+        "true_positive": 4514,
+        "predicted": 4655,
+        "support": 4624
+      }
+    },
+    "total_samples": 5963,
+    "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+    "overlap_policy": "retain all; deduplicate identical spans from overlapping windows",
+    "loss": 0.18588025093440208,
+    "windows": 6099,
+    "seconds": 18.864552483079024,
+    "threshold": 0.0,
+    "coverage": {
+      "sentences": 5963,
+      "windows": 6099,
+      "gold_entities": 20782,
+      "gold_not_fully_contained_in_any_window": 0,
+      "max_encoder_tokens_observed": 223,
+      "max_chars_observed": 192,
+      "evaluation": "all original character gold spans; no gold dropped from metric denominator"
+    },
+    "world_size": 2,
+    "device": "cuda:0",
+    "amp": "bf16"
+  },
+  "estimand": "conditional intervention plus fixed-budget adaptation; not from-scratch ablation",
+  "parent_sha256": "145224e85c808ddc84cda9177e7cd4a6731b004edbc713b03008bb0695fe01cd"
+}

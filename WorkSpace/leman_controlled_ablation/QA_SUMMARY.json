@@ -1,0 +1,228 @@
+{
+  "structural": {
+    "full_vs_parent_eval_train_logits_loss_exact": true,
+    "full_vs_parent_gradients_close_atol1e7_rtol1e5": true,
+    "max_gradient_absolute_difference": 2.9802322387695312e-08,
+    "initialization_rng_equal_all_variants": true,
+    "variants": {
+      "F": {
+        "shared_tensors_equal": 67,
+        "loss_finite": true,
+        "all_parameters_used": true
+      },
+      "no_lexicon": {
+        "shared_tensors_equal": 56,
+        "loss_finite": true,
+        "all_parameters_used": true
+      },
+      "no_attention": {
+        "shared_tensors_equal": 55,
+        "loss_finite": true,
+        "all_parameters_used": true
+      },
+      "dot_attention": {
+        "shared_tensors_equal": 67,
+        "loss_finite": true,
+        "all_parameters_used": true
+      },
+      "crf": {
+        "shared_tensors_equal": 65,
+        "loss_finite": true,
+        "all_parameters_used": true
+      },
+      "max_words3": {
+        "shared_tensors_equal": 67,
+        "loss_finite": true,
+        "all_parameters_used": true
+      },
+      "max_words5": {
+        "shared_tensors_equal": 67,
+        "loss_finite": true,
+        "all_parameters_used": true
+      },
+      "encoder_gp": {
+        "shared_tensors_equal": 24,
+        "loss_finite": true,
+        "all_parameters_used": true
+      }
+    },
+    "A_loss_is_standard_MLCCE": true,
+    "CRF_bruteforce_and_BIOES_roundtrip": true
+  },
+  "ddp_all_8_variants": {
+    "F": {
+      "two_FGM_steps_passed": true,
+      "loss": 3.2516965866088867,
+      "ranks_parameters_equal": true,
+      "bf16": true
+    },
+    "no_lexicon": {
+      "two_FGM_steps_passed": true,
+      "loss": 3.2446587085723877,
+      "ranks_parameters_equal": true,
+      "bf16": true
+    },
+    "no_attention": {
+      "two_FGM_steps_passed": true,
+      "loss": 3.242523670196533,
+      "ranks_parameters_equal": true,
+      "bf16": true
+    },
+    "dot_attention": {
+      "two_FGM_steps_passed": true,
+      "loss": 3.251713752746582,
+      "ranks_parameters_equal": true,
+      "bf16": true
+    },
+    "crf": {
+      "two_FGM_steps_passed": true,
+      "loss": 10.032414436340332,
+      "ranks_parameters_equal": true,
+      "bf16": true
+    },
+    "max_words3": {
+      "two_FGM_steps_passed": true,
+      "loss": 3.2516965866088867,
+      "ranks_parameters_equal": true,
+      "bf16": true
+    },
+    "max_words5": {
+      "two_FGM_steps_passed": true,
+      "loss": 3.251697063446045,
+      "ranks_parameters_equal": true,
+      "bf16": true
+    },
+    "encoder_gp": {
+      "two_FGM_steps_passed": true,
+      "loss": 3.022146224975586,
+      "ranks_parameters_equal": true,
+      "bf16": true
+    }
+  },
+  "resume_and_phases": {
+    "interruption_at_step2": true,
+    "resume_weights_optimizer_scheduler_EMA_best_exact": true,
+    "epoch_loss_and_dev_counts_exact": true,
+    "periodic_snapshots_present": true,
+    "F_phase_B": "PASS: same-seed stage transfer and entry candidate",
+    "F_phase_C": "PASS: same-seed stage transfer and entry candidate",
+    "CRF_phase_A": "PASS: real trainer and full-sentence decoder",
+    "CRF_phase_B": "PASS: real trainer and full-sentence decoder",
+    "CRF_phase_C": "PASS: real trainer and full-sentence decoder",
+    "real_task_data_read": false,
+    "synthetic_only": true
+  },
+  "full_size_memory": {
+    "variant": "max_words5",
+    "per_gpu_batch": 32,
+    "tokens_per_sample": 247,
+    "chars_per_sample": 192,
+    "synthetic_samples_only": true,
+    "input_sizes_from": "train cache size statistics; token/word/character IDs and gold are synthetic",
+    "task_data_training": false,
+    "weights_saved": false,
+    "optimizer_and_EMA_present": true,
+    "two_FGM_steps": true,
+    "ranks": [
+      {
+        "rank": 0,
+        "loss": 9.870494842529297,
+        "norm": 11.748434452052942,
+        "peak_allocated_gib": 18.953197479248047,
+        "peak_reserved_gib": 20.32421875,
+        "seconds_for_two_steps": 4.7237942890496925
+      },
+      {
+        "rank": 1,
+        "loss": 9.873873710632324,
+        "norm": 11.748434452052942,
+        "peak_allocated_gib": 18.960049152374268,
+        "peak_reserved_gib": 20.30078125,
+        "seconds_for_two_steps": 4.723077601054683
+      }
+    ],
+    "source_hashes": {
+      "adversarial.py": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa",
+      "config.py": "fe9c638eea522149445aed62e42e5deea73e6adc6ae4c7a6a93062e4accc0440",
+      "controlled_data.py": "aa1074d687fe8bc9f7eb5d222e767399a15951e46471cb873b6d983586359c62",
+      "controlled_evaluate.py": "ed519d4017853204538bf4a29b3842cef0cd13eff41fff109c05aad82095b16a",
+      "crf_data_reference.py": "1c008c24e8b24305e2e44385763c3500ac79ff371aa74c47d5a1ec90bb8c9594",
+      "crf_reference.py": "7d6f7b8eedb456ea099a8681ad673c3b9b75869dc1bd778a66c7c13c033a6085",
+      "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+      "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+      "model.py": "8fbcddab8a4d5b9e277e3906a7d53a790624f9fc0cc6b2d2ce73d292c578baab",
+      "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+      "parent_config.py": "73634cfe029342a0b7fa6f7746616f24f86a11f6759313e505a79792648c8c04",
+      "parent_model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+      "prepare.py": "91648fe307bb18643b73cef63c89037282da2ca027e7433e34a398ef54f87753",
+      "qa.py": "c3d1b4486acc838320d0c1308ea213a99a1dc6e04e791ac0a53964a9db5ed8d6",
+      "qa_pipeline.py": "91d07e018e7ed373a5bfcbc3b07328cfc047f6795a25684638c59662849d8060",
+      "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+      "run_pipeline.py": "fe41968e575ecd8f5f674f9b1778c5ec286379c51708b7c52ffcc2781d525031",
+      "runtime.py": "1d21fd4b208b0c5a0aad6e6f4a350ed32142aca7bdcee0767d18a72e0190ebdb",
+      "train.py": "2171300eb1efe5cdc286995bf7707101ef76b24a720d3a5279e137b69e3d3410",
+      "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+    }
+  },
+  "long_sentence_crf": {
+    "overlapping_windows": 3,
+    "sentence_length": 35,
+    "exact_predictions": [
+      [
+        0,
+        12,
+        20
+      ],
+      [
+        1,
+        30,
+        33
+      ]
+    ],
+    "one_entity_crosses_first_window_boundary": true,
+    "perfect_original_span_recovery": true,
+    "synthetic_only": true,
+    "implementation_sha256": "ed519d4017853204538bf4a29b3842cef0cd13eff41fff109c05aad82095b16a"
+  },
+  "launcher": {
+    "STOP_blocks_launch": true,
+    "completed_phases_skipped": 3,
+    "collection_passed": true,
+    "synthetic_fixture_only": true,
+    "stdout": "Using completed A: best epoch 1\nUsing completed B: best epoch 0\nUsing completed C: best epoch 0\nCollected: /root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/uninterrupted/output/leman_controlled_ablation_v1/return_controlled_F_seed42_20261020T043011Z.zip\nSHA256: a090de92df7fe51c7f65bcb4c4d6a3f06b3187a3c7fbac88ae5b34a8cc50363e\nA/B/C complete. Selected model and dev predictions saved. Test was not evaluated.\n"
+  },
+  "resources": {
+    "words": 48942,
+    "characters": 3912,
+    "word_character_IDs_equal_to_frozen_v4": true,
+    "train_windows": 48884,
+    "steps_per_epoch_global64": 764,
+    "variant_cache_gold_coverage_complete": true,
+    "neural_training_started": false,
+    "test_read": false
+  },
+  "source_hashes": {
+    "adversarial.py": "86f147400fb333542b8c6e740d317784071755c95277386216c43d27a68953fa",
+    "config.py": "fe9c638eea522149445aed62e42e5deea73e6adc6ae4c7a6a93062e4accc0440",
+    "controlled_data.py": "aa1074d687fe8bc9f7eb5d222e767399a15951e46471cb873b6d983586359c62",
+    "controlled_evaluate.py": "ed519d4017853204538bf4a29b3842cef0cd13eff41fff109c05aad82095b16a",
+    "crf_data_reference.py": "1c008c24e8b24305e2e44385763c3500ac79ff371aa74c47d5a1ec90bb8c9594",
+    "crf_reference.py": "7d6f7b8eedb456ea099a8681ad673c3b9b75869dc1bd778a66c7c13c033a6085",
+    "data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+    "evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+    "model.py": "8fbcddab8a4d5b9e277e3906a7d53a790624f9fc0cc6b2d2ce73d292c578baab",
+    "paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+    "parent_config.py": "73634cfe029342a0b7fa6f7746616f24f86a11f6759313e505a79792648c8c04",
+    "parent_model.py": "4336ec77ce88a1786ccd0a491e6c6b262f662e8d658570339650d1577c99e3f2",
+    "prepare.py": "91648fe307bb18643b73cef63c89037282da2ca027e7433e34a398ef54f87753",
+    "qa.py": "c3d1b4486acc838320d0c1308ea213a99a1dc6e04e791ac0a53964a9db5ed8d6",
+    "qa_pipeline.py": "91d07e018e7ed373a5bfcbc3b07328cfc047f6795a25684638c59662849d8060",
+    "recipe.py": "a481bb7f4819a03fabf0817d007384a52709b09b725745cc5a1727d10d3a99fc",
+    "run_pipeline.py": "fe41968e575ecd8f5f674f9b1778c5ec286379c51708b7c52ffcc2781d525031",
+    "runtime.py": "1d21fd4b208b0c5a0aad6e6f4a350ed32142aca7bdcee0767d18a72e0190ebdb",
+    "train.py": "2171300eb1efe5cdc286995bf7707101ef76b24a720d3a5279e137b69e3d3410",
+    "transfer.py": "c3571aa9bd0e474aeb95d80aef62fcef8a84aafd17bed0ee37e50857a220ed9b"
+  },
+  "formal_task_training_started": false,
+  "evidence_archive_sha256": "b095f315ffa3b1205bc23b3ce585ba6395b5673e3dcc31020b93fc9447ab7a89"
+}

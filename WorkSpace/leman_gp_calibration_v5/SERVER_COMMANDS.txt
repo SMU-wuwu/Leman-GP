@@ -1,0 +1,10 @@
+cd /root/data/WorkSpace
+unzip -q leman_gp_calibration_v5.zip
+cd leman_gp_calibration_v5
+bash run.sh
+
+# 回传输出目录中的 return_leman_calibration_v5_*.zip
+# /root/data/WorkSpace/output/leman_calibration_v5_seed42/
+
+# 可选：4 张 4090 对 dev 重新前向，不训练、不读取 test
+# bash predict.sh --split dev

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "predict.py": "e6784f832406f4fd0e5b6865e62c6b9b67ad62701f8d45aca1c673b248a1f6bf",
+    "predict.sh": "0dc5fbca5f1f1f045a46bb76fcc1ef4e414b12b0b1dfd049b0304b8a9c8c21fe"
+  },
+  "selection_sha256": "050dd074323902f6be3352ebaab1ded1dfec93e3f386abc27488f416e62f5385",
+  "shared_dependencies": {
+    "leman_gp_fgm_v10": "8f30cf112dbc26696afaefb633ae635adc0cb0484a5297fdc5d20cb8cced5a4e",
+    "leman_gp_fgm_v10_analysis": "32299f85994ddcefa42878f1036bfc1afae21caade346c9dbd65c2c8ce68fe0c",
+    "leman_gp_typecal_v9": "9feb7005d4de355bc4419536be8416dc4c2c88721fe0527e5975cc7769aefd97"
+  }
+}

@@ -1,0 +1,5 @@
+cd /root/data/WorkSpace/leman_gp_gazetteer_v6
+bash run.sh
+bash predict.sh --split dev
+
+# Results can be read directly by Codex through the authorized SSH connection.

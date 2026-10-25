@@ -1,0 +1,40 @@
+{
+  "experiment": "leman-fgm-seed47-dual4090",
+  "status": "configured_before_seed47_training",
+  "goal": "generate one additional FGM prediction source and evaluate complementary value under fixed dev folds",
+  "parent": {
+    "path": "output/leman_finetune_v4_seed42/best.pt",
+    "sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4",
+    "weight_source": "EMA epoch 1"
+  },
+  "training": {
+    "seed": 47,
+    "epochs": 3,
+    "world_size": 2,
+    "per_gpu_batch_size": 32,
+    "global_batch_size": 64,
+    "reference_fgm_global_batch_size": 128,
+    "encoder_lr": 3e-06,
+    "reused_head_lr": 1e-05,
+    "fgm_epsilon": 0.5,
+    "clean_weight": 0.5,
+    "ema_decay": 0.995,
+    "grad_clip": 1.0,
+    "selection": "raw-dev exact character-span Micro F1 at threshold zero; parent epoch zero and live/EMA after every epoch",
+    "resume": "same full checkpoint, two-rank RNG, optimizer, scheduler, epoch and batch position",
+    "test_accessed": false
+  },
+  "known_dev_references": {
+    "v32_crossfit_micro": 0.945469534224,
+    "v42_vote_crossfit_micro": 0.94602547,
+    "v43_nested_blend_crossfit_micro": 0.945969,
+    "v44_extratrees_crossfit_micro": 0.945455,
+    "v45_vote_decode_crossfit_micro": 0.945788,
+    "scope": "development-only exploratory results; no independent-test claim"
+  },
+  "analysis": {
+    "initial": "run the package's same FGM calibration on v4 parent and seed47 model; report raw, full-dev and fixed-fold crossfit",
+    "complementarity": "evaluate new seed against fixed v32 and v42 candidate predictions using the same text-hash folds; report standalone and frozen vote/union rules separately",
+    "test_accessed": false
+  }
+}

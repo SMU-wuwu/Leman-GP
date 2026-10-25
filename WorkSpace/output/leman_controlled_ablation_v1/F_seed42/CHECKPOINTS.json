@@ -1,0 +1,46 @@
+{
+  "A/best.pt": {
+    "bytes": 1551694687,
+    "sha256": "8ff4aa5c6ea2f691df2d29b5a5ca3acba8aff50cf7059c4ef94461c57044e21b"
+  },
+  "A/epoch_005.pt": {
+    "bytes": 7758535759,
+    "sha256": "fad36db80aedd1656f022c6d9cc2136c4b1da57d58ae786bb65fd7db4a387d17"
+  },
+  "A/epoch_010.pt": {
+    "bytes": 7758548751,
+    "sha256": "74a28875eea1c64b64605eb3a34583a8a814c968e3618da06a229f7c882a70d9"
+  },
+  "A/epoch_015.pt": {
+    "bytes": 7758561743,
+    "sha256": "9c80d342dc9e88a793787523e6d0121d288bec130a45e78d58ea4252288807c9"
+  },
+  "A/epoch_020.pt": {
+    "bytes": 7758574799,
+    "sha256": "78d46e2c8b136726308a5fed9b326dd7e9556aeabc7f7e769b9d8a187c22bbbb"
+  },
+  "A/last.pt": {
+    "bytes": 7758574799,
+    "sha256": "78d46e2c8b136726308a5fed9b326dd7e9556aeabc7f7e769b9d8a187c22bbbb"
+  },
+  "B/best.pt": {
+    "bytes": 1551695007,
+    "sha256": "f6eb2c4b472fd5e90063a6968054681ff2a52cdd4c155c34599fe3578f485fe2"
+  },
+  "B/epoch_005.pt": {
+    "bytes": 7758552271,
+    "sha256": "ece24684dacf4715efe497770f7c6bb70e7be59d345751fc1e91835f65b2da14"
+  },
+  "B/last.pt": {
+    "bytes": 7758552271,
+    "sha256": "ece24684dacf4715efe497770f7c6bb70e7be59d345751fc1e91835f65b2da14"
+  },
+  "C/best.pt": {
+    "bytes": 1551695007,
+    "sha256": "145224e85c808ddc84cda9177e7cd4a6731b004edbc713b03008bb0695fe01cd"
+  },
+  "C/last.pt": {
+    "bytes": 7758546191,
+    "sha256": "8e25a0a8ed3beddd7e53101a854aa74957396590da5ff7d2e148812a2e771e6a"
+  }
+}

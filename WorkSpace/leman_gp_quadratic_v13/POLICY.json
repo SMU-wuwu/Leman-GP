@@ -1,0 +1,30 @@
+{
+  "created_before_scoring_utc": "2026-10-17T14:19:05.766013+00:00",
+  "experiment": "fixed quadratic GP-boundary calibration on existing expanded FGM/v4 candidates",
+  "routes": [
+    "v10",
+    "expanded_quadratic"
+  ],
+  "baseline_selection_sha256": "35cd4fc0381dedb090e5636f2ba63f09f8940e95655195df38eb4d1f160b9b69",
+  "v11_comparison_sha256": "013cc93b7017a1a03a6402b4c5b1c0d7ddc0815a18f8c9286eb00ef4717f45ce",
+  "expanded_fgm_cache_sha256": "43292783f5fe64ff71b7fe217e1e9cd8e22fea0ebfc9e300c9df77a4f9fc4017",
+  "expanded_v4_cache_sha256": "b3ee694b968a84c79bad962933c33f03e939b5c0d20cd137282036daf49a3523",
+  "candidate_floor": -32.0,
+  "missing_GP": -32.0,
+  "missing_boundary": -16.0,
+  "features": "same twelve v11 features, append GP_scaled squared, GP_scaled times boundary_logprob, boundary_logprob squared for each model; six fixed global quadratic terms, no extra type slopes",
+  "type_slopes": [
+    0,
+    1,
+    6,
+    7
+  ],
+  "ridge": 10.0,
+  "type_slope_ridge": 50.0,
+  "normalization": "fit-partition only",
+  "folds": "unchanged fixed text-hash folds",
+  "selection": "fit-only Micro then Macro then prefer v10; same fixed decoder search",
+  "acceptance": "full-dev >= v10; nested crossfit strictly exceeds v10 and v11; neither held half lower than either reference",
+  "no_neural_training_or_test": true,
+  "cache_precision_disclosure": "v4 expanded cache from prior v7 GPU inference, as disclosed and audited in v11"
+}

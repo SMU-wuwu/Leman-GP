@@ -1,0 +1,631 @@
+{
+  "root": "/root/data/WorkSpace",
+  "date": "2026-10-25",
+  "authorization": "User requested deleting unnecessary .pt files; preserve final inference, selected models, ablation endpoints and chapter-four resources",
+  "source_archive_must_be_downloaded_before_execution": true,
+  "delete": [
+    {
+      "path": "/root/data/WorkSpace/output/lebert_agcner_seed42/epoch_005.pt",
+      "bytes": 3636986059,
+      "allocated_bytes": 3636986368,
+      "inode": 1100034482394,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792421883949561745,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": "LEBERT 10-epoch completed baseline; selected best.pt retained; epoch5/epoch10/last not final-system sources"
+    },
+    {
+      "path": "/root/data/WorkSpace/output/lebert_agcner_seed42/epoch_010.pt",
+      "bytes": 3636992587,
+      "allocated_bytes": 3636993024,
+      "inode": 1100034482434,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792424811305723077,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": "LEBERT 10-epoch completed baseline; selected best.pt retained; epoch5/epoch10/last not final-system sources"
+    },
+    {
+      "path": "/root/data/WorkSpace/output/lebert_agcner_seed42/last.pt",
+      "bytes": 3636948849,
+      "allocated_bytes": 3636948992,
+      "inode": 1100034482435,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792424846373981326,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": "LEBERT 10-epoch completed baseline; selected best.pt retained; epoch5/epoch10/last not final-system sources"
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_attention_mechanism_v2/F_seed42/last.pt",
+      "bytes": 7758548047,
+      "allocated_bytes": 7758548480,
+      "inode": 1100036722409,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792582588124176341,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "S",
+          "completed_epochs": 3,
+          "best_epoch": 0,
+          "best_sha256": "525a9f21e9ccad610f38cbabff1948029156b83cd28ce3cd642c1eceb01c1d7a"
+        },
+        "completed_epochs": 3,
+        "configured_epochs": 3
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_attention_mechanism_v2/attention_norm_only_seed42/last.pt",
+      "bytes": 7730209179,
+      "allocated_bytes": 7730209280,
+      "inode": 1100036722513,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792584916519068245,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "attention_norm_only",
+          "phase": "S",
+          "completed_epochs": 3,
+          "best_epoch": 1,
+          "best_sha256": "a4fd924cb07c3cca5855745655f563c1b970ce1d1fcd7e69317760f37a0ca538"
+        },
+        "completed_epochs": 3,
+        "configured_epochs": 3
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/A/epoch_005.pt",
+      "bytes": 7758535759,
+      "allocated_bytes": 7758536192,
+      "inode": 1100035222653,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792474489907659858,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "A",
+          "completed_epochs": 20,
+          "best_epoch": 6,
+          "best_sha256": "8ff4aa5c6ea2f691df2d29b5a5ca3acba8aff50cf7059c4ef94461c57044e21b"
+        },
+        "completed_epochs": 20,
+        "configured_epochs": 20
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/A/epoch_010.pt",
+      "bytes": 7758548751,
+      "allocated_bytes": 7758548992,
+      "inode": 1100035222679,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792478129982882468,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "A",
+          "completed_epochs": 20,
+          "best_epoch": 6,
+          "best_sha256": "8ff4aa5c6ea2f691df2d29b5a5ca3acba8aff50cf7059c4ef94461c57044e21b"
+        },
+        "completed_epochs": 20,
+        "configured_epochs": 20
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/A/epoch_015.pt",
+      "bytes": 7758561743,
+      "allocated_bytes": 7758561792,
+      "inode": 1100035222704,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792482021087066496,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "A",
+          "completed_epochs": 20,
+          "best_epoch": 6,
+          "best_sha256": "8ff4aa5c6ea2f691df2d29b5a5ca3acba8aff50cf7059c4ef94461c57044e21b"
+        },
+        "completed_epochs": 20,
+        "configured_epochs": 20
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/A/epoch_020.pt",
+      "bytes": 7758574799,
+      "allocated_bytes": 7758575104,
+      "inode": 1100035222730,
+      "device": 1048667,
+      "nlink": 2,
+      "mtime_ns": 1792485297565594424,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "A",
+          "completed_epochs": 20,
+          "best_epoch": 6,
+          "best_sha256": "8ff4aa5c6ea2f691df2d29b5a5ca3acba8aff50cf7059c4ef94461c57044e21b"
+        },
+        "completed_epochs": 20,
+        "configured_epochs": 20
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/A/last.pt",
+      "bytes": 7758574799,
+      "allocated_bytes": 7758575104,
+      "inode": 1100035222730,
+      "device": 1048667,
+      "nlink": 2,
+      "mtime_ns": 1792485297565594424,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "A",
+          "completed_epochs": 20,
+          "best_epoch": 6,
+          "best_sha256": "8ff4aa5c6ea2f691df2d29b5a5ca3acba8aff50cf7059c4ef94461c57044e21b"
+        },
+        "completed_epochs": 20,
+        "configured_epochs": 20
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/B/epoch_005.pt",
+      "bytes": 7758552271,
+      "allocated_bytes": 7758552576,
+      "inode": 1100035222800,
+      "device": 1048667,
+      "nlink": 2,
+      "mtime_ns": 1792488870447683511,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "B",
+          "completed_epochs": 5,
+          "best_epoch": 0,
+          "best_sha256": "f6eb2c4b472fd5e90063a6968054681ff2a52cdd4c155c34599fe3578f485fe2"
+        },
+        "completed_epochs": 5,
+        "configured_epochs": 5
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/B/last.pt",
+      "bytes": 7758552271,
+      "allocated_bytes": 7758552576,
+      "inode": 1100035222800,
+      "device": 1048667,
+      "nlink": 2,
+      "mtime_ns": 1792488870447683511,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "B",
+          "completed_epochs": 5,
+          "best_epoch": 0,
+          "best_sha256": "f6eb2c4b472fd5e90063a6968054681ff2a52cdd4c155c34599fe3578f485fe2"
+        },
+        "completed_epochs": 5,
+        "configured_epochs": 5
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/C/last.pt",
+      "bytes": 7758546191,
+      "allocated_bytes": 7758546432,
+      "inode": 1100035222863,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792492906022769808,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {
+          "variant": "F",
+          "phase": "C",
+          "completed_epochs": 3,
+          "best_epoch": 3,
+          "best_sha256": "145224e85c808ddc84cda9177e7cd4a6731b004edbc713b03008bb0695fe01cd"
+        },
+        "completed_epochs": 3,
+        "configured_epochs": 3
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_fgm_seed46_dual4090/last.pt",
+      "bytes": 7758543119,
+      "allocated_bytes": 7758543360,
+      "inode": 1100034109930,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792373476045553697,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {},
+        "completed_epochs": 3,
+        "configured_epochs": 3
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_fgm_seed47_dual4090/last.pt",
+      "bytes": 7758543183,
+      "allocated_bytes": 7758543360,
+      "inode": 1100034110124,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792392569309421655,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {},
+        "completed_epochs": 3,
+        "configured_epochs": 3
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_fgm_v14_seed44/last.pt",
+      "bytes": 7758570043,
+      "allocated_bytes": 7758570496,
+      "inode": 1100033188500,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792250153762380662,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {},
+        "completed_epochs": 3,
+        "configured_epochs": 3
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_finetune_v4_seed42/epoch_005.pt",
+      "bytes": 7758574971,
+      "allocated_bytes": 7758575104,
+      "inode": 1100033126976,
+      "device": 1048667,
+      "nlink": 2,
+      "mtime_ns": 1792234912043663973,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {},
+        "completed_epochs": 5,
+        "configured_epochs": 5
+      }
+    },
+    {
+      "path": "/root/data/WorkSpace/output/leman_rdrop_v17_seed45/last.pt",
+      "bytes": 7758544207,
+      "allocated_bytes": 7758544384,
+      "inode": 1100033201440,
+      "device": 1048667,
+      "nlink": 1,
+      "mtime_ns": 1792297554823360500,
+      "symlink": false,
+      "reason": "Completed run: unselected optimizer/resume or intermediate-epoch checkpoint; best/fixed endpoints retained",
+      "completion_evidence": {
+        "complete": {},
+        "completed_epochs": 3,
+        "configured_epochs": 3
+      }
+    }
+  ],
+  "protected": {
+    "/root/data/WorkSpace/output/leman_finetune_v4_seed42/best.pt": {
+      "reason": "final-v3 inference source: old",
+      "expected_sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4"
+    },
+    "/root/data/WorkSpace/output/leman_fgm_v10_seed43/best.pt": {
+      "reason": "final-v3 inference source: fgm43",
+      "expected_sha256": "efdeaaa83bc483b376837ee5bcb35df7bcb5a9b1b10d2f120eb32868f1d80506"
+    },
+    "/root/data/WorkSpace/output/leman_fgm_v14_seed44/best.pt": {
+      "reason": "final-v3 inference source: fgm44",
+      "expected_sha256": "a3020f91bdf471069a58e25f4c016daa45d246c03b648a8ad6e760cce20dc625"
+    },
+    "/root/data/WorkSpace/output/leman_fgm_v10_seed43/last.pt": {
+      "reason": "final-v3 inference source: ema43",
+      "expected_sha256": "36b341622a634ea305000a5776950e8d93ae0e9fdc73a73fbbb5b8c7b7833a34"
+    },
+    "/root/data/WorkSpace/output/leman_fgm_seed46_dual4090/best.pt": {
+      "reason": "final-v3 inference source: fgm46",
+      "expected_sha256": "3d790b4796c31932d7ad51a01f57dcfb9ebb573ebae021ca757995961a4eb605"
+    },
+    "/root/data/WorkSpace/output/leman_soup_v16/soup2.pt": {
+      "reason": "final-v3 inference source: soup2",
+      "expected_sha256": "bc5ef68b6f733ccdd9e96d558e501ebef24d1584c1aedd02f6ca09316d8e0b23"
+    },
+    "/root/data/WorkSpace/output/leman_soup_v16/soup3.pt": {
+      "reason": "final-v3 inference source: soup3",
+      "expected_sha256": "3061466ac2f6782ec6694818ee0317b8a6fb8ad51567b18c97fa2ac763837a83"
+    },
+    "/root/data/WorkSpace/output/leman_f1_4x4090_seed42/best.pt": {
+      "reason": "final-v3 inference source: parent",
+      "expected_sha256": "22a4efe6a31021bda0d62fc6c1b73294dadfca79f00e79ab83bb89a9c9177bc1"
+    },
+    "/root/data/WorkSpace/output/leman_finetune_v4_seed42/last.pt": {
+      "reason": "final-v3 inference source: v4ema",
+      "expected_sha256": "5c281cda42f510b0300aa37d8cf7e3825f814e9a43da36f7ae7d916052e284ff"
+    },
+    "/root/data/WorkSpace/output/leman_f1_4x4090_seed42/last.pt": {
+      "reason": "final-v3 inference source: v2ema",
+      "expected_sha256": "40e537c6c411509604045e348e3cc75753152682f7c005c5de157ec1e2386b02"
+    },
+    "/root/data/WorkSpace/output/leman_rdrop_v17_seed45/best.pt": {
+      "reason": "final-v3 inference source: rdrop",
+      "expected_sha256": "bc94979d39e8857164496eda617d05c99edd9ddb51f1b222ccbed8f7625b6271"
+    },
+    "/root/data/WorkSpace/output/leman_fgm_seed47_dual4090/best.pt": {
+      "reason": "final-v3 inference source: fgm47",
+      "expected_sha256": "c68b55b30f3f0caa229344f71151fefcba0170b8e75ddea9ef9a06cf6d2c97e3"
+    },
+    "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/C/best.pt": {
+      "reason": "final-v3 inference source: F42_C",
+      "expected_sha256": "145224e85c808ddc84cda9177e7cd4a6731b004edbc713b03008bb0695fe01cd"
+    },
+    "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/B/best.pt": {
+      "reason": "final-v3 inference source: F42_B",
+      "expected_sha256": "f6eb2c4b472fd5e90063a6968054681ff2a52cdd4c155c34599fe3578f485fe2"
+    },
+    "/root/data/WorkSpace/model/model.safetensors": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/resumed/model/model.safetensors": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/resumed/output/leman_controlled_ablation_v1/F_seed42/A/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/uninterrupted/model/model.safetensors": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/uninterrupted/output/leman_controlled_ablation_v1/F_seed42/A/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/uninterrupted/output/leman_controlled_ablation_v1/F_seed42/B/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/uninterrupted/output/leman_controlled_ablation_v1/F_seed42/C/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/uninterrupted/output/leman_controlled_ablation_v1/crf_seed42/A/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/uninterrupted/output/leman_controlled_ablation_v1/crf_seed42/B/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/controlled_ablation_qa_20261020/pipeline_v1/uninterrupted/output/leman_controlled_ablation_v1/crf_seed42/C/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/lebert_agcner_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_attention_mechanism_v2/F_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_attention_mechanism_v2/F_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_attention_mechanism_v2/attention_norm_only_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_attention_mechanism_v2/attention_norm_only_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/A/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_paper_a100_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/F_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/F_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/clean_two_pass_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/clean_two_pass_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/crf_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/crf_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/dot_attention_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/dot_attention_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/encoder_gp_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/encoder_gp_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/fgm_control_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/fixed_gate_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/fixed_gate_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/gp_reset_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/gp_reset_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/max_words3_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/max_words3_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/max_words5_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/max_words5_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_attention_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_attention_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_bmes_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_bmes_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_boundary_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_boundary_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_char_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_char_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_fgm_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_fgm_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_gru_linear_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_gru_linear_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_lexicon_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_lexicon_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_recurrence_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_recurrence_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_rope_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/no_rope_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/uniform_lexicon_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/uniform_lexicon_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/unit_loss_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/unit_loss_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/leman_short_mechanism_v1/weighted_control_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/model/model.safetensors": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/F_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/F_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/clean_two_pass_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/clean_two_pass_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/crf_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/crf_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/no_boundary_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/no_boundary_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/no_gru_linear_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/continuous/output/leman_short_mechanism_v1/no_gru_linear_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/resumed/model/model.safetensors": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/resumed/output/leman_short_mechanism_v1/F_seed42/best.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/short_pipeline_qa_v1/resumed/output/leman_short_mechanism_v1/F_seed42/final_ema.pt": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/resources/bert-base-chinese/model.safetensors": {
+      "reason": "selected model, fixed endpoint, or pretrained backbone"
+    },
+    "/root/data/WorkSpace/output/chapter4_lexicon_contribution/M_seed42/best.pt": {
+      "reason": "chapter-four documented dependency"
+    }
+  },
+  "estimated_reclaim_allocated_bytes": 103985208832,
+  "logical_delete_bytes": 127260906828,
+  "file_count": 18,
+  "policy": "Delete exactly listed paths after inode,size,mtime checks and active-process check; leave all unknown checkpoints and caches untouched"
+}

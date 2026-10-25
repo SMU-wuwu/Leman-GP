@@ -1,0 +1,50 @@
+{
+  "strategy": "weighted_interval",
+  "global_threshold": -0.75,
+  "thresholds": {
+    "BIS": -0.4499999999999996,
+    "COM": -2.5,
+    "CRO": -0.6999999999999997,
+    "CUL": -0.6099999999999997,
+    "DIS": -0.25,
+    "DRUG": -1.1999999999999995,
+    "FER": -2.25,
+    "ORG": 0.0500000000000006,
+    "OTH": -0.5,
+    "PAOG": -1.0,
+    "PART": -0.6999999999999995,
+    "PER": -0.8499999999999996,
+    "PET": -0.3499999999999992
+  },
+  "fit_support": {
+    "BIS": 92,
+    "COM": 30,
+    "CRO": 2215,
+    "CUL": 566,
+    "DIS": 1389,
+    "DRUG": 1354,
+    "FER": 45,
+    "ORG": 155,
+    "OTH": 123,
+    "PAOG": 230,
+    "PART": 896,
+    "PER": 1022,
+    "PET": 2300
+  },
+  "eligible": [
+    "CRO",
+    "CUL",
+    "DIS",
+    "DRUG",
+    "PAOG",
+    "PART",
+    "PER",
+    "PET"
+  ],
+  "min_support": 200,
+  "selection_metric": "exact original character-span micro F1",
+  "fit_sentences": 3019,
+  "fit_micro_f1": 0.9588830043331729,
+  "boundary_weight": 0.0,
+  "fit_macro_f1": 0.9073622771828216
+}

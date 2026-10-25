@@ -1,0 +1,6 @@
+cd /root/data/WorkSpace/leman_gp_fgm_v10
+bash train.sh
+
+中断后续训：重复以上两行。
+输出目录：/root/data/WorkSpace/output/leman_fgm_v10_seed43
+训练结束后告诉 Codex「已执行」，由 Codex 直接通过 SSH 分析和校准。

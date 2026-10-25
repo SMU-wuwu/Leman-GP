@@ -1,0 +1,11 @@
+{
+  "verified_utc": "2026-10-21T00:49:05.901316+00:00",
+  "resume_epoch": 5,
+  "resume_batch": 189,
+  "paused_global_step": 3245,
+  "current_batch": 233,
+  "gradient_last_step": 3250,
+  "source_and_optimizer_state_restored_by_strict_loader": true,
+  "gpu_processes": "81863, 19642 MiB\n81864, 19186 MiB\n",
+  "queue_running": true
+}

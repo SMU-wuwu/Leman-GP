@@ -1,0 +1,18 @@
+{
+  "closed_utc": "2026-10-20T02:34:50.334067+00:00",
+  "user_instruction": "Stop LEBERT permanently for this revision; summarize through completed epoch10 and move on",
+  "seed": 42,
+  "completed_epochs": 10,
+  "planned_epochs": 20,
+  "scheduler_budget_epochs": 20,
+  "best_epoch_within_cutoff": 9,
+  "excluded_partial_epoch11_steps": 85,
+  "last_checkpoint": "last.pt contains 85 updates into epoch11; do not use it as epoch10 endpoint",
+  "unrun_seeds": [
+    43,
+    44
+  ],
+  "resume_authorized": false,
+  "formal_training_started_by_this_audit": false,
+  "test_evaluated_by_this_audit": false
+}

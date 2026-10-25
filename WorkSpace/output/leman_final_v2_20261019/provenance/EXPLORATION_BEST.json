@@ -1,0 +1,255 @@
+{
+  "name": "v23 wide context consensus",
+  "status": "exploration; final_v1 remains frozen",
+  "case": "wide_context6_consensus8",
+  "parent_freeze_sha256": "0b86632a0e2f1734e546603123955bd6eb003c3b3155d8d3f2a37f94f545006b",
+  "reports": {
+    "full_dev": {
+      "micro": {
+        "precision": 0.9561297202966698,
+        "recall": 0.9490905591377153,
+        "f1": 0.9525971360266596,
+        "true_positive": 19724,
+        "predicted": 20629,
+        "support": 20782
+      },
+      "macro_f1": 0.9020008059443738,
+      "per_type": {
+        "BIS": {
+          "precision": 0.9597989949748744,
+          "recall": 0.9744897959183674,
+          "f1": 0.9670886075949368,
+          "true_positive": 191,
+          "predicted": 199,
+          "support": 196
+        },
+        "COM": {
+          "precision": 0.7702702702702703,
+          "recall": 0.890625,
+          "f1": 0.8260869565217391,
+          "true_positive": 57,
+          "predicted": 74,
+          "support": 64
+        },
+        "CRO": {
+          "precision": 0.972472819801064,
+          "recall": 0.972472819801064,
+          "f1": 0.972472819801064,
+          "true_positive": 4204,
+          "predicted": 4323,
+          "support": 4323
+        },
+        "CUL": {
+          "precision": 0.8995633187772926,
+          "recall": 0.9221128021486124,
+          "f1": 0.9106984969053935,
+          "true_positive": 1030,
+          "predicted": 1145,
+          "support": 1117
+        },
+        "DIS": {
+          "precision": 0.9966654316413487,
+          "recall": 0.9785376500545653,
+          "f1": 0.9875183553597651,
+          "true_positive": 2690,
+          "predicted": 2699,
+          "support": 2749
+        },
+        "DRUG": {
+          "precision": 0.9503012048192772,
+          "recall": 0.9424943988050785,
+          "f1": 0.9463817022872141,
+          "true_positive": 2524,
+          "predicted": 2656,
+          "support": 2678
+        },
+        "FER": {
+          "precision": 0.9411764705882353,
+          "recall": 0.8205128205128205,
+          "f1": 0.8767123287671232,
+          "true_positive": 64,
+          "predicted": 68,
+          "support": 78
+        },
+        "ORG": {
+          "precision": 0.8195488721804511,
+          "recall": 0.6964856230031949,
+          "f1": 0.7530224525043178,
+          "true_positive": 218,
+          "predicted": 266,
+          "support": 313
+        },
+        "OTH": {
+          "precision": 0.8087431693989071,
+          "recall": 0.6271186440677966,
+          "f1": 0.7064439140811456,
+          "true_positive": 148,
+          "predicted": 183,
+          "support": 236
+        },
+        "PAOG": {
+          "precision": 0.9625550660792952,
+          "recall": 0.9583333333333334,
+          "f1": 0.9604395604395605,
+          "true_positive": 437,
+          "predicted": 454,
+          "support": 456
+        },
+        "PART": {
+          "precision": 0.9202524383247275,
+          "recall": 0.9077532541029995,
+          "f1": 0.913960113960114,
+          "true_positive": 1604,
+          "predicted": 1743,
+          "support": 1767
+        },
+        "PER": {
+          "precision": 0.9244159413650939,
+          "recall": 0.9252636405318662,
+          "f1": 0.9248395967002749,
+          "true_positive": 2018,
+          "predicted": 2183,
+          "support": 2181
+        },
+        "PET": {
+          "precision": 0.979076790336497,
+          "recall": 0.9816176470588235,
+          "f1": 0.9803455723542117,
+          "true_positive": 4539,
+          "predicted": 4636,
+          "support": 4624
+        }
+      },
+      "total_samples": 5963,
+      "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+      "overlap_policy": "retain all; deduplicate identical spans from overlapping windows"
+    },
+    "crossfit": {
+      "micro": {
+        "precision": 0.9497228435281533,
+        "recall": 0.9398517948224425,
+        "f1": 0.94476153622908,
+        "true_positive": 19532,
+        "predicted": 20566,
+        "support": 20782
+      },
+      "macro_f1": 0.8825433771149538,
+      "per_type": {
+        "BIS": {
+          "precision": 0.949748743718593,
+          "recall": 0.9642857142857143,
+          "f1": 0.9569620253164557,
+          "true_positive": 189,
+          "predicted": 199,
+          "support": 196
+        },
+        "COM": {
+          "precision": 0.782608695652174,
+          "recall": 0.84375,
+          "f1": 0.8120300751879699,
+          "true_positive": 54,
+          "predicted": 69,
+          "support": 64
+        },
+        "CRO": {
+          "precision": 0.96833102172908,
+          "recall": 0.9690030071709461,
+          "f1": 0.9686668979072726,
+          "true_positive": 4189,
+          "predicted": 4326,
+          "support": 4323
+        },
+        "CUL": {
+          "precision": 0.9162790697674419,
+          "recall": 0.8818263205013429,
+          "f1": 0.8987226277372263,
+          "true_positive": 985,
+          "predicted": 1075,
+          "support": 1117
+        },
+        "DIS": {
+          "precision": 0.9893577981651376,
+          "recall": 0.9807202619134231,
+          "f1": 0.9850200949945196,
+          "true_positive": 2696,
+          "predicted": 2725,
+          "support": 2749
+        },
+        "DRUG": {
+          "precision": 0.9433183183183184,
+          "recall": 0.938386855862584,
+          "f1": 0.940846125046799,
+          "true_positive": 2513,
+          "predicted": 2664,
+          "support": 2678
+        },
+        "FER": {
+          "precision": 0.7875,
+          "recall": 0.8076923076923077,
+          "f1": 0.7974683544303798,
+          "true_positive": 63,
+          "predicted": 80,
+          "support": 78
+        },
+        "ORG": {
+          "precision": 0.7491289198606271,
+          "recall": 0.6869009584664537,
+          "f1": 0.7166666666666667,
+          "true_positive": 215,
+          "predicted": 287,
+          "support": 313
+        },
+        "OTH": {
+          "precision": 0.7816091954022989,
+          "recall": 0.576271186440678,
+          "f1": 0.6634146341463415,
+          "true_positive": 136,
+          "predicted": 174,
+          "support": 236
+        },
+        "PAOG": {
+          "precision": 0.9552572706935123,
+          "recall": 0.9364035087719298,
+          "f1": 0.9457364341085271,
+          "true_positive": 427,
+          "predicted": 447,
+          "support": 456
+        },
+        "PART": {
+          "precision": 0.914103308183401,
+          "recall": 0.8913412563667232,
+          "f1": 0.9025787965616046,
+          "true_positive": 1575,
+          "predicted": 1723,
+          "support": 1767
+        },
+        "PER": {
+          "precision": 0.9043083900226757,
+          "recall": 0.9142595139844109,
+          "f1": 0.9092567259461924,
+          "true_positive": 1994,
+          "predicted": 2205,
+          "support": 2181
+        },
+        "PET": {
+          "precision": 0.9790940766550522,
+          "recall": 0.972318339100346,
+          "f1": 0.9756944444444444,
+          "true_positive": 4496,
+          "predicted": 4592,
+          "support": 4624
+        }
+      },
+      "total_samples": 5963,
+      "metric": "exact original character-span + entity type; inclusive start, exclusive end",
+      "overlap_policy": "retain all; deduplicate identical spans from overlapping windows"
+    }
+  },
+  "model": "/root/data/WorkSpace/output/leman_wide_v23/wide_context6_consensus8/hgb_full_dev.joblib",
+  "decoder": "/root/data/WorkSpace/output/leman_wide_v23/wide_context6_consensus8/decoder_full.json",
+  "boundary_priors": "/root/data/WorkSpace/output/leman_wide_v23/train_boundary_priors.joblib",
+  "gazetteer": "/root/data/WorkSpace/output/leman_wide_v23/v6_train_gazetteer.json",
+  "cache_paths": "/root/data/WorkSpace/output/leman_wide_v23/dev_caches.json",
+  "test_accessed": false,
+  "neural_training": false
+}

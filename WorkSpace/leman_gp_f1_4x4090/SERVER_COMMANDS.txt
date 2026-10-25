@@ -1,0 +1,30 @@
+环境：4×RTX 4090，每卡24GB，默认使用GPU 0,1,2,3；根目录 /root/data/WorkSpace。
+已有目录：/root/data/WorkSpace/data、model、output/leman_paper_a100_seed42
+保留旧目录中的 best.pt 和 lexicon.json。新 zip 上传至 /root/data/WorkSpace。
+
+cd /root/data/WorkSpace
+unzip -o leman_gp_f1_4x4090.zip
+cd leman_gp_f1_4x4090
+# 只有新环境尚未安装依赖时才需要：bash install.sh
+bash run.sh
+
+同一命令可以自动续训：
+cd /root/data/WorkSpace/leman_gp_f1_4x4090
+bash run.sh
+
+主动暂停（另开终端）：
+touch /root/data/WorkSpace/output/leman_f1_4x4090_seed42/STOP
+
+暂停后的恢复：
+rm -f /root/data/WorkSpace/output/leman_f1_4x4090_seed42/STOP
+cd /root/data/WorkSpace/leman_gp_f1_4x4090
+bash run.sh
+
+训练及 dev 校准完成后，按已冻结选择评估 test：
+bash test.sh
+python collect.py
+
+回传 output/leman_f1_4x4090_seed42/return_leman_f1_v2_*.zip；不用回传 pt。
+
+默认12 epoch；自动探测每卡batch（4至64），全局batch=每卡batch×4；eval每卡16。
+每5 epoch保存完整快照，保留best.pt，每轮和每1000步保存last.pt。

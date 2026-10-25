@@ -1,0 +1,112 @@
+{
+  "version": "final-v3",
+  "order": [
+    "old",
+    "fgm43",
+    "fgm44",
+    "ema43",
+    "fgm46",
+    "soup2",
+    "soup3",
+    "parent",
+    "v4ema",
+    "v2ema",
+    "rdrop",
+    "fgm47",
+    "F42_C",
+    "F42_B"
+  ],
+  "sources": {
+    "old": {
+      "path": "/root/data/WorkSpace/output/leman_finetune_v4_seed42/best.pt",
+      "sha256": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4",
+      "floor": -4.0,
+      "weight_source": "ema"
+    },
+    "fgm43": {
+      "path": "/root/data/WorkSpace/output/leman_fgm_v10_seed43/best.pt",
+      "sha256": "efdeaaa83bc483b376837ee5bcb35df7bcb5a9b1b10d2f120eb32868f1d80506",
+      "floor": -4.0,
+      "weight_source": "live"
+    },
+    "fgm44": {
+      "path": "/root/data/WorkSpace/output/leman_fgm_v14_seed44/best.pt",
+      "sha256": "a3020f91bdf471069a58e25f4c016daa45d246c03b648a8ad6e760cce20dc625",
+      "floor": -4.0,
+      "weight_source": "live"
+    },
+    "ema43": {
+      "path": "/root/data/WorkSpace/output/leman_fgm_v10_seed43/last.pt",
+      "sha256": "36b341622a634ea305000a5776950e8d93ae0e9fdc73a73fbbb5b8c7b7833a34",
+      "floor": -4.0,
+      "weight_source": "ema"
+    },
+    "fgm46": {
+      "path": "/root/data/WorkSpace/output/leman_fgm_seed46_dual4090/best.pt",
+      "sha256": "3d790b4796c31932d7ad51a01f57dcfb9ebb573ebae021ca757995961a4eb605",
+      "floor": -32.0,
+      "weight_source": "ema"
+    },
+    "soup2": {
+      "path": "/root/data/WorkSpace/output/leman_soup_v16/soup2.pt",
+      "sha256": "bc5ef68b6f733ccdd9e96d558e501ebef24d1584c1aedd02f6ca09316d8e0b23",
+      "floor": -4.0,
+      "weight_source": "soup2"
+    },
+    "soup3": {
+      "path": "/root/data/WorkSpace/output/leman_soup_v16/soup3.pt",
+      "sha256": "3061466ac2f6782ec6694818ee0317b8a6fb8ad51567b18c97fa2ac763837a83",
+      "floor": -4.0,
+      "weight_source": "soup3"
+    },
+    "parent": {
+      "path": "/root/data/WorkSpace/output/leman_f1_4x4090_seed42/best.pt",
+      "sha256": "22a4efe6a31021bda0d62fc6c1b73294dadfca79f00e79ab83bb89a9c9177bc1",
+      "floor": -32.0,
+      "weight_source": "live"
+    },
+    "v4ema": {
+      "path": "/root/data/WorkSpace/output/leman_finetune_v4_seed42/last.pt",
+      "sha256": "5c281cda42f510b0300aa37d8cf7e3825f814e9a43da36f7ae7d916052e284ff",
+      "floor": -32.0,
+      "weight_source": "ema.shadow"
+    },
+    "v2ema": {
+      "path": "/root/data/WorkSpace/output/leman_f1_4x4090_seed42/last.pt",
+      "sha256": "40e537c6c411509604045e348e3cc75753152682f7c005c5de157ec1e2386b02",
+      "floor": -32.0,
+      "weight_source": "ema.shadow"
+    },
+    "rdrop": {
+      "path": "/root/data/WorkSpace/output/leman_rdrop_v17_seed45/best.pt",
+      "sha256": "bc94979d39e8857164496eda617d05c99edd9ddb51f1b222ccbed8f7625b6271",
+      "floor": -4.0,
+      "weight_source": "parent"
+    },
+    "fgm47": {
+      "path": "/root/data/WorkSpace/output/leman_fgm_seed47_dual4090/best.pt",
+      "sha256": "c68b55b30f3f0caa229344f71151fefcba0170b8e75ddea9ef9a06cf6d2c97e3",
+      "floor": -32.0,
+      "weight_source": "ema"
+    },
+    "F42_C": {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/C/best.pt",
+      "sha256": "145224e85c808ddc84cda9177e7cd4a6731b004edbc713b03008bb0695fe01cd",
+      "floor": -32.0,
+      "weight_source": "ema",
+      "lexicon_sha256": "948ec3f4b25d33cc58d35cdc04d201cab3841cabfbc200c416aefad18830f4a3",
+      "preprocessing": "unified F/seed42 lexicon and cached character windows"
+    },
+    "F42_B": {
+      "path": "/root/data/WorkSpace/output/leman_controlled_ablation_v1/F_seed42/B/best.pt",
+      "sha256": "f6eb2c4b472fd5e90063a6968054681ff2a52cdd4c155c34599fe3578f485fe2",
+      "floor": -32.0,
+      "weight_source": "phase_entry",
+      "lexicon_sha256": "948ec3f4b25d33cc58d35cdc04d201cab3841cabfbc200c416aefad18830f4a3",
+      "preprocessing": "unified F/seed42 lexicon and cached character windows"
+    }
+  },
+  "neural_weights_copied": false,
+  "reason": "Reuse verified existing server checkpoints; no duplicate multi-GB weights",
+  "result_scope": "complete test split; 14-source fusion"
+}

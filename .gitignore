@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.idea/
+.vscode/
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+WorkSpace/data/train2.txt
+WorkSpace/data/dev2.txt
+WorkSpace/data/test2.txt
+WorkSpace/data/label.txt

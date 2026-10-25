@@ -1,0 +1,158 @@
+{
+  "method": "calibrated_v4",
+  "fit": {
+    "logistic": {
+      "mean": [
+        12.330436339032584,
+        -0.19766346210926639,
+        0.8830355191991519,
+        1.455757286575096,
+        4.750426300757871,
+        0.013731293512009406
+      ],
+      "std": [
+        3.4056933092525354,
+        0.5151509848914643,
+        0.2111787690971897,
+        0.38698983755778643,
+        2.7011796935196215,
+        0.15217682912623376
+      ],
+      "coefficients": [
+        3.8935600206003103,
+        1.0518650204688058,
+        -0.33240889208894464,
+        0.46784056137219243,
+        0.17111023471363315,
+        0.6261050320676208,
+        -0.10424209150257185,
+        -0.4324580482187217,
+        0.36931780688547294,
+        0.17387067709413306,
+        0.08021980987936878,
+        -0.3023259257376102,
+        -0.25465809799119243,
+        0.2958069367529731,
+        -0.24495098327821568,
+        -0.48964233064963053,
+        -0.09714239382945257
+      ],
+      "eligible_types": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "support": [
+        196,
+        64,
+        4323,
+        1117,
+        2749,
+        2678,
+        78,
+        313,
+        236,
+        456,
+        1767,
+        2181,
+        4624
+      ],
+      "iterations": 9,
+      "fit_candidate_rows": 20997,
+      "fit_positive_rows": 19577,
+      "gradient_max": 4.263256414560601e-13,
+      "objective": 3276.414537631153
+    },
+    "decoder": {
+      "strategy": "weighted_interval",
+      "global_threshold": -0.25,
+      "thresholds": {
+        "BIS": -0.25,
+        "COM": -0.25,
+        "CRO": -0.25,
+        "CUL": -1.25,
+        "DIS": 0.5,
+        "DRUG": -0.25,
+        "FER": -0.25,
+        "ORG": -0.75,
+        "OTH": -0.25,
+        "PAOG": -1.25,
+        "PART": 0.25,
+        "PER": -0.25,
+        "PET": 0.0
+      },
+      "fit_support": {
+        "BIS": 196,
+        "COM": 64,
+        "CRO": 4323,
+        "CUL": 1117,
+        "DIS": 2749,
+        "DRUG": 2678,
+        "FER": 78,
+        "ORG": 313,
+        "OTH": 236,
+        "PAOG": 456,
+        "PART": 1767,
+        "PER": 2181,
+        "PET": 4624
+      },
+      "eligible": [
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "ORG",
+        "OTH",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "min_support": 200,
+      "selection_metric": "exact original character-span micro F1",
+      "fit_sentences": 5963,
+      "fit_micro_f1": 0.9424934900586504,
+      "boundary_weight": 0.0,
+      "fit_macro_f1": 0.8787252473644609
+    },
+    "family": "train_gazetteer"
+  },
+  "types": [
+    "BIS",
+    "COM",
+    "CRO",
+    "CUL",
+    "DIS",
+    "DRUG",
+    "FER",
+    "ORG",
+    "OTH",
+    "PAOG",
+    "PART",
+    "PER",
+    "PET"
+  ],
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "train_sha256": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+  "checkpoint_sha256": {
+    "parent": "22a4efe6a31021bda0d62fc6c1b73294dadfca79f00e79ab83bb89a9c9177bc1",
+    "upgraded": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4"
+  },
+  "identity": {
+    "package_manifest_sha256": "2bfb5ecb1549e526b0b17e46fefb7b5b8eaef7beda669361381180a7484bb16e",
+    "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+    "train_sha256": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+    "gazetteer_sha256": "f7ab9615cb3917ea01d5a8cda0834b95672e5c30ee30df9f45019f89b11a709d",
+    "test_accessed": false
+  },
+  "gazetteer_sha256": "f7ab9615cb3917ea01d5a8cda0834b95672e5c30ee30df9f45019f89b11a709d",
+  "test_accessed": false,
+  "scope": "Exploratory dev-only calibration; same previously selected v4 checkpoint."
+}

@@ -1,0 +1,79 @@
+{
+  "types": [
+    "BIS",
+    "COM",
+    "CRO",
+    "CUL",
+    "DIS",
+    "DRUG",
+    "FER",
+    "ORG",
+    "OTH",
+    "PAOG",
+    "PART",
+    "PER",
+    "PET"
+  ],
+  "num_types": 13,
+  "num_bioes_tags": 53,
+  "task_splits_read": [
+    "train",
+    "dev"
+  ],
+  "test_read": false,
+  "optimizer_steps": 0,
+  "splits": {
+    "train": {
+      "sentences": 47839,
+      "windows": 48108,
+      "gold_entities": 165686,
+      "per_type_gold": {
+        "BIS": 1480,
+        "COM": 549,
+        "CRO": 33788,
+        "CUL": 9815,
+        "DIS": 22291,
+        "DRUG": 19689,
+        "FER": 864,
+        "ORG": 2346,
+        "OTH": 1892,
+        "PAOG": 3779,
+        "PART": 14400,
+        "PER": 18035,
+        "PET": 36758
+      },
+      "uncovered_gold": 0,
+      "labels_in_range": true,
+      "cache": "/root/data/WorkSpace/output/lebert_data_cache/train_f4793a01b2bfb8af8e2be39d.pt",
+      "cache_sha256": "ca0c4d67e29db3fb6bf988e719ec89c1b3dfc33a64df6a93b8d9805e9eafc847",
+      "seconds": 53.601740630343556
+    },
+    "dev": {
+      "sentences": 5963,
+      "windows": 5998,
+      "gold_entities": 20782,
+      "per_type_gold": {
+        "BIS": 196,
+        "COM": 64,
+        "CRO": 4323,
+        "CUL": 1117,
+        "DIS": 2749,
+        "DRUG": 2678,
+        "FER": 78,
+        "ORG": 313,
+        "OTH": 236,
+        "PAOG": 456,
+        "PART": 1767,
+        "PER": 2181,
+        "PET": 4624
+      },
+      "uncovered_gold": 0,
+      "labels_in_range": true,
+      "cache": "/root/data/WorkSpace/output/lebert_data_cache/dev_7a90727e98cee3e599b6a710.pt",
+      "cache_sha256": "9cc89a0c2c7a474ce3e28a8faf55c2ebb491223757baad9e34fcc4ea1fa5ddae",
+      "seconds": 6.386165617033839
+    }
+  },
+  "source_data_sha256": "1c008c24e8b24305e2e44385763c3500ac79ff371aa74c47d5a1ec90bb8c9594",
+  "status": "PASS"
+}

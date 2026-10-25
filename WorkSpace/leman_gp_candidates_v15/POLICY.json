@@ -1,0 +1,41 @@
+{
+  "experiment": "v15 expanded seed44 candidates; dev exploration",
+  "created_before_scoring_utc": "2026-10-17T15:37:29.812470+00:00",
+  "known_results": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "baseline_selection_sha256": "050dd074323902f6be3352ebaab1ded1dfec93e3f386abc27488f416e62f5385",
+  "baseline_comparison_sha256": "d3bf9f3fab3092f332de3a976fff32b6810f11cbccf5c9300aa46cffc66e2da1",
+  "checkpoint_sha256": {
+    "old": "55b803b48f2aeee3fbfda60422ac3918ab6d87603cdd2f5039b7312f1ec300e4",
+    "fgm43": "efdeaaa83bc483b376837ee5bcb35df7bcb5a9b1b10d2f120eb32868f1d80506",
+    "fgm44": "a3020f91bdf471069a58e25f4c016daa45d246c03b648a8ad6e760cce20dc625"
+  },
+  "routes": [
+    "v14",
+    "expanded_fgm44",
+    "expanded_fusion44"
+  ],
+  "raw_candidate_floor": -32.0,
+  "missing_model_GP": -32.0,
+  "missing_model_boundary_logprob": -16.0,
+  "features": "unchanged six v10 features per model; expanded fusion = old + fgm43 + fgm44",
+  "type_intercept_min_support": 200,
+  "type_slope_min_support": 500,
+  "ridge_base": 10.0,
+  "ridge_interactions": 50.0,
+  "selection": "fit-only Micro then Macro13 then earlier route; unchanged fixed text-hash halves and decoder grid",
+  "acceptance": "full dev >= v14, nested crossfit > v14, and neither held-out half decreases",
+  "baseline": "replay audited v14 selected full and per-half fits with their original candidate caches",
+  "train_sha256": "34fb6145c1e6f14e80fd98c9f469aeb292a75be6a6e7cd87d155c41d5c7e022e",
+  "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+  "no_training_or_test": true
+}

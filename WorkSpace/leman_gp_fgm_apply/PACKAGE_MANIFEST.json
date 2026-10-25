@@ -1,0 +1,10 @@
+{
+  "files": {
+    "predict.py": "021c349dffefdb5b51e5e78665471dca757d0a88899149145479afc0e3a7ac2b",
+    "predict.sh": "0dc5fbca5f1f1f045a46bb76fcc1ef4e414b12b0b1dfd049b0304b8a9c8c21fe"
+  },
+  "selection_sha256": {
+    "10": "35cd4fc0381dedb090e5636f2ba63f09f8940e95655195df38eb4d1f160b9b69",
+    "11": "b1d98740cd1a249429e91bd31fd7a1ec18c9db1e276981c722e75a010d566b74"
+  }
+}

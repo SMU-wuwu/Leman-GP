@@ -1,0 +1,28 @@
+{
+  "files": {
+    "README.md": "428e473db3c2be9ff00adeaa9caba4db6b524aed47cfbd11ce00658c2bd3b2e6",
+    "env.sh": "2416fa52571df646692ef25aac4bf4e801e07a9bab7282871d780cedbe0d8651",
+    "features.py": "babc0d5d6dd97aaecf279f9134a1b5474d2f7fa94e8abeb720f5714f88ea2b54",
+    "frozen_source/calibrate.py": "a57c096322d9548bf2f72808e9d84298305540d6e0941e201641c332dc6bdb96",
+    "frozen_source/collect.py": "82e18b5a7161543a0dbf23bfe0c8a68bf59a6215c37dd2d2d6c4a9abbd5c3175",
+    "frozen_source/config.py": "bb5c7ca2f37d4eae5287d972c4c2026b34ff42a42c21b74d935bc195bd9f3404",
+    "frozen_source/data.py": "6f0f543e6ea28fc2001df1274499cde735d31293ef02e8fccb2317068f22ecee",
+    "frozen_source/decoding.py": "5fba8537050607edc9c02c726c5af3ec03761c0770306e85a8e0bbfa1b4b5a33",
+    "frozen_source/evaluate.py": "566e9bbea75a56baafe1df7f9bf5e584c3529bdfee6b5d0ff639c74ab0ef9bf3",
+    "frozen_source/inference.py": "97350709abfed1052be060f3870e1f53f7bf482f2ad3b7038fc4bf74a471d14a",
+    "frozen_source/model.py": "2fc225106526c1faca78f10e9f1de7e51833d5c3ead0ce5f976a17727a76160e",
+    "frozen_source/paper_core.py": "11918c27459d2a04909514975e9cc6068c2986bec1c088d86b06e2d00f6d5303",
+    "frozen_source/runtime.py": "99491da1358f20e8fe06642a270181f76bbd9ad0122461c9f08813a20b6e548f",
+    "frozen_source/test.py": "e3ff76359d3113f96d8de6882baaff86a3cc174488f1d9b12143d6cc902d9c22",
+    "frozen_source/train.py": "b946508286d164a941095f0f9475cb3fda36a91ade8abf564ac32b0921a3bbe1",
+    "frozen_source/transfer.py": "b5d45b749d4f38a0b8e5ce335edd04eaa102254a786afed2c8a55ba88d699023",
+    "pack_results.py": "384fce3cdd5c79d9f64206b77d337f523b01cffd1f73d1b2f5f09b3a47866dda",
+    "refine.py": "ae487e2bfd3aeec5c6d29e8ba3e2a428b7323594483295b2db96a1e58e2085b4",
+    "run.sh": "00d586de52750a86d94508f662300444d67ffb326b082e99a38e1dafcdcf2f5c",
+    "search.py": "cfb58c82b70ab7ee2fba551bcadbc9759b95a50300d03b119b6c0192a72202c7",
+    "test.sh": "88dea84531c45ff6140ec65618025263aa6cbf583a6c596e1a25452066d45feb"
+  },
+  "frozen_parent": "leman_gp_f1_4x4090",
+  "training_required": false,
+  "default_split": "dev"
+}

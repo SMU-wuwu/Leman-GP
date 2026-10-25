@@ -1,0 +1,6 @@
+{
+  "recorded_before_v11_fitting_utc": "2026-10-17T14:06:48.885356+00:00",
+  "initial_check": "FGM floor -32 filtered above -4 exactly equals v10 FGM; v4 v7 cache has identical unique keys above -4, 182/20997 maximum-window GP scores differ from the v6 cache, max abs 0.0298004150390625, mean abs 0.0000425111",
+  "handling": "use original planned v7 expanded cache unchanged; v10 baseline continues exact replay of its own caches; remove only overly strict v4 floating-score equality assertion",
+  "change_to_search_or_routes": false
+}

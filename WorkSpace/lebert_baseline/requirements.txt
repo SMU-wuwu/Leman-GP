@@ -1,0 +1,6 @@
+torch==2.7.0
+transformers==4.56.2
+numpy>=2.2,<3
+tqdm>=4.67,<5
+huggingface-hub>=0.34,<1
+safetensors>=0.4

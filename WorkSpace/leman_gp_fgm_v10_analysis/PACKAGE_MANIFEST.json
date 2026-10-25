@@ -1,0 +1,9 @@
+{
+  "files": {
+    "IMPLEMENTATION.json": "947195fcffa6d77d44cf776b7318eb16d8e0106371125644d8652d2fc8b3befc",
+    "analyze.py": "027fdb8406d4a3c471774c7c366941463d93df0d8efc6f3bfbadfc30944190ef",
+    "extract.py": "2294f9efc9e00c430760a7b32c18a0f2355978619f5df6e6e599a6362dcc97cb"
+  },
+  "v9_manifest_sha256": "9feb7005d4de355bc4419536be8416dc4c2c88721fe0527e5975cc7769aefd97",
+  "v10_manifest_sha256": "8f30cf112dbc26696afaefb633ae635adc0cb0484a5297fdc5d20cb8cced5a4e"
+}

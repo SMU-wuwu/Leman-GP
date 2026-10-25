@@ -1,0 +1,15 @@
+# Upload leman_gp_fgm_seed47_dual4090_ready.zip to /root/data/WorkSpace/
+cd /root/data/WorkSpace
+sha256sum leman_gp_fgm_seed47_dual4090_ready.zip
+unzip -o leman_gp_fgm_seed47_dual4090_ready.zip
+cd /root/data/WorkSpace/leman_gp_fgm_seed47_dual4090
+bash run.sh
+
+# run.sh trains, performs dev calibration/crossfit, and creates the return ZIP.
+# If interrupted, remove STOP if present, then repeat the same command:
+rm -f /root/data/WorkSpace/output/leman_fgm_seed47_dual4090/STOP
+cd /root/data/WorkSpace/leman_gp_fgm_seed47_dual4090
+bash run.sh
+
+# To request a graceful pause from another shell:
+# touch /root/data/WorkSpace/output/leman_fgm_seed47_dual4090/STOP

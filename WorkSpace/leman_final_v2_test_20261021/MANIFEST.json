@@ -1,0 +1,16 @@
+{
+  "files": {
+    "probe_cpu.py": "3e9a41cb24f72efe1abab619c648130518e443474bf20f2365a445351d9eecc7",
+    "test.py": "6c47c3ad548975187bde716d6655643a508bab094783dc847a68f7b00609df4d",
+    "README.md": "dd69a452152a4a1d3164d236b5264ae548cf50ca8024e4f7ae41591dd66d2a24",
+    "evidence_core.py": "bc539a54f78030422cb54c5ae33540a24b53f6c0c61791f3c3a34e3355d329da",
+    "COPIED_FILES.json": "8bf21e90449a683b2f73336758ce254ebfdd857b8203d6f297f2c321a2824748",
+    "frozen_pipeline.py": "2e85a1afe883883000268146f3a03210348d763ce40ee79d9adf8494cf2358b9",
+    "priority_test_and_resume.py": "daf7112b0d14e3d9cc015ba2f87597ba73727f93b6c3abfdf7a4e46d3e3ddcd4"
+  },
+  "formal_test_completed": false,
+  "frozen_dev_replay": "5963 sentences exactly match",
+  "new_training": false,
+  "new_fitting": false,
+  "execution": "User selected safe pause, test, then resume original ablation"
+}

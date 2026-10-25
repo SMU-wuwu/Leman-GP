@@ -1,0 +1,13 @@
+cd /root/data/WorkSpace/lebert_baseline
+/root/miniconda3/bin/python -m pip install -r requirements.txt
+
+当前服务器已有 torch 2.7.0+cu126、transformers 4.56.2，可继续使用。
+资源下载另执行：
+/root/miniconda3/bin/python prepare_resources.py
+
+资源也可手工放入：
+/root/data/WorkSpace/resources/bert-base-chinese/
+    config.json、model.safetensors、vocab.txt、tokenizer_config.json
+
+已有腾讯词向量的 .tar.gz 或带行数/维度表头的 .txt 时：
+/root/miniconda3/bin/python prepare_resources.py --vectors /你的路径/tencent-ailab-embedding-zh-d200-v0.2.0.tar.gz

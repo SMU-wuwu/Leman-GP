@@ -1,0 +1,306 @@
+{
+  "split": "dev",
+  "test_read": false,
+  "rows": [
+    {
+      "added_source": "original",
+      "candidate_rows": 23769,
+      "gold_covered": 20170,
+      "gold_uncovered": 612,
+      "new_gold": 0,
+      "recall": 0.9705514387450679,
+      "per_type": {
+        "BIS": {
+          "gold": 196,
+          "covered": 194,
+          "new": 0
+        },
+        "COM": {
+          "gold": 64,
+          "covered": 58,
+          "new": 0
+        },
+        "CRO": {
+          "gold": 4323,
+          "covered": 4253,
+          "new": 0
+        },
+        "CUL": {
+          "gold": 1117,
+          "covered": 1056,
+          "new": 0
+        },
+        "DIS": {
+          "gold": 2749,
+          "covered": 2726,
+          "new": 0
+        },
+        "DRUG": {
+          "gold": 2678,
+          "covered": 2567,
+          "new": 0
+        },
+        "FER": {
+          "gold": 78,
+          "covered": 73,
+          "new": 0
+        },
+        "ORG": {
+          "gold": 313,
+          "covered": 272,
+          "new": 0
+        },
+        "OTH": {
+          "gold": 236,
+          "covered": 175,
+          "new": 0
+        },
+        "PAOG": {
+          "gold": 456,
+          "covered": 447,
+          "new": 0
+        },
+        "PART": {
+          "gold": 1767,
+          "covered": 1682,
+          "new": 0
+        },
+        "PER": {
+          "gold": 2181,
+          "covered": 2089,
+          "new": 0
+        },
+        "PET": {
+          "gold": 4624,
+          "covered": 4578,
+          "new": 0
+        }
+      }
+    },
+    {
+      "added_source": "F42_C",
+      "candidate_rows": 25176,
+      "gold_covered": 20389,
+      "gold_uncovered": 393,
+      "new_gold": 219,
+      "recall": 0.981089404292176,
+      "per_type": {
+        "BIS": {
+          "gold": 196,
+          "covered": 194,
+          "new": 0
+        },
+        "COM": {
+          "gold": 64,
+          "covered": 61,
+          "new": 3
+        },
+        "CRO": {
+          "gold": 4323,
+          "covered": 4277,
+          "new": 24
+        },
+        "CUL": {
+          "gold": 1117,
+          "covered": 1074,
+          "new": 18
+        },
+        "DIS": {
+          "gold": 2749,
+          "covered": 2734,
+          "new": 8
+        },
+        "DRUG": {
+          "gold": 2678,
+          "covered": 2595,
+          "new": 28
+        },
+        "FER": {
+          "gold": 78,
+          "covered": 74,
+          "new": 1
+        },
+        "ORG": {
+          "gold": 313,
+          "covered": 282,
+          "new": 10
+        },
+        "OTH": {
+          "gold": 236,
+          "covered": 189,
+          "new": 14
+        },
+        "PAOG": {
+          "gold": 456,
+          "covered": 448,
+          "new": 1
+        },
+        "PART": {
+          "gold": 1767,
+          "covered": 1720,
+          "new": 38
+        },
+        "PER": {
+          "gold": 2181,
+          "covered": 2148,
+          "new": 59
+        },
+        "PET": {
+          "gold": 4624,
+          "covered": 4593,
+          "new": 15
+        }
+      }
+    },
+    {
+      "added_source": "F42_B",
+      "candidate_rows": 25563,
+      "gold_covered": 20412,
+      "gold_uncovered": 370,
+      "new_gold": 23,
+      "recall": 0.982196131267443,
+      "per_type": {
+        "BIS": {
+          "gold": 196,
+          "covered": 194,
+          "new": 0
+        },
+        "COM": {
+          "gold": 64,
+          "covered": 61,
+          "new": 0
+        },
+        "CRO": {
+          "gold": 4323,
+          "covered": 4281,
+          "new": 4
+        },
+        "CUL": {
+          "gold": 1117,
+          "covered": 1078,
+          "new": 4
+        },
+        "DIS": {
+          "gold": 2749,
+          "covered": 2735,
+          "new": 1
+        },
+        "DRUG": {
+          "gold": 2678,
+          "covered": 2597,
+          "new": 2
+        },
+        "FER": {
+          "gold": 78,
+          "covered": 75,
+          "new": 1
+        },
+        "ORG": {
+          "gold": 313,
+          "covered": 282,
+          "new": 0
+        },
+        "OTH": {
+          "gold": 236,
+          "covered": 190,
+          "new": 1
+        },
+        "PAOG": {
+          "gold": 456,
+          "covered": 448,
+          "new": 0
+        },
+        "PART": {
+          "gold": 1767,
+          "covered": 1727,
+          "new": 7
+        },
+        "PER": {
+          "gold": 2181,
+          "covered": 2149,
+          "new": 1
+        },
+        "PET": {
+          "gold": 4624,
+          "covered": 4595,
+          "new": 2
+        }
+      }
+    },
+    {
+      "added_source": "no_lexicon",
+      "candidate_rows": 26230,
+      "gold_covered": 20438,
+      "gold_uncovered": 344,
+      "new_gold": 26,
+      "recall": 0.9834472139351361,
+      "per_type": {
+        "BIS": {
+          "gold": 196,
+          "covered": 194,
+          "new": 0
+        },
+        "COM": {
+          "gold": 64,
+          "covered": 61,
+          "new": 0
+        },
+        "CRO": {
+          "gold": 4323,
+          "covered": 4284,
+          "new": 3
+        },
+        "CUL": {
+          "gold": 1117,
+          "covered": 1081,
+          "new": 3
+        },
+        "DIS": {
+          "gold": 2749,
+          "covered": 2736,
+          "new": 1
+        },
+        "DRUG": {
+          "gold": 2678,
+          "covered": 2605,
+          "new": 8
+        },
+        "FER": {
+          "gold": 78,
+          "covered": 76,
+          "new": 1
+        },
+        "ORG": {
+          "gold": 313,
+          "covered": 288,
+          "new": 6
+        },
+        "OTH": {
+          "gold": 236,
+          "covered": 190,
+          "new": 0
+        },
+        "PAOG": {
+          "gold": 456,
+          "covered": 449,
+          "new": 1
+        },
+        "PART": {
+          "gold": 1767,
+          "covered": 1727,
+          "new": 0
+        },
+        "PER": {
+          "gold": 2181,
+          "covered": 2150,
+          "new": 1
+        },
+        "PET": {
+          "gold": 4624,
+          "covered": 4597,
+          "new": 2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "independent_KL": 0.5971951056541419,
+  "implementation_KL": 0.5971951484680176,
+  "padding_gradient_zero": true,
+  "empty_type_null_finite": true,
+  "uneven_accumulation_gradient_equal": true
+}

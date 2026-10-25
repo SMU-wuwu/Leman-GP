@@ -1,0 +1,119 @@
+{
+  "identity": {
+    "package_manifest_sha256": "2266ab4534a93bcedb689e6fcb59c93b9c7551546f6e288992eadc1c0bb2af5e",
+    "dev_sha256": "6a40b69b1449ad4b7eeaf6ef347e2ec2beb6a1b22fef433b96d12dc738bc47ca",
+    "test_accessed": false
+  },
+  "fit": {
+    "logistic": {
+      "mean": [
+        12.355892614132634,
+        -0.19532734378090494,
+        0.8841593711976835,
+        1.4578578698002418
+      ],
+      "std": [
+        3.385457564128657,
+        0.5125848648556499,
+        0.2094990334917473,
+        0.3899155269135934
+      ],
+      "coefficients": [
+        3.522777229820886,
+        1.1222261287313817,
+        -0.3170427256461866,
+        0.48585144361563626,
+        -0.08701722692007048,
+        -0.03496555468043082,
+        0.18248277293782084,
+        0.3931294686388245,
+        0.13956134305589205,
+        0.324534801881553,
+        -0.19242092072114936,
+        -0.2797296886591862,
+        0.23946475645555934
+      ],
+      "eligible_types": [
+        2,
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12
+      ],
+      "support": [
+        92,
+        30,
+        2215,
+        566,
+        1389,
+        1354,
+        45,
+        155,
+        123,
+        230,
+        896,
+        1022,
+        2300
+      ],
+      "iterations": 7,
+      "fit_candidate_rows": 10507,
+      "fit_positive_rows": 9828,
+      "gradient_max": 1.302921104340271e-10,
+      "objective": 1680.8963300436485
+    },
+    "decoder": {
+      "strategy": "weighted_interval",
+      "global_threshold": -0.25,
+      "thresholds": {
+        "BIS": -0.25,
+        "COM": -0.25,
+        "CRO": -0.75,
+        "CUL": -1.25,
+        "DIS": -0.75,
+        "DRUG": -0.75,
+        "FER": -0.25,
+        "ORG": -0.25,
+        "OTH": -0.25,
+        "PAOG": -1.0,
+        "PART": 0.75,
+        "PER": 0.0,
+        "PET": -0.75
+      },
+      "fit_support": {
+        "BIS": 92,
+        "COM": 30,
+        "CRO": 2215,
+        "CUL": 566,
+        "DIS": 1389,
+        "DRUG": 1354,
+        "FER": 45,
+        "ORG": 155,
+        "OTH": 123,
+        "PAOG": 230,
+        "PART": 896,
+        "PER": 1022,
+        "PET": 2300
+      },
+      "eligible": [
+        "CRO",
+        "CUL",
+        "DIS",
+        "DRUG",
+        "PAOG",
+        "PART",
+        "PER",
+        "PET"
+      ],
+      "min_support": 200,
+      "selection_metric": "exact original character-span micro F1",
+      "fit_sentences": 3019,
+      "fit_micro_f1": 0.943655830628361,
+      "boundary_weight": 0.0,
+      "fit_macro_f1": 0.8871689911472908
+    },
+    "family": "single_v4"
+  }
+}
